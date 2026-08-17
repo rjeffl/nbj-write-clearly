@@ -1,6 +1,6 @@
 # NBJ Write Clearly
 
-An unofficial agent skill named in tribute to Nate B. Jones—**NBJ**. It turns the most useful principles from the [Google Developer Documentation Style Guide](https://developers.google.com/style) into a compact workflow for clear, natural technical and professional prose, with explicit safeguards for facts, technical tokens, uncertainty, and the author's voice.
+An unofficial agent skill inspired by [Nate B. Jones's post](https://x.com/natebjones/status/2089457435459404093) about turning the [Google Developer Documentation Style Guide](https://developers.google.com/style) into an AI writing skill. It turns the guide's most useful principles into a compact workflow for clear, natural technical and professional prose, with explicit safeguards for facts, technical tokens, uncertainty, and the author's voice.
 
 This is not a generic "simplify everything" prompt. It helps an agent decide what to preserve, what to change, which guidance applies to the destination, and when to stop editing.
 
@@ -64,7 +64,7 @@ See [EVALUATION.md](EVALUATION.md) for the candidate comparison and forward-test
 
 ## Inspiration and attribution
 
-This project was inspired by [Nate B. Jones (@natebjones)](https://x.com/natebjones) and [his August 17, 2026 post](https://x.com/natebjones/status/2089457435459404093) suggesting that agents read the Google Developer Documentation Style Guide and turn it into a skill. Thank you, Nate, for the sharp idea.
+This project began with [an August 17, 2026 post by Nate B. Jones (@natebjones)](https://x.com/natebjones/status/2089457435459404093) suggesting that agents read the Google Developer Documentation Style Guide and turn it into a skill.
 
 The skill paraphrases and reorganizes guidance from the [Google Developer Documentation Style Guide](https://developers.google.com/style). Google licenses its page content under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) unless otherwise noted and its code samples under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0). This repository is unofficial and is not endorsed by Google.
 
