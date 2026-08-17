@@ -1,4 +1,4 @@
 interface:
   display_name: "NBJ Write Clearly"
-  short_description: "Clear prose inspired by Nate B. Jones"
+  short_description: "Clear prose using Google's documentation style"
   default_prompt: "Use $nbj-write-clearly to revise this draft for clarity without changing its meaning."
