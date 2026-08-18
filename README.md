@@ -1,8 +1,20 @@
 # NBJ Write Clearly
 
-An unofficial agent skill inspired by [Nate B. Jones's post](https://x.com/natebjones/status/2089457435459404093) about turning the [Google Developer Documentation Style Guide](https://developers.google.com/style) into an AI writing skill. It turns the guide's most useful principles into a compact workflow for clear, natural technical and professional prose, with explicit safeguards for facts, technical tokens, uncertainty, and the author's voice.
+An unofficial agent skill for drafting, revising, and auditing clear technical and product documentation. It applies principles from the [Google Developer Documentation Style Guide](https://developers.google.com/style) while protecting facts, technical tokens, uncertainty, and the author's voice.
 
 This is not a generic "simplify everything" prompt. It helps an agent decide what to preserve, what to change, which guidance applies to the destination, and when to stop editing.
+
+## When to use it
+
+Invoke `$nbj-write-clearly`, or let a compatible agent select it automatically, for:
+
+- developer documentation;
+- procedures and help-center content;
+- release notes;
+- technical explanations; and
+- UI copy.
+
+Use it to draft new material, revise an existing draft, or audit prose without rewriting it. Do not treat it as a default voice layer for marketing, legal, academic, fictional, or personal writing unless you explicitly request this style.
 
 ## What it improves
 
