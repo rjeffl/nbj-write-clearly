@@ -75,4 +75,4 @@ Use this reference for technical artifacts or detailed style questions. Apply on
 
 ## Official source
 
-This skill paraphrases the [Google Developer Documentation Style Guide](https://developers.google.com/style). For a disputed word, specialized format, or exception, consult the live guide, beginning with its [highlights](https://developers.google.com/style/highlights) and [word list](https://developers.google.com/style/word-list).
+This file is a high-frequency synthesis, not a complete reproduction of the [Google Developer Documentation Style Guide](https://developers.google.com/style). For a disputed word, specialized format, detailed compliance request, or exception, use [official-index.md](official-index.md) to find the relevant live page. Apply only the applicable category. If browsing isn't available, don't claim complete Google Style Guide compliance.
