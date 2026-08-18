@@ -33,6 +33,7 @@ Depart from a guideline when doing so makes the content clearer for its actual r
 8. Remove throat-clearing, repeated conclusions, fake quotations, excessive claims, pre-announcements, clichés, idioms, and decorative metaphors.
 9. Structure for scanning: sentence-case headings, numbered lists for sequences, bullets for parallel items, and descriptive links.
 10. Read [references/guide.md](references/guide.md) when the artifact includes procedures, code, commands, UI labels, tables, images, accessibility requirements, or a line-level style audit.
+11. Read [references/official-index.md](references/official-index.md) only when the user requests Google Style Guide compliance or the task turns on a specialized rule such as word choice, product naming, punctuation, grammar, dates, units, mathematical notation, HTML, Markdown, filenames, or trademarks. Consult only the relevant official page when browsing is available.
 
 ## Protect meaning and voice
 
