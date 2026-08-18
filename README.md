@@ -64,13 +64,13 @@ It can also audit without rewriting:
 Use $nbj-write-clearly to audit this procedure. Report the highest-risk clarity problems, but don't rewrite it.
 ```
 
-The trigger description also lets compatible agents select the skill for documentation, explanations, procedures, release notes, UI copy, and related professional writing.
+The trigger description also lets compatible agents select the skill for developer documentation, technical explanations, procedures, release notes, help-center content, and UI copy.
 
 ## Design
 
-The 60-line `SKILL.md` holds the core workflow, authority order, preservation rules, and completion check. A conditional reference adds technical guidance only for procedures, code, commands, UI, tables, images, accessibility, and detailed audits. This keeps ordinary writing tasks lean without making technical behavior shallow.
+The compact `SKILL.md` holds the core workflow, authority order, preservation rules, and completion check. A conditional reference adds high-frequency technical guidance for procedures, code, commands, UI, tables, images, accessibility, and detailed audits. A separate [official category index](.agents/skills/nbj-write-clearly/references/official-index.md) routes specialized compliance questions to the relevant live Google page without loading the whole guide for ordinary writing.
 
-The source review covered all 70 pages in the guide's live navigation on August 17, 2026. The skill keeps the guide's own philosophy: project rules and reader clarity can override house guidance when the result stays consistent.
+The source review inspected all 70 distinct content pages in the guide's live navigation on August 17, 2026. The skill deliberately operationalizes the core principles and high-frequency rules; it does not reproduce every word-list entry, punctuation exception, naming rule, or specialized format. For those cases, it routes the agent to the live guide. Project rules and reader clarity can still override house guidance when the result stays consistent.
 
 See [EVALUATION.md](EVALUATION.md) for the candidate comparison and forward-test result.
 
