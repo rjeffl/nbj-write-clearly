@@ -10,11 +10,14 @@ This is not a generic "simplify everything" prompt. It helps an agent decide wha
 
 Invoke `$nbj-write-clearly`, or let a compatible agent select it automatically, for:
 
-- developer documentation;
+- developer documentation and READMEs;
 - procedures and help-center content;
-- release notes;
-- technical explanations; and
-- UI copy.
+- release notes and CHANGELOG entries;
+- technical explanations;
+- UI copy;
+- code review feedback;
+- code comments and docstrings; and
+- commit messages and merge request descriptions.
 
 Use it to draft new material, revise an existing draft, or audit prose without rewriting it. Do not treat it as a default voice layer for marketing, legal, academic, fictional, or personal writing unless you explicitly request this style.
 
@@ -32,9 +35,11 @@ Use it to draft new material, revise an existing draft, or audit prose without r
 Clone the repository:
 
 ```sh
-git clone https://github.com/daniel-p-green/nbj-write-clearly.git
+git clone https://github.com/bjornjohansen/nbj-write-clearly.git
 cd nbj-write-clearly
 ```
+
+To install the original, narrower-scope skill instead, clone the upstream repository: `https://github.com/daniel-p-green/nbj-write-clearly.git`.
 
 Copy the skill into your agent's skill directory. For Codex:
 
@@ -66,7 +71,7 @@ It can also audit without rewriting:
 Use $nbj-write-clearly to audit this procedure. Report the highest-risk clarity problems, but don't rewrite it.
 ```
 
-The trigger description also lets compatible agents select the skill for developer documentation, technical explanations, procedures, release notes, help-center content, and UI copy.
+The trigger description also lets compatible agents select the skill for any developer-facing prose: developer documentation, technical explanations, procedures, release notes, help-center content, UI copy, code review feedback, code comments, commit messages, and merge request descriptions.
 
 ## Design
 
