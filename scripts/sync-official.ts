@@ -18,7 +18,8 @@ const indexPath = join(skillRoot, "references/official-index.md");
 const outDir = join(skillRoot, "references/official");
 
 const REQUEST_DELAY_MS = 300;
-const MIN_CONTENT_CHARS = 500;
+// The shortest legitimate page (/style/future) is ~290 chars of Markdown.
+const MIN_CONTENT_CHARS = 200;
 
 // Devsite boilerplate that must not end up in the snapshots.
 const STRIP_SELECTORS = [
@@ -28,6 +29,9 @@ const STRIP_SELECTORS = [
   "devsite-thumb-rating",
   "devsite-recommendations",
   "devsite-page-rating",
+  "devsite-key-takeaways-panel", // AI-generated "Page Summary", not guide content
+  "devsite-toc",
+  "devsite-view-release-notes",
   ".nocontent",
   ".devsite-article-meta",
   ".devsite-floating-action-buttons",
@@ -51,7 +55,13 @@ function extractUrls(indexMarkdown: string): string[] {
 }
 
 function cleanArticle(html: string, url: string): HTMLElement {
-  const root = parse(html);
+  // node-html-parser fails to build a tree for some full devsite pages, so
+  // narrow to the single <article> element before parsing.
+  const start = html.indexOf("<article");
+  const end = html.lastIndexOf("</article>");
+  const fragment =
+    start !== -1 && end > start ? html.slice(start, end + "</article>".length) : html;
+  const root = parse(fragment);
   const article =
     root.querySelector("article.devsite-article") ??
     root.querySelector("article") ??
@@ -62,7 +72,12 @@ function cleanArticle(html: string, url: string): HTMLElement {
     for (const el of article.querySelectorAll(selector)) el.remove();
   }
   // Self-referencing anchor icons render as "[link](#term)" noise in Markdown.
-  for (const a of article.querySelectorAll("a[aria-hidden]")) a.remove();
+  // The aria-hidden attribute sits on the icon <span>, not the anchor.
+  for (const a of article.querySelectorAll("a")) {
+    if (a.getAttribute("aria-hidden") !== undefined || a.querySelector(".material-icons")) {
+      a.remove();
+    }
+  }
   for (const a of article.querySelectorAll("a")) {
     const href = a.getAttribute("href");
     if (href?.startsWith("/")) {
