@@ -42,7 +42,10 @@ if (( skill_lines > 100 )); then
   exit 1
 fi
 
+# references/official/ holds vendored Google pages that may legitimately
+# contain TODO in code samples; sync-official.ts validates them instead.
 if grep -R -n -E '/Users/|TODO|FIXME' \
+  --exclude-dir=official \
   "$repo_root/README.md" \
   "$repo_root/EVALUATION.md" \
   "$repo_root/NOTICE.md" \
@@ -51,6 +54,19 @@ if grep -R -n -E '/Users/|TODO|FIXME' \
   echo "Found a local path or unfinished placeholder." >&2
   exit 1
 fi
+
+official_dir="$skill_root/references/official"
+official_count=$(find "$official_dir" -name '*.md' 2>/dev/null | wc -l)
+if (( official_count < 1 )); then
+  echo "No vendored snapshots in $official_dir; run scripts/sync-official.ts." >&2
+  exit 1
+fi
+for file in "$official_dir"/*.md; do
+  if ! head -2 "$file" | grep -q '^Source: https://developers\.google\.com/'; then
+    echo "Missing snapshot header in $file." >&2
+    exit 1
+  fi
+done
 
 if git -C "$repo_root" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   git -C "$repo_root" diff --check

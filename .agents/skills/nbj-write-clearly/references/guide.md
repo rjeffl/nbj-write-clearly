@@ -20,7 +20,7 @@ Use this reference for technical artifacts or detailed style questions. Apply on
 - Describe intended benefits or design instead of promising outcomes.
 - Do not document unapproved future features or pre-announce changes.
 - Avoid time anchors such as *currently*, *new*, *latest*, and *soon* in durable documentation unless a date or version makes them meaningful.
-- Paraphrase and link to third-party material instead of copying it. Preserve required attribution and licenses.
+- Paraphrase and link to third-party material instead of copying it into the prose you author. Preserve required attribution and licenses.
 
 ## Structure
 

@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Vendored snapshots of all 70 Google Developer Documentation Style Guide pages linked from `official-index.md`, under `references/official/` (snapshot 2026-08-19), so specialized lookups read exact local text instead of fetching live pages.
+- `scripts/sync-official.ts` (Bun) to generate and refresh the snapshots, with boilerplate stripping and invisible-Unicode validation.
+- Snapshot presence and attribution-header checks in `scripts/check.sh`.
+
 ### Changed
 
 - Broadened the skill's trigger scope from documentation artifacts to all developer-facing prose: code review feedback, code comments and docstrings, commit messages, merge request descriptions, and CHANGELOG entries (`SKILL.md` description and Outcome section).

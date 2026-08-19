@@ -1,6 +1,6 @@
 # Official guide category index
 
-Use this index only when a task requires a specialized rule or explicit Google Style Guide compliance. Open the relevant live page when browsing is available. Do not load or apply unrelated categories, and do not let Google guidance override the user's request, source facts, destination requirements, or project style.
+Use this index only when a task requires a specialized rule or explicit Google Style Guide compliance. Each linked page has a local snapshot at `references/official/<last-path-segment>.md` — for `https://developers.google.com/style/dashes`, read `references/official/dashes.md`. Read the snapshot first; for the word list, search `references/official/word-list.md` for the term instead of reading the whole file. Open the live URL only if the snapshot is missing or the task depends on the latest wording. Do not load or apply unrelated categories, and do not let Google guidance override the user's request, source facts, destination requirements, or project style.
 
 ## Start and key resources
 
