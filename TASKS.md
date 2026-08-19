@@ -9,6 +9,7 @@ Non-blocking follow-ups from reviews (2026-08-19).
 - [ ] Re-run `bun run sync-official` when [What's new](https://developers.google.com/style/whats-new) shows guide changes; review the resulting diff before merging.
 - [ ] Consider a fetch retry for transient failures in `sync-official.ts` (currently a flaky page forces a full re-run).
 - [ ] Consider type-checking `scripts/sync-official.ts` (`bunx tsc --noEmit`) in `check.sh` if more TypeScript is added.
+- [ ] Cosmetic: Material Icons ligature glyphs concatenate with the following word in a few snapshot prose lines (e.g. `ui-elements.md` "arrow_rightexpander arrow") — strip or space icon ligatures in `sync-official.ts` if it bothers readers.
 - [ ] Optional: add own copyright line for fork modifications alongside the retained upstream MIT line if the fork is published more widely.
 - [ ] Be aware the skill can trigger outbound fetches to developers.google.com for specialized rules ("when browsing is available") — legitimate, hardcoded domain, but visible in permission prompts.
 - [ ] Consider spelling out a lighter-weight path in SKILL.md for short artifacts (one-line commit messages, brief review comments) — the full 11-step workflow and 9-point validation checklist are heavy for those.
