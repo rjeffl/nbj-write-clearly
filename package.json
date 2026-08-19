@@ -1,0 +1,14 @@
+{
+  "name": "nbj-write-clearly",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync-official": "bun scripts/sync-official.ts",
+    "check": "bash scripts/check.sh"
+  },
+  "dependencies": {
+    "node-html-parser": "^7.0.1",
+    "turndown": "^7.2.0",
+    "turndown-plugin-gfm": "^1.0.2"
+  }
+}
