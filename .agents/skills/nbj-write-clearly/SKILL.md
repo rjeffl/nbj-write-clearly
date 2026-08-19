@@ -1,6 +1,6 @@
 ---
 name: nbj-write-clearly
-description: Drafts, revises, and audits reader-first technical and product documentation. Use when working on developer docs, procedures, release notes, technical explanations, help-center content, or UI copy where clarity, source fidelity, accessibility, or global readability matters. Do not auto-apply it to marketing, legal, academic, fictional, or personal writing unless the user explicitly requests this style.
+description: Drafts, revises, and audits reader-first technical and product writing. Use when producing any developer-facing prose - developer docs, READMEs, procedures, release notes, technical explanations, help-center content, UI copy, code review feedback, code comments and docstrings, commit messages, merge request descriptions, and CHANGELOG entries - where clarity, source fidelity, accessibility, or global readability matters. Do not auto-apply it to marketing, legal, academic, fictional, or personal writing unless the user explicitly requests this style.
 ---
 
 # NBJ Write Clearly
@@ -8,6 +8,8 @@ description: Drafts, revises, and audits reader-first technical and product docu
 ## Outcome
 
 Produce prose that lets the reader understand the point, identify the actor and action, and complete the task without rereading. Preserve the author's facts, intent, uncertainty, and useful voice.
+
+This applies to every developer-facing artifact, not only documentation pages: code review feedback, code comments and docstrings, commit messages, merge request descriptions, and CHANGELOG entries follow the same rules, scaled to their length.
 
 ## Apply the right authority
 

@@ -1,5 +1,7 @@
 # NBJ Write Clearly
 
+> **Fork notice:** This is a fork of [daniel-p-green/nbj-write-clearly](https://github.com/daniel-p-green/nbj-write-clearly), adapted to trigger for all developer-facing output — code review feedback, code comments, commit messages, and merge request descriptions — not only documentation artifacts. See [CHANGELOG.md](CHANGELOG.md).
+
 An unofficial agent skill for drafting, revising, and auditing clear technical and product documentation. It applies principles from the [Google Developer Documentation Style Guide](https://developers.google.com/style) while protecting facts, technical tokens, uncertainty, and the author's voice.
 
 This is not a generic "simplify everything" prompt. It helps an agent decide what to preserve, what to change, which guidance applies to the destination, and when to stop editing.
