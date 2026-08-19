@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Example domains and names
@@ -130,11 +131,11 @@ For IPv6 address ranges, use the following example:
 
 Avoid using real street addresses in examples. Instead, use one of the following fictional street addresses:
 
--   1800 Amphibious Blvd.  
+-   1800 Amphibious Blvd.
     Mountain View, CA 94045
--   Avenida da Pastelaria, 1903  
+-   Avenida da Pastelaria, 1903
     Lisbon, 1229-076
--   8 Rue du Nom Fictif  
+-   8 Rue du Nom Fictif
     341 Paris
 
 ## Example project names

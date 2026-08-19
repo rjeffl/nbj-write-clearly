@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Write for a global audience
@@ -32,34 +33,34 @@ Consider global audiences and translation and write in a way that's clear, conci
 
 -   Use a simple word. For example, don't use words like _commence_ when you mean _start_ or _begin_. Don't use _consequently_ when you mean _so_. Don't use words like _utilize_ or _leverage_ when you mean _use_. (It's fine to use these words when you're conveying a special sense—for example, _Cloud Spanner utilizes up to 100% of the available CPU resources._)
 -   Use a single word when it conveys the same idea as a phrase. For example, don't use a phrase like _a number of_ when you can use _some_ or _many_.
-    
+
 -   Write shorter sentences. The shorter the sentence, the easier it is to translate. English sentences can be shorter in length than some languages, so an English sentence of average length might result in a long sentence when translated. Longer sentences can impair understanding, cause rendering issues on the page or product interface, lengthen translation time, and increase translation and review costs.
 
 ### Avoid phrasal verbs
 
 -   Avoid phrasal verbs when possible. A phrasal verb combines multiple words to form a single verb phrase. These verbs are also known as compound verbs. Try to substitute a simpler verb first. There might not be a better verb; for example, a few exceptions to this rule include _set up_, _log in_, and _sign in_.
-    
+
     Recommended: This document uses the following terms:
-    
+
     Not recommended: This document makes use of the following terms:
-    
+
 
 ### Use modifiers appropriately
 
 -   Don't use too many modifiers. In particular, don't use more than two nouns as modifiers of another noun.
-    
+
     Recommended: A cloud-native DevSecOps pipeline in a hybrid environment
-    
+
     Not recommended: A hybrid cloud-native DevSecOps pipeline
-    
+
 -   Don't misplace modifiers. For example, place a word like _only_ immediately before the word or phrase that it relates to. If the meaning is still ambiguous, try rephrasing the sentence.
-    
+
     Recommended: Request only one token.
-    
+
     Recommended: Request no more than one token.
-    
+
     Not recommended: Only request one token.
-    
+
 
 ### Use active voice and present tense
 
@@ -75,40 +76,40 @@ Consider global audiences and translation and write in a way that's clear, conci
 
 -   Use qualifying nouns for technical keywords. For example, when referring to a file called `example.yaml`, call it the _`example.yaml` file_ and not _`example.yaml`_ by itself. For more information, see [Grammatical treatment of code elements](https://developers.google.com/style/code-in-text#keywords).
 -   Repeat a word if the redundancy improves comprehension.
-    
+
     | Recommended | Not recommended |
     | --- | --- |
     | If the VM has started and if you're able to connect... | If the VM has started and you're able to connect... |
     | The resource hierarchy design creates both IAM segmentation and network segmentation by default. | The resource hierarchy design creates both IAM and network segmentation by default. |
     | An egress rule whose action is `allow`, whose destination is `0.0.0.0/0`, and whose priority is the lowest possible (`65535`). | An egress rule whose action is `allow`, destination is `0.0.0.0/0`, and priority is the lowest possible (`65535`). |
-    
+
 -   Use helper words. Helper words such as _then_, _that_, and _of_ are frequently left out of conversational English. Use these words to avoid ambiguity.
-    
+
     | Recommended | Not recommended |
     | --- | --- |
     | If the attribute key is not found, then the default value is returned. | If the attribute key is not found, the default value is returned. |
     | This document is intended for data engineers and assumes that you have the following knowledge: | This document is intended for data engineers and assumes you have the following knowledge: |
     | Identify all of the datasets. | Identify all the datasets. |
     | Start the profiler, and then run the app. | Start the profiler, then run the app. |
-    
+
     See also [Optional pronouns](https://developers.google.com/style/pronouns#optional-pronouns).
-    
+
 -   Don't omit relative pronouns. To provide clarity and to avoid ambiguity, use relative pronouns such as _that_ and _which_. For more information, see [Relative pronouns](https://developers.google.com/style/pronouns#relative-pronouns).
-    
+
     Recommended: You can programmatically update the rules that you previously defined.
-    
+
     Not recommended: You can programmatically update the rules you previously defined.
-    
+
 
 ### Clarify abbreviations and pronouns
 
 -   Define abbreviations. Abbreviations can be confusing out of context, and they don't translate well. Spell things out whenever possible, at least the first time that you use a given term. For more information, see [Abbreviations](https://developers.google.com/style/abbreviations).
 -   Clarify antecedents. Using pronouns can get tricky when translators are working with small, unconnected strings of text. Help them out by making things as clear as possible. For example, if a pronoun is ambiguous, then replace it with the appropriate noun.
-    
+
     Recommended: If you use the term _green beer_ in an ad, then make sure that the ad is targeted.
-    
+
     Not recommended: If you use the term _green beer_ in an ad, then make sure that it's targeted.
-    
+
 
 ### Use apostrophes appropriately
 
@@ -120,7 +121,7 @@ Address the user and their needs directly and avoid providing unnecessary inform
 
 -   Address the reader directly. Use _you_, instead of _the user_ or _they_, unless you're referring to someone who uses the software that the reader is developing. For more information, see [Second person and first person](https://developers.google.com/style/person).
 -   Provide context. Don't assume that the reader already knows what you're talking about.
-    
+
 -   Avoid negative constructions when possible. Consider whether it's necessary to tell the reader what they can't do instead of what they can.
 
 ## Be consistent
@@ -134,7 +135,7 @@ If you use a particular term for a concept in one place, then use that exact sam
 ### Use standard sentence structures and formatting
 
 -   Use standardized phrases for frequently used sentences, introductory phrases, and other common tasks. For examples, read about [introducing links](https://developers.google.com/style/cross-references#link-introductions), [introducing output](https://developers.google.com/style/placeholders#placeholders-in-output), and [introducing code samples](https://developers.google.com/style/code-samples#introductions).
-    
+
 -   Use standard English word order. Sentences follow the _subject + verb + object_ order.
 -   Try to keep the main subject and verb as close to the beginning of the sentence as possible.
 -   Use the conditional clause first. If you want to tell the audience to do something in a particular circumstance, mention the circumstance before you provide the instruction. For more information, see [Sentence structure](https://developers.google.com/style/sentence-structure).

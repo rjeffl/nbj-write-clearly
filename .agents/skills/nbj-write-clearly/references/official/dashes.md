@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Dashes
@@ -57,9 +58,12 @@ Not recommended: Appendix A—My first appendix
 
 Recommended:
 
+```
     <dl>
       <dt>Example</dt>
       <dd>This is an example.</dd>
       <dt>Another example</dt>
       <dd>This is another example.</dd>
     </dl>
+
+```

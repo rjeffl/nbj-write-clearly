@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Write inclusive documentation
@@ -116,6 +117,7 @@ Following are scenarios for writing around non-inclusive terms that occur in cod
 
 One scenario is if you're documenting an existing system in which an entity is already named by using a non-inclusive term. For example, there might be a configuration file that includes the following cluster name:
 
+```
 apiVersion: v1
 kind: Config
 preferences: {}
@@ -125,10 +127,13 @@ clusters:
   name: master
 - cluster:
   name: replica-1
+```
 
 Another scenario is if your documentation includes a non-inclusive term that's an established keyword, such as the keyword `SLAVE` in dialects of SQL:
 
-START SLAVE UNTIL SQL\_AFTER\_MTS\_GAPS;
+```
+START SLAVE UNTIL SQL_AFTER_MTS_GAPS;
+```
 
 The first time that you refer to a code item that uses a non-inclusive term, you can directly refer to that term, but format it in code font, and put it in parentheses if possible.
 
@@ -146,9 +151,9 @@ Some general guidelines in this area include the following:
 
 -   Don't describe people without disabilities as _normal_ or _healthy_. This contributes to othering and alienation of people with disabilities by implying that they are abnormal or sick. Instead, use terms such as _nondisabled person_, _sighted person_, _hearing person_, _person without disabilities_, or _neurotypical person_.
 -   Research the ways that the people in the communities that you're writing about prefer to be identified and use the terms that they prefer. In many cases, avoid terms that remove personhood or that define people by their disability. For example, avoid terms such as _the disabled_ or _a quadriplegic_. Instead, use terms such as _people with disabilities_ or _a quadriplegic person_.
-    
+
     However, many members of some communities prefer _identity-first language_—for example, that preference is common in autistic, blind, and Deaf communities. Capitalization of identities also can vary (for some perspectives, visit [Identity-First Language](https://autisticadvocacy.org/about-asan/identity-first-language/) and [Self-Identification in the Deaf Community](https://www.verywellhealth.com/deaf-culture-big-d-small-d-1046233)). Whenever possible, research and choose terms that respect the ways that people in the communities identify.
-    
+
 -   Use _see_ to refer to links and cross-references. For more information, see [see](https://developers.google.com/style/word-list#see).
 -   Avoid terms that reflect or project feelings and judgments about a person's disability, such as _victim of_, _suffering from_, or _wheelchair-bound_. Instead, use neutral terms such as _experiencing_, _living with_, or _uses a wheelchair_.
 -   Avoid euphemisms or patronizing terms such as _physically challenged_, _special_, _differently abled_, or _handi-capable_.

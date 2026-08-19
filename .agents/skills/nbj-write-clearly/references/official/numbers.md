@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Numbers
@@ -27,43 +28,43 @@ If it's important to have the number and associated noun together on the same li
 In general, spell out the following:
 
 -   Numbers from zero through nine, except as noted in [Numbers as numerals](#numbers-as-numerals).
-    
+
     Recommended: two-day total
-    
+
     Recommended: four options
-    
+
     Recommended: five minutes
-    
+
     Recommended: nine developers
-    
+
 -   A number that starts a sentence.
-    
+
     Recommended: Fifteen directories are created.
-    
+
     In some cases it's better to rearrange the sentence so that the number appears later.
-    
+
     Recommended: In general, avoid sending files larger than 164 MB as attachments.
-    
+
     Not recommended: 164 MB is generally considered too large a file to send as an attachment.
-    
+
     **Exception**: It's okay, but non-optimal, to begin a sentence with a four-digit year.
-    
+
 -   A number that is followed by a numeral.
-    
+
     Recommended: This procedure creates fifteen 100,000-byte files.
-    
+
     _But_
-    
+
     Recommended: This procedure creates 15 of the 100,000-byte files.
-    
+
 -   Indefinite and casual numbers.
-    
+
     Using words like _millions_ or _billions_ is fine for approximate numbers. For precise numbers, use numerals.
-    
+
     Recommended: You can specify thousands of combinations.
-    
+
     Recommended: The API might return a list of a million songs.
-    
+
 
 ## Numbers as numerals
 
@@ -74,61 +75,61 @@ If it's important to have the number and associated noun together on the same li
 In general, use numerals for the following:
 
 -   Numbers 10 and greater.
-    
+
     Recommended: The link expires in 24 hours.
-    
+
     Recommended: 18 years old
-    
+
     Recommended: 27 minutes
-    
+
     Recommended: 728 shipments
-    
+
     Recommended: 18,000,000 users
-    
+
     Recommended: 10 chapters
-    
+
     Recommended: 102 degrees
-    
+
     **Exceptions**: Always use numerals for the following items, even if they're less than 10:
-    
+
     -   Version numbers.
-        
+
         Recommended: version 3
-        
+
     -   Technical quantities, such as amounts of memory, amounts of disk space, numbers of queries, or usage limits.
-        
+
         Recommended: 6 queries per second
-        
+
         Recommended: 50 Mbps
-        
+
         Recommended: 128 bits
-        
+
     -   Page numbers.
     -   Chapter numbers, sections, pages, and so on.
     -   Step numbers. Avoid referring to step numbers whenever possible, but in edge cases where you have no choice or it makes the most sense, use the numeral.
     -   Prices.
     -   Numbers without units, such as numbers used in mathematical expressions.
     -   Numbers less than 10 when they appear in the same sentence with numbers greater than 9.
-        
+
         Recommended: The menu contains 15 options but 6 of them are deselected.
-        
+
 -   Negative numbers.
 -   Most [fractions](#fractions).
 -   [Percentages](#percentages).
 -   [Dimensions](#dimensions).
 -   Numbers containing decimal points.
     -   Treat decimal numbers as plural even when less than or equal to 1.0.
-        
+
         Recommended: 1.0 inches
-        
+
     -   For decimal numbers less than one, place a zero in front of the decimal point.
-        
+
         Recommended: 0.3 inches
-        
+
 -   Measurements.
-    
+
     Recommended: 8 pixels
-    
+
 -   [Numbers in a range](#ranges-of-numbers).
 
 ## Numbers as Roman numerals

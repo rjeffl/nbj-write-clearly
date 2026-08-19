@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Code samples
@@ -19,41 +20,47 @@ This page explains how to format code samples. For more information about format
 Follow these guidelines when formatting code samples:
 
 -   **Follow the indentation guidelines in the relevant [code style guide](#coding)**. For most programming languages, this means using spaces instead of tabs and using two spaces for each indentation level. However, some contexts use four spaces for each indentation level, and some contexts use tabs. This guidance applies to formatting code samples, not to [formatting commands](https://developers.google.com/style/code-syntax#formatting-a-command).
-    
+
 -   **Wrap lines** at 80 characters. If you expect readers to have a relatively narrow browser window or to print out your document, consider wrapping at a smaller number of characters for readability.
-    
+
 -   **Mark code blocks as preformatted text**. In HTML, use a `pre` element; in Markdown, indent every line of the code block by four spaces.
 -   **Indicate omitted code by using a comment** in the syntax of the language of your code sample. Don't use three dots or the ellipsis character (`…`). If a code block contains an omission, don't format the block as click-to-copy.
 
 Recommended:
 
+```
 <pre>
 function helloWorld() {
   alert('Hello, world! This sentence is so long that it wraps onto a second
     line.');
 }
 </pre>
+```
 
 This renders the following code block:
 
+```
 function helloWorld() {
   alert('Hello, world! This sentence is so long that it wraps onto a second
     line.');
 }
+```
 
 Recommended:
 
+```
 apiVersion: serving.knative.dev/v1
 kind: Service
-\# Several lines of code are omitted here.
+# Several lines of code are omitted here.
 spec:
   template:
     spec:
       containers:
-      \- image: IMAGE\_URL
+      - image: IMAGE_URL
         ports:
-        \- name: h2c
+        - name: h2c
           containerPort: 8080
+```
 
 ## Introductory statements
 

@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Cross-references and linking
@@ -94,11 +95,15 @@ In general, don't use a URL as link text. Instead, use the page title or a descr
 
 Recommended:
 
+```
 For more information about protocols, see <a href="http://www.w3.org/Protocols/rfc2616/rfc2616.html">HTTP/1.1 RFC</a>.
+```
 
 Not recommended:
 
+```
   See the HTTP/1.1 RFC at <a href="http://www.w3.org/Protocols/rfc2616/rfc2616.html">http://www.w3.org/Protocols/rfc2616/rfc2616.html</a>.
+```
 
 **Exception**: In some legal documents (such as some Terms of Service documents), it's okay to use URLs as link text.
 
@@ -153,24 +158,26 @@ Recommended: If your sample dump file is in a CSV, Avro, or Parquet file format,
 If a link goes to an unexpected destination or behaves in an unexpected way, then provide that context. The following are a few such situations:
 
 -   **Links that download files and open emails.** If a link downloads a file or opens an email, then make that clear in the link text, and mention the file type.
-    
+
     Recommended: For more information, [download the security features PDF](https://www.example.com/security.pdf).
-    
+
     Recommended:
-    
-      <a href="mailto:support@example.com">send email to Technical Support</a>
+
+```
+  <a href="mailto:support@example.com">send email to Technical Support</a>
+```
 -   **Links to sections on the same page.** When you're linking to another section on the same page, let the reader know that the link takes you to a different section of the same page. Use a standard phrase to clue readers in if you use an on-page link.
-    
+
     Recommended: For more information, see the [Write descriptive link text](#descriptive-link-text) section of this document.
-    
+
 -   **Links to sections on another page.** When you're linking to a section heading on another page, use the same wording and formatting as you do in a regular cross-reference.
-    
+
     If the title of the section that you're linking to is identical to a title on the source page, add context to the cross-reference.
-    
+
     Recommended: For more information, see [Create a table](https://cloud.google.com/bigtable/docs/managing-tables#create-table).
-    
+
     Recommended: For more information, see [Install libraries](#different-page) in "Building new audiences based on existing customer lifetime value."
-    
+
 -   **Links that open in a new tab.** For more information, see the [Open links in the current tab](#current-tab) section of this document.
 -   **Links that go to a different domain or server.** For more information, see the [Don't use external link icons](#external-link-icons) section of this document.
 
@@ -182,15 +189,21 @@ In the rare situation that a link needs to open in a new tab or window, let the 
 
 Recommended:
 
+```
 <a href="/style/accessibility">Accessible content</a>
+```
 
 Recommended:
 
-<a href="/style/accessibility" target="\_blank">Accessible content (opens in a new tab)</a>
+```
+<a href="/style/accessibility" target="_blank">Accessible content (opens in a new tab)</a>
+```
 
 Not recommended:
 
-<a href="/style/accessibility" target="\_blank">Accessible content</a>
+```
+<a href="/style/accessibility" target="_blank">Accessible content</a>
+```
 
 ## Don't use external link icons
 
@@ -208,11 +221,15 @@ If you have punctuation immediately before or after a link, put the punctuation 
 
 Recommended:
 
+```
 For more information, see <a href="#Test">Test your code</a>.
+```
 
 Not recommended:
 
+```
 For more information, see <a href="#Test">Test your code.</a>
+```
 
 ## Quotation marks and italics
 
@@ -227,14 +244,14 @@ Not recommended: For more information, see ["Meet Android Studio"](https://devel
 In the rare case when a cross-reference isn't a link, use italics or quotation marks as appropriate.
 
 -   For an unlinked reference to a document section, short work, or part of a series—such as an episode in a web series—use quotation marks.
-    
+
 
 Recommended: For more information, see "Describing system versions" in the following section.
 
 -   For an unlinked reference to the title of a full-length work—such as a book, movie, or web series—use italics.
-    
+
     Recommended: ...see _The Chicago Manual of Style_.
-    
+
 
 ## Avoid external links in your documentation navigation
 

@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Slashes
@@ -26,7 +27,7 @@ Recommended: For example, a disaster relief map is not subject to the usage limi
 
 Not recommended: For example, a disaster relief map is not subject to the usage limits even if it has been developed/hosted by a commercial entity.
 
-  
+
 
 Recommended: Call this method five or six times.
 
@@ -40,7 +41,7 @@ Recommended: You can view and edit your own data.
 
 Not recommended: You can view and/or edit your own data.
 
-  
+
 
 Recommended: You can export raw events, processed events, or both.
 
@@ -56,7 +57,7 @@ Recommended: https://developers.google.com/cardboard/
 
 Where very long URLs extend beyond a line, add a line break immediately after a slash. Don't ever insert an extraneous hyphen into a URL to break it between two lines.
 
-Recommended: https://developers.google.com/  
+Recommended: https://developers.google.com/
 cardboard/
 
 ## Slashes with fractions

@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # UI elements and interaction
@@ -61,7 +62,7 @@ Don't use UI elements as if they were English verbs or nouns.
 | --- | --- |
 | In the **Name** field, enter an account name. | **Name** the account. |
 | To save the settings, click **Save**. | **Save** the settings. |
-| 
+|
 In the **Service account ID** field, enter a name.
 
 For **Service account ID**, enter a name.
@@ -145,11 +146,15 @@ In the following example, the text renders as _Select **View \> Tools \> Devel
 
 ### HTML
 
+```
 Select <b>View&nbsp;<span aria-label="and then">></span> Tools&nbsp;<span aria-label="and then">></span> Developer Tools</b>.
+```
 
 ### Markdown
 
-Select \*\*View&nbsp;<span aria-label="and then">></span> Tools <span aria-label="and then">></span> Developer Tools\*\*.
+```
+Select **View&nbsp;<span aria-label="and then">></span> Tools <span aria-label="and then">></span> Developer Tools**.
+```
 
 This notation is useful for abbreviating a longer phrase like _In the **File** menu, select **Open**._ However, this notation applies only to menu items. Don't use it to describe a combination of different UI elements.
 
@@ -212,21 +217,21 @@ Not recommended: In the left-side panel, click the button with three lines.
 If you have UI elements that are difficult to find, consider one of the following options as an alternative to using directional language, which can be problematic for accessibility and localization reasons.
 
 -   Use the button icon along with its name as shown in the button tooltip.
-    
+
     Recommended: Click refresh **Refresh**.
-    
+
 -   Add context to help the user find the element.
-    
+
     Recommended: On the Cloud Run toolbar, click refresh **Refresh**.
-    
+
 -   Use a screenshot.
-    
+
     Recommended: In the list of services, click view\_column **Column display options**.
-    
+
     ![List of services.](/static/style/images/list-of-services.png)
-    
+
     For more information about when and how to use screenshots, see [Diagrams, figures, and other images](https://developers.google.com/style/images).
-    
+
 
 ### Tab
 
@@ -358,7 +363,7 @@ When documenting the UI, use the following prepositions.
 
 | Preposition | UI element | Recommended |
 | --- | --- | --- |
-| in | 
+| in |
 dialogs
 
 fields
@@ -371,7 +376,7 @@ panes
 
 windows
 
- | 
+ |
 
 In the **Alert** dialog, click **OK**.
 
@@ -386,7 +391,7 @@ In the **Metrics** pane, click **New**.
 In the **Task** window, click **Start**.
 
  |
-| on | 
+| on |
 
 pages
 
@@ -394,7 +399,7 @@ tabs
 
 toolbars
 
- | 
+ |
 
 On the **Create an instance** page, click **Add**.
 

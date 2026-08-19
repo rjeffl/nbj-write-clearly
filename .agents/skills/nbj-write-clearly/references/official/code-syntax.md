@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Document command-line syntax
@@ -19,20 +20,22 @@ This page shows how to document command-line commands and their arguments. For m
 When you write procedural or conceptual documentation for a command-line command, apply the following best practices:
 
 -   **Provide an inline link to the command reference**. A good place for that link is in the text that introduces the command or a series of steps.
-    
+
     Recommended:
-    
+
     To connect to the instance, use the [`gcloud compute ssh` command](https://cloud.google.com/sdk/gcloud/reference/compute/ssh):
-    
-    gcloud compute ssh
-    
+
+```
+gcloud compute ssh
+```
+
 -   **Determine which arguments are needed to complete each task in the recommended way**. To minimize the number of options that you need to document in non-reference content, use as few optional arguments as possible. Rely on the command reference for the complete list of arguments.
 -   **Provide a click-to-copy command example that the reader doesn't need to edit after they copy it**. If possible, include only runnable code and placeholder variables in the click-to-copy example.
-    
+
     Some command examples contain [optional arguments](#optional-arguments), [mutually exclusive arguments](#set-of-two-arguments), or [repeated arguments](#arguments-that-can-repeat) that are indicated by square brackets (`[]`), pipes (`|`), braces (`{}`), and ellipses (`...`). These characters can break commands if they're not first removed. For that reason, avoid using these arguments in click-to-copy examples.
-    
+
     For more information, see the [Optional arguments in click-to-copy commands](#click-to-copy-commands) section of this document.
-    
+
 
 ## Format a command
 
@@ -45,7 +48,7 @@ To format a command with multiple elements, do the following:
 
 -   When a line exceeds 80 characters, you can safely add a line break before some characters, such as a single hyphen, double hyphen, underscore, or quotation marks. After the first line, indent each line by four spaces to vertically align each line that follows a line break.
 -   When you split a command line with a line break, each line except the last line must end with the command-continuation character. Commands that don't have the command-continuation character don't work.
-    
+
     -   Linux or Cloud Shell: A backslash typically preceded with a space ( `\`)
     -   Windows: A caret preceded with a space ( `^`)
 -   Format placeholder text with [placeholders](https://developers.google.com/style/placeholders).
@@ -64,20 +67,26 @@ Recommended:
 
 Enter the following code into the terminal:
 
+```
 $ adb devices
+```
 
 The output is the following:
 
+```
 List of devices attached
 emulator-5554  device
 emulator-5556  device
+```
 
 Recommended:
 
+```
 $ adb shell
 shell@ $ screencap /sdcard/screen.png
 shell@ $ exit
 $ adb pull /sdcard/screen.png
+```
 
 When you're showing a one-line command, the command prompt (the `$` symbol) is optional. However, if your document includes both multi-line and one-line commands, then we recommend using the command prompt for all of the commands in the document for consistency.
 
@@ -85,11 +94,15 @@ If your command-line instructions include a combination of input and output line
 
 Recommended:
 
+```
 $ cat ~/.ssh/my-ssh-key.pub
+```
 
 The output is similar to the following:
 
-ssh-rsa KEY\_VALUE USERNAME
+```
+ssh-rsa KEY_VALUE USERNAME
+```
 
 ## Optional arguments
 
@@ -99,7 +112,9 @@ Avoid using optional arguments in click-to-copy code examples. For best practice
 
 In the following example, `GROUP` is required, but `GLOBAL_FLAG` and `FILENAME` are optional:
 
-gcloud dns GROUP \[GLOBAL\_FLAG\] \[FILENAME\]
+```
+gcloud dns GROUP [GLOBAL_FLAG] [FILENAME]
+```
 
 ## Mutually exclusive arguments
 
@@ -109,17 +124,21 @@ Avoid using mutually exclusive arguments in click-to-copy code examples. For bes
 
 In the following example, choose either `FILE_1` or `FILE_2`:
 
-{FILE\_1|FILE\_2}
+```
+{FILE_1|FILE_2}
+```
 
 In the following example, there are also two options:
 
--   Left side of pipe: If the source code is deployed from a cloud repository, the following is required:  
+-   Left side of pipe: If the source code is deployed from a cloud repository, the following is required:
     `--source=CLOUD_SOURCE --source-url=SOURCE_URL`
 -   Right side of pipe: If the source code is in a local directory:
     -   `--bucket=BUCKET` is required.
     -   `--source=LOCAL_SOURCE` is optional, as specified by the square brackets.
 
-{--source=CLOUD\_SOURCE --source-url=SOURCE\_URL | --bucket=BUCKET \[--source=LOCAL\_SOURCE\]}
+```
+{--source=CLOUD_SOURCE --source-url=SOURCE_URL | --bucket=BUCKET [--source=LOCAL_SOURCE]}
+```
 
 ## Arguments that can repeat
 
@@ -129,74 +148,90 @@ Avoid using an ellipsis in click-to-copy code examples. For best practices on do
 
 In this example, the reader can specify multiple instances of the optional parameter `GLOBAL_FLAG`:
 
-gcloud dns GROUP \[GLOBAL\_FLAG ...\]
+```
+gcloud dns GROUP [GLOBAL_FLAG ...]
+```
 
 ## Optional arguments in click-to-copy commands
 
 [Optional arguments](#optional-arguments), [mutually exclusive arguments](#set-of-two-arguments), and [repeated arguments](#arguments-that-can-repeat) contain characters (such as square brackets, curly braces, pipes, and ellipses) that can break commands if the reader doesn't remove them. Avoid using these types of arguments in click-to-copy commands. Instead, choose one of the following approaches:
 
 -   **Remove the optional arguments**. As a best practice, [use only the necessary arguments](#best-practices) to complete the task for the most common use case. If possible, remove optional arguments from the command; always provide a link to the command reference for the command, where readers can find the full list of options. For more information, check with product management or a technical support specialist for the most relevant arguments.
-    
+
     Recommended:
-    
+
     To get an aggregate list of all virtual machine (VM) instances in all zones for a project, use the [`gcloud compute instances list` command](https://cloud.google.com/sdk/gcloud/reference/compute/instances/list):
-    
-    gcloud compute instances list
-    
+
+```
+gcloud compute instances list
+```
+
     If you want to narrow the list of VMs to a specific zone, use the previous command with the `--zones` flag.
-    
+
 -   **Use separate code blocks for each option**. In some cases, it might be ideal to provide more than one click-to-copy code block within the same section.
-    
+
     Recommended:
-    
+
     To create a bootable Compute Engine image, use the [`gcloud compute images import` command](https://cloud.google.com/sdk/gcloud/reference/compute/images/import):
-    
-    gcloud compute images import IMAGE\_NAME \\
-        --source-file=SOURCE\_FILE
-    
+
+```
+gcloud compute images import IMAGE_NAME \
+    --source-file=SOURCE_FILE
+```
+
     If you're importing an image with an existing license, specify the `--byol` flag:
-    
-    gcloud compute images import IMAGE\_NAME \\
-        --source-file=SOURCE\_FILE \\
-        --byol
-    
+
+```
+gcloud compute images import IMAGE_NAME \
+    --source-file=SOURCE_FILE \
+    --byol
+```
+
 -   **Document optional arguments in separate tasks**. In some cases, it might be best to treat different options in separate sections.
-    
+
     Recommended:
-    
+
     To create a bootable or non-bootable Compute Engine image based on an existing virtual disk, use the [`gcloud compute images import` command](https://cloud.google.com/sdk/gcloud/reference/compute/images/import).
-    
+
     ### Import a bootable virtual disk
-    
+
     If your virtual disk has a bootable operating system installed on it, run the following command:
-    
-    gcloud compute images import IMAGE\_NAME \\
-        --source-file=SOURCE\_FILE
-    
+
+```
+gcloud compute images import IMAGE_NAME \
+    --source-file=SOURCE_FILE
+```
+
     ### Import a non-bootable virtual disk
-    
+
     If your virtual disk doesn't have a bootable operating system installed on it, include the `--data-disk` flag:
-    
-    gcloud compute images import IMAGE\_NAME \\
-        --source-file=SOURCE\_FILE \\
-        --data-disk
-    
+
+```
+gcloud compute images import IMAGE_NAME \
+    --source-file=SOURCE_FILE \
+    --data-disk
+```
+
 -   **Let the reader know that the command contains optional arguments**. If you must include special characters to indicate optional arguments, indicate that fact when you introduce the command.
-    
+
     Recommended:
-    
+
     To create a VM with a custom name and attach one or more existing stateful disks to that VM, use the [`gcloud compute instance-groups managed create-instance` command](https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/create-instance) with one or multiple `--stateful-disk` flags. In the following example, you optionally specify the `auto-delete` subflag to keep or discard each disk when the VM is permanently deleted:
-    
-    gcloud compute instance-groups managed create-instance NAME \\
-        --instance=VM\_NAME \\
-        --stateful-disk=device-name=DEVICE\_NAME,source=DISK\[,auto-delete=DELETE\_RULE\]
-    
+
+```
+gcloud compute instance-groups managed create-instance NAME \
+    --instance=VM_NAME \
+    --stateful-disk=device-name=DEVICE_NAME,source=DISK[,auto-delete=DELETE_RULE]
+```
+
     For example, the following command creates a managed instance that's named `db-instance` and attaches the persistent disk `db-data-disk-1` as a stateful disk that is detached and preserved if its VM is deleted:
-    
-    gcloud compute instance-groups managed create-instance example-database-mig \\
-        --instance=db-instance \\
-        --stateful-disk=device-name=data-disk,source=projects/example-project/zones/us-east1-c/disks/db-data-disk-1,auto-delete=never
-    
+
+```
+gcloud compute instance-groups managed create-instance example-database-mig \
+    --instance=db-instance \
+    --stateful-disk=device-name=data-disk,source=projects/example-project/zones/us-east1-c/disks/db-data-disk-1,auto-delete=never
+```
+
 
 ## Output from commands
 
@@ -214,10 +249,12 @@ Recommended: The output is similar to the following, in which the `IP` column sh
 
 To indicate that one or more lines of output are omitted from sample output, use three dots and no spaces (`...`) on a separate line. Do not use the ellipsis character (`…`). For example:
 
+```
 Reading file status
 Upload done, resetting board...
 ...
 Wakeup reason: 0
+```
 
 For more information about presenting output, also see the following:
 
@@ -235,10 +272,12 @@ When discussing commands and their constituent parts in the `gcloud` CLI and in 
 
 ### gcloud commands
 
-gcloud GROUP | COMMAND \[--account=ACCOUNT\] \[--configuration=CONFIGURATION\] \\
-    \[--flatten=\[KEY,...\]\]\[--format=FORMAT\] \[--help\] \[--project=PROJECT\_ID\] \\
-    \[--quiet, -q\]\[--verbosity=VERBOSITY; default="warning"\] \[--version, -v\] \\
-    \[-h\] \[--log-http\]\[--trace-token=TRACE\_TOKEN\] \[--no-user-output-enabled\]
+```
+gcloud GROUP | COMMAND [--account=ACCOUNT] [--configuration=CONFIGURATION] \
+    [--flatten=[KEY,...]][--format=FORMAT] [--help] [--project=PROJECT_ID] \
+    [--quiet, -q][--verbosity=VERBOSITY; default="warning"] [--version, -v] \
+    [-h] [--log-http][--trace-token=TRACE_TOKEN] [--no-user-output-enabled]
+```
 
 For the sake of accurate classification, the `gcloud` CLI's syntax distinguishes between a _command_ and a _command group_. In docs, however, command-line contents are generally referred to as commands.
 
@@ -246,26 +285,32 @@ You can use commands (and groups) alone or with one or more flags. A _flag_ is a
 
 #### Example command
 
+```
 gcloud init
+```
 
 #### Example command with a flag
 
+```
 gcloud init --skip-diagnostics
+```
 
 #### Example command with multiple elements
 
-gcloud ml-engine jobs submit training ${JOB\_NAME} \\
-    --package-path=trainer \\
-    --module-name=trainer.task \\
-    --staging-bucket=gs://${BUCKET} \\
-    --job-dir=gs://${BUCKET}/${JOB\_NAME} \\
-    --runtime-version=1.2 \\
-    --region=us-central1 \\
-    --config=config/config.yaml \\
-    -- \\
-    --data\_dir=gs://${BUCKET}/data \\
-    --output\_dir=gs://${BUCKET}/${JOB\_NAME} \\
-    --train\_steps=10000
+```
+gcloud ml-engine jobs submit training ${JOB_NAME} \
+    --package-path=trainer \
+    --module-name=trainer.task \
+    --staging-bucket=gs://${BUCKET} \
+    --job-dir=gs://${BUCKET}/${JOB_NAME} \
+    --runtime-version=1.2 \
+    --region=us-central1 \
+    --config=config/config.yaml \
+    -- \
+    --data_dir=gs://${BUCKET}/data \
+    --output_dir=gs://${BUCKET}/${JOB_NAME} \
+    --train_steps=10000
+```
 
 The preceding command consists of the following elements:
 
@@ -287,7 +332,9 @@ For more information, see the [Cloud SDK: gcloud](https://cloud.google.com/sdk/g
 
 Where the `gcloud` CLI uses the catchall terms flag and option, Linux commands use _options_, _parameters_, _arguments_, and a host of specialized syntax elements. The following is an example:
 
-find /usr/src/linux -follow -type f -name '\*.\[ch\]' | xargs grep -iHn pcnet
+```
+find /usr/src/linux -follow -type f -name '*.[ch]' | xargs grep -iHn pcnet
+```
 
 The preceding command consists of the following elements:
 

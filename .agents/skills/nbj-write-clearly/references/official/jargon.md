@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Jargon
@@ -17,19 +18,19 @@ However, some jargon is widely understood and accepted by our industry or by the
 -   **Can you write around the term?** If you don't need the term for search engine optimization (SEO), try writing around it. For example, instead of writing _Hold a post-mortem_, write _When the project is finished, review what processes worked or didn't work_. Instead of writing _Create a back-of-the-envelope design_, write _Use an informal design process_.
 -   **Can you replace the term with a different, more specific term?** For example, the [word list](https://developers.google.com/style/word-list) for this style guide offers several replacement terms: _affected area_ or _spatial impact_ (for _blast radius_), _import_ or _load_ (for _ingest_), and _ready-made_ or _pre-built_ (for _off-the-shelf_). When a term on the word list is marked as "Don't use" (some jargon can be considered offensive, violent, or not inclusive), replace that term or write around it.
 -   **Are you using the term only once in your document?** If so, describe the term in plain language and refer to it in parentheses, or link to a trusted definition.
-    
+
     Recommended: You then move the task to an earlier part of the process (also known as _shifting left_).
-    
+
     Recommended: A [split-brain](https://en.wikipedia.org/wiki/Split-brain_\(computing\)) situation can develop.
-    
+
 -   **Are you using the term throughout your document?** If so, briefly describe the term in parentheses on first reference, or link to a trusted definition.
-    
+
     Recommended: The application is in the same state as a _cold standby_ (a backup or redundant system that's identical to a primary system).
-    
+
     Recommended: A better approach is to use a pattern called a [_dead letter queue_](https://en.wikipedia.org/wiki/Dead_letter_queue).
-    
+
 -   **Is the term used in a command or code sample?** If so, use the words only in direct reference to the code items ([formatted as code](https://developers.google.com/style/code-in-text)), and make it clear what you're referring to.
-    
+
     Recommended: Add a user to the allowlist (`whitelist`) by entering the following: `whitelist adduser EMAIL_ADDRESS`.
-    
+
     Not recommended: Add a user to the whitelist by entering the following: `whitelist adduser EMAIL_ADDRESS`.

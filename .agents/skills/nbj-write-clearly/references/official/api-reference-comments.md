@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # API reference code comments
@@ -23,26 +24,26 @@ For more information, see the following resources:
 The API reference **must** provide a description for each of the following:
 
 -   Every class, interface, struct, and any other similar member of the API (such as union types in C++).
-    
+
 -   Every constant, field, enum, and typedef.
-    
+
 -   Every method, with a description for each parameter, the return value, and any exceptions thrown.
-    
+
 
 The following are **extremely strong suggestions**. In some cases, they don't make sense for a particular API or in a specific language, but in general, follow these guidelines:
 
 -   On each unique page (for a class, interface, etc.), include a code sample (~5-20 lines) at the top.
-    
+
 -   Put all API names, classes, methods, constants, and parameters in code font, and link each name to the corresponding reference page. Most document generators do this automatically for you.
-    
+
 -   Put string literals in code font, and enclose them in double quotation marks. For example, XML attribute values might be `"wrap_content"` or `"true"`.
-    
+
 -   Make sure that the spelling of a class name in documentation matches the spelling in code, with capital letters and no spaces (for example, `ActionBar`).
-    
+
     -   Don't make class names plural (`Intents`, `Activities`); instead, add a plural noun (`Intent` objects, `Activity` instances). For more information, see [Plural product and feature names](https://developers.google.com/style/pluralization#plural-product-and-feature-names).
-        
+
     -   However, if a class has a name that's a common term, you can refer to it with the corresponding English word, in lowercase and _not_ in code font (activities, action bar).
-        
+
 
 ## Classes, interfaces, structs
 
@@ -51,11 +52,11 @@ In the first sentence of a class description, briefly state the intended purpose
 Many documentation tools automatically extract the first sentence of each class description for use in a list of all classes, so make the first sentence unique and descriptive, yet short. Additionally:
 
 -   Don't repeat the class name in the first sentence.
-    
+
 -   Don't say "this class will/does ..."
-    
+
 -   Don't use a period before the actual end of the sentence, because some document generators naively terminate the "short description" at the first period. For example, some generators terminate the sentence if they see _e.g._, so use _for example_ instead.
-    
+
 
 The following example is the first sentence of the description for Android's [`ActionBar` class](http://developer.android.com/reference/android/app/ActionBar.html):
 
@@ -84,66 +85,66 @@ For example, here's the description for Android's [`Activity.isChangingConfigura
 Use present tense for all descriptions—for example:
 
 -   _Adds a new bird to the ornithology list._
-    
+
 -   _Returns a bird._
-    
+
 
 ### Description
 
 -   If a method performs an operation and returns some data, start the description with a verb describing the operation—for example:
-    
+
     -   _Adds a new bird to the ornithology list and returns the ID of the new entry._
 -   If it's a "getter" method and it returns a boolean, start with "Checks whether ...."
-    
+
 -   If it's a "getter" method and it returns something other than a boolean, start with "Gets the ...."
-    
+
 -   If it has no return value, start with a verb like one of the following:
-    
+
     -   Turning on an ability or setting: "Sets the ...."
-        
+
     -   Updating a property: "Updates the ...."
-        
+
     -   Deleting something: "Deletes the ...."
-        
+
     -   Registering a callback or other element for later reference: "Registers ...."
-        
+
     -   For a callback: "Called by ...." (Usually for a method that's named starting with "on", such as `onBufferingUpdate`.) For example, "Called by Android when ...." Then, later in the description: "Subclasses implement this method to ...."
-        
+
 -   If it's a convenience method that constructs the class object, start with "Creates a ...."
-    
+
 
 ### Parameters
 
 For parameter descriptions, follow these guidelines:
 
 -   Capitalize the first word, and end the sentence or phrase with a period.
-    
+
 -   Begin descriptions of non-boolean parameters with "The" or "A" if possible:
-    
+
     -   _The ID of the bird you want to get._
-        
+
     -   _A description of the bird._
-        
+
 -   For boolean parameters that tell the API to do or not do something, state what the API does if the parameter is true and if it's false. For example:
-    
+
     -   _`enableCertificateValidation`: If true, validates the SSL certificate before proceeding. If false, trusts the certificate without validating it._
 -   For boolean parameters that declare the already-established state of something (rather than telling the API to do something), use the format "True if ...; false otherwise." For example:
-    
+
     -   _True if the zoom is set; false otherwise._
 -   In this context, don't put the words "true" and "false" in code font or quotation marks.
-    
+
 -   For parameters with default behavior, explain what the behavior is for each value or range of values, and then say what the default value is. Use the format _Default:_ to explain the default value.
-    
+
 
 ### Return values
 
 Be as brief as possible in the return value's description; put any detailed information in the class description.
 
 -   If the return value is anything other than a boolean, start with "The ..."—for example:
-    
+
     -   _The bird specified by the given ID._
 -   If the return value is a boolean, use the format "True if ...; false otherwise."—for example:
-    
+
     -   _True if the bird is in the sanctuary; false otherwise._
 
 ### Exceptions

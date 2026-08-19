@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Format placeholders
@@ -36,38 +37,47 @@ There are several ways to format placeholders, depending on whether you're worki
 If your sample code and command placeholders occur in a sentence, use the following formatting:
 
 -   In HTML, wrap variable placeholders by using the `var` element, like this:
-    
-    <code><var>PLACEHOLDER\_NAME</var></code>
-    
+
+```
+<code><var>PLACEHOLDER_NAME</var></code>
+```
+
 -   In Markdown, wrap inline placeholders in backticks (\`), and use an asterisk (\*) before the first backtick and after the second one (``*`PLACEHOLDER_NAME`*``).
 
 If your placeholder does not represent a code sample or command, use the following formatting:
 
 -   In HTML, wrap placeholders by using the `var` element, like this:
-    
-    <var>PLACEHOLDER\_NAME</var>
-    
+
+```
+<var>PLACEHOLDER_NAME</var>
+```
+
 
 ### Placeholders in code blocks
 
 If your placeholders are in a block of code, use the following formatting:
 
 -   In HTML, wrap the code block in a `pre` element, and tag placeholders with `var` elements:
-    
-          <pre>
-          gcloud compute forwarding-rules create <var>FORWARDING\_RULE\_NAME</var> \\
-              --global | --region=<var>REGION</var> \\
-              --load-balancing-scheme=<var>LOAD\_BALANCING\_SCHEME</var> \\
-              --network=<var>NETWORK</var> \\
-              ...
-          </pre>
-          
+
+```
+      <pre>
+      gcloud compute forwarding-rules create <var>FORWARDING_RULE_NAME</var> \
+          --global | --region=<var>REGION</var> \
+          --load-balancing-scheme=<var>LOAD_BALANCING_SCHEME</var> \
+          --network=<var>NETWORK</var> \
+          ...
+      </pre>
+
+```
+
 -   In Markdown, wrap the code block in a code fence (\`\`\`). Inside a code fence, you can't apply formatting like bold or italic.
-    
-    \`\`\`
-    PLACEHOLDER\_NAME
-    \`\`\`
-    
+
+````
+```
+PLACEHOLDER_NAME
+```
+````
+
 
 ### Placeholder text
 
@@ -117,13 +127,15 @@ When you use a placeholder in text or code, explain the placeholder the first ti
 
 The following is an example of a command that uses a placeholder with an explanation of that placeholder:
 
+```
 <pre class="devsite-click-to-copy">
-gcloud compute instances create <var>INSTANCE\_NAME</var> \\
+gcloud compute instances create <var>INSTANCE_NAME</var> \
     --metadata enable-guest-attributes=TRUE
 </pre>
 
-<p>Replace <code><var>INSTANCE\_NAME</var></code> with the name that
+<p>Replace <code><var>INSTANCE_NAME</var></code> with the name that
 you want your new VM instance to have.</p>
+```
 
 ### Single placeholder
 
@@ -134,11 +146,13 @@ Use the following format for a single placeholder:
 Recommended:
 
 1.  Stream the build logs to the Google Cloud console:
-    
-    gcloud builds log --stream=BUILD\_ID
-    
+
+```
+gcloud builds log --stream=BUILD_ID
+```
+
     Replace `BUILD_ID` with the ID of the `WORKING` build that you copied in the preceding step.
-    
+
 
 ### Two or more placeholders
 
@@ -148,30 +162,38 @@ Use the following format for two or more placeholders:
 -   Introduce this list with _Replace the following:_
 -   List the placeholders in the order in which they appear in the command line.
 -   Tag each placeholder in a code sample or command with `code` and `var` elements, followed by a [colon and a description that starts with a lowercase letter](https://developers.google.com/style/colons). For non-code samples, remove the `code` elements—for example:
-    
-    <li><code><var>INSTANCE\_NAME</var></code>: description</li>
-    
+
+```
+<li><code><var>INSTANCE_NAME</var></code>: description</li>
+```
+
 -   If the description contains an example, introduce it with an _em dash_ or _such as_—for example:
-    
-    <li><code><var>INSTANCE\_NAME</var></code>: description&mdash;for example,...</li>
-    
-    <li><code><var>INSTANCE\_NAME</var></code>: description, such as...</li>
-    
+
+```
+<li><code><var>INSTANCE_NAME</var></code>: description&mdash;for example,...</li>
+```
+
+```
+<li><code><var>INSTANCE_NAME</var></code>: description, such as...</li>
+```
+
 -   Each item in the list follows our [list style](https://developers.google.com/style/lists).
 
 Recommended:
 
 1.  Set the maximum concurrency target for a new reservation:
-    
-        bq mk \\
-            --project\_id=ADMIN\_PROJECT\_ID \\
-            --location=LOCATION \\
-            --target\_job\_concurrency=CONCURRENCY \\
-            --reservation \\
-            RESERVATION\_NAME
-    
+
+```
+    bq mk \
+        --project_id=ADMIN_PROJECT_ID \
+        --location=LOCATION \
+        --target_job_concurrency=CONCURRENCY \
+        --reservation \
+        RESERVATION_NAME
+```
+
     Replace the following:
-    
+
     -   `ADMIN_PROJECT_ID`: the project that owns the reservation
     -   `LOCATION`: the location of the reservation
     -   `CONCURRENCY`: the maximum concurrency target
@@ -180,12 +202,14 @@ Recommended:
 Recommended:
 
 1.  In Cloud Shell, set the environment variables:
-    
-    export ONPREM\_PROJECT=ON\_PREM\_PROJECT\_NAME \\
-        export ONPREM\_ZONE=ZONE
-    
+
+```
+export ONPREM_PROJECT=ON_PREM_PROJECT_NAME \
+    export ONPREM_ZONE=ZONE
+```
+
     Replace the following:
-    
+
     -   `ON_PREM_PROJECT_NAME`: the Google Cloud project name for your on-premises project. You can find your project number on the [Dashboard](https://console.cloud.google.com/home/dashboard) page of the Google Cloud console.
     -   `ZONE`: a [Google Cloud zone](https://developers.google.com/compute/docs/regions-zones#identifying_a_region_or_zone) that's close to your location—for example, `us-east1`.
 
@@ -198,15 +222,21 @@ If you provide a code output example, explain any placeholders that appear in sa
 -   Introduce the list of placeholders with _This output includes the following values:_
 -   List the placeholders in the order in which they appear in the example.
 -   Tag each placeholder with a `var` element, followed by a colon and a description that starts with a lowercase letter—for example:
-    
-    <li><code><var>INSTANCE\_NAME</var></code>: description</li>
-    
+
+```
+<li><code><var>INSTANCE_NAME</var></code>: description</li>
+```
+
 -   If the description contains an example, introduce it with an _em dash_ or _such as_—for example:
-    
-    <li><code><var>INSTANCE\_NAME</var></code>: description&mdash;for example,...</li>
-    
-    <li><code><var>INSTANCE\_NAME</var></code>: description, such as...</li>
-    
+
+```
+<li><code><var>INSTANCE_NAME</var></code>: description&mdash;for example,...</li>
+```
+
+```
+<li><code><var>INSTANCE_NAME</var></code>: description, such as...</li>
+```
+
 
 For more information, see [Output from commands](https://developers.google.com/style/code-syntax#output).
 
@@ -216,39 +246,41 @@ Recommended:
 
 The output is similar to the following:
 
+```
 {
- "name": "operations/build/PROJECT\_ID/OPERATION\_ID",
+ "name": "operations/build/PROJECT_ID/OPERATION_ID",
  "metadata": {
   "@type": "type.googleapis.com/google.devtools.cloudbuild.v1.BuildOperationMetadata",
   "build": {
-   "id": "BUILD\_ID",
+   "id": "BUILD_ID",
    "status": "QUEUED",
    "createTime": "2019-09-20T15:55:29.353258929Z",
-   "steps": \[
+   "steps": [
     {
-     "name": "gcr.io/compute-image-import/gce\_vm\_image\_import:release",
-     "env": \[
-      "BUILD\_ID=BUILD\_ID"
-     \],
-     "args": \[
+     "name": "gcr.io/compute-image-import/gce_vm_image_import:release",
+     "env": [
+      "BUILD_ID=BUILD_ID"
+     ],
+     "args": [
       "-timeout=7056s",
-      "-image\_name=IMAGE\_NAME",
-      "-client\_id=api",
+      "-image_name=IMAGE_NAME",
+      "-client_id=api",
       "-data-disk",
-      "-source\_file=SOURCE\_FILE"
-     \]
+      "-source_file=SOURCE_FILE"
+     ]
     }
-   \],
+   ],
    "timeout": "7200s",
-   "projectId": "PROJECT\_ID",
-   "logsBucket": "gs://PROJECT\_NUMBER.cloudbuild-logs.googleusercontent.com",
+   "projectId": "PROJECT_ID",
+   "logsBucket": "gs://PROJECT_NUMBER.cloudbuild-logs.googleusercontent.com",
    "options": {
     "logging": "LEGACY"
    },
-   "logUrl": "https://console.cloud.google.com/gcr/builds/BUILD\_ID?project=PROJECT\_NUMBER"
+   "logUrl": "https://console.cloud.google.com/gcr/builds/BUILD_ID?project=PROJECT_NUMBER"
   }
  }
 }
+```
 
 This output includes the following values:
 

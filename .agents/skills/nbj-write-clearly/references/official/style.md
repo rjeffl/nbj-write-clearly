@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # About this guide
@@ -22,15 +23,15 @@ Use the following references, including this guide, in this order:
 
 1.  **Project-specific style**. Follow style guidance specific to your project or product, such as necessary exceptions to this guide or terms that are relevant only to your product.
 2.  **This style guide**. If project-specific style guidelines don't provide explicit guidance, then follow this guide.
-    
+
 3.  **Third-party references**. If the preceding references don't provide explicit guidance, then see these third-party references, depending on the nature of your question:
-    
+
     | Type of question | Third-party reference |
     | --- | --- |
     | Spelling | Follow [Merriam-Webster.com](https://www.merriam-webster.com/). See also [Spelling](https://developers.google.com/style/spelling). |
     | Nontechnical style | Follow [_The Chicago Manual of Style_, 17th edition](https://www.chicagomanualofstyle.org/home.html) (subscription required). |
     | Technical style | See the [Microsoft Writing Style Guide](https://docs.microsoft.com/style-guide/welcome/). But consider whether Microsoft's guidance applies; some of it might apply only to Microsoft products and interfaces. |
-    
+
 
 At multiple stages of this hierarchy, it can be helpful to look to established usage. For example, search your organization's documentation, or check a broad language corpus such as [Google Ngram Viewer](https://books.google.com/ngrams/).
 
@@ -53,7 +54,7 @@ For guidance that applies only to Android or Google Cloud documentation, look fo
 ## Break the rules
 
 > _Break any of these rules sooner than say anything outright barbarous._
-> 
+>
 > —George Orwell, "[Politics and the English Language](https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/)"
 
 This guide contains guidelines, not rules. Depart from it when doing so improves your content.

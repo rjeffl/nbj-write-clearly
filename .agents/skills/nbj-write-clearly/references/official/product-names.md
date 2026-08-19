@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Product names
@@ -17,17 +18,17 @@ In general, Google product names are in _title case_, sometimes called _init-cap
 When you write about any product, follow the official capitalization for the names of brands, companies, software, products, services, features, and terms defined by companies and open source communities.
 
 -   For example, if you're using Kubernetes-related terms, then follow the capitalization that's shown in the Kubernetes [Concepts documentation](https://kubernetes.io/docs/concepts/).
-    
+
     Recommended in a Kubernetes context: A Job creates one or more Pods.
-    
+
     Recommended: The Cloud Scheduler job publishes a message to a Pub/Sub topic at one-minute intervals.
-    
+
 -   If an official name begins with a lowercase letter, then put it in lowercase even at the start of a sentence. But it's better to revise the sentence to avoid putting a lowercase word at the start, if possible.
-    
+
     Recommended: You can use macOS to run the app.
-    
+
     Not recommended: macOS can run the app.
-    
+
 
 ### Feature names
 

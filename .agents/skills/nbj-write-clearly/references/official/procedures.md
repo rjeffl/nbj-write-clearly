@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Procedures
@@ -73,38 +74,42 @@ To document a complex procedural step, use the following order:
 1.  Describe the action to take.
 2.  List a command, if necessary.
 3.  Explain any placeholders that are used in the command.
-    
+
     For more information, see [Formatting placeholders](https://developers.google.com/style/placeholders).
-    
+
 4.  Explain the command in more detail, if necessary.
 5.  List the output of the command, if necessary.
-    
+
     For more information, see [Output from commands](https://developers.google.com/style/code-syntax#output).
-    
+
 6.  In a separate paragraph, explain [the result of an action](https://developers.google.com/style/procedures#steps-with-results-or-justifications), or any output, if necessary.
 
 The following example demonstrates the preceding order:
 
 1.  Plan the Terraform deployment:
-    
-    terraform plan -out=NAME
-    
+
+```
+terraform plan -out=NAME
+```
+
     Replace `NAME` with the name of your Terraform plan.
-    
+
     The `terraform plan` command does the following:
-    
+
     1.  Parses the Terraform configuration, building a list of resources to provision.
     2.  Refreshes the current state of resources already provisioned in Google Cloud.
     3.  Creates a plan to make the currently provisioned resources match the parsed configuration.
-    
+
     The output is similar to the following:
-    
-      Plan: 26 to add, 0 to change, 0 to destroy.
-      ------------------------------------------------------------
-      This plan was saved to: NAME
-    
+
+```
+  Plan: 26 to add, 0 to change, 0 to destroy.
+  ------------------------------------------------------------
+  This plan was saved to: NAME
+```
+
     The output shows what resources to add, change, or destroy.
-    
+
 
 ## Multi-action procedures
 
@@ -230,25 +235,25 @@ Recommended:
 | Use complete sentences. |  |  |
 | Use parallel structure and consistent verb form. | Download the service account key to your local machine. Click **More**, and then click **Download**. | Download the service account key to your local machine by clicking **More** and then clicking **Download** file. |
 | For an optional step, type _Optional:_ as the first word of the step. | Optional: Type an arbitrary string... | (Optional) Type an arbitrary string... |
-| 
+|
 Set the context (such as a tool or an environment) in which the reader performs a procedure.
 
 If there are multiple headings associated with a set of procedures, restate the context of the procedure in the first step, even if the context is the same as in the previous procedure.
 
- | 
+ |
 
 In Cloud Shell, connect to the development cluster.
 
 In the Google Cloud console, go to the **BigQuery** page.
 
  |  |
-| Write in the order that the reader needs to follow. State the location of the action before stating the action. | 
+| Write in the order that the reader needs to follow. State the location of the action before stating the action. |
 
 In Google Docs, click **File \> New \> Document**.
 
 In the Google Cloud console, go to the **Monitoring** page.
 
- | 
+ |
 
 Click **File \> New \> Document** in Google Docs.
 
@@ -256,13 +261,13 @@ Go to the **Monitoring** page in the Google Cloud console.
 
  |
 | State the purpose or goal of the action before stating the action. | To start a new document, click **File \> New \> Document**. | Click **File \> New \> Document** to start a new document. |
-| 
+|
 
 Don't use directional language to orient the reader, such as _above_, _below_, or _right-hand side_. This type of language doesn't work well for accessibility or for localization. If a UI element is hard to find, provide a screenshot.
 
 For information about documenting icons, see [Buttons and icons](https://developers.google.com/style/ui-elements#buttons).
 
- | 
+ |
 
 Click menu**Menu**.
 
@@ -270,7 +275,7 @@ In the preceding diagram,...
 
 In the following diagram,...
 
- | 
+ |
 
 Click the button with three lines.
 
@@ -280,24 +285,24 @@ In the diagram below, ...
 
  |
 | Don't use _please_. | To open a document, click **File \> Open**. | To open a document, please click **File \> Open**. |
-| 
+|
 
 Avoid using _run the following command_ to introduce code. Instead, focus on what the command does.
 
- | 
+ |
 
 In Cloud Shell, deploy the load generator:...
 
 Define a firewall rule to allow internal traffic:...
 
- | 
+ |
 
 In Cloud Shell, deploy the load generator by running the following command:...
 
 Run the following command:...
 
  |
-| If the reader must press **Enter** after a step, then include that instruction as part of the step. | Click the search box, type `custom function`, and then press **Enter**. | 
+| If the reader must press **Enter** after a step, then include that instruction as part of the step. | Click the search box, type `custom function`, and then press **Enter**. |
 
 1.  Click the search box and type `custom function`.
 2.  Press **Enter**.

@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # What's new
@@ -14,34 +15,34 @@ This page provides a summary of significant changes to the style guide.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Softened a statement regarding the effect of inconsistent terminology on translation costs.
 
  | [Write for a global audience](https://developers.google.com/style/translation) |
-| 
+|
 
 Added cross-references between guidance about optional procedure steps and guidance about optional headings.
 
- | [Headings and titles](https://developers.google.com/style/headings),  
+ | [Headings and titles](https://developers.google.com/style/headings),
 [Procedures](https://developers.google.com/style/procedures) |
-| 
+|
 
 Clarified that much of our guidance about writing inclusive documentation relates to the broader principle of avoiding figurative language, which can be ableist or unnecessarily graphic. Instead, we use literal, precise terms in their primary sense.
 
- | [Write inclusive documentation](https://developers.google.com/style/inclusive-documentation),  
-[Voice and tone](https://developers.google.com/style/tone),  
+ | [Write inclusive documentation](https://developers.google.com/style/inclusive-documentation),
+[Voice and tone](https://developers.google.com/style/tone),
 [Word list](https://developers.google.com/style/word-list) |
-| 
+|
 
 Updated guidance about creating custom heading targets, making anchor (`<a>`) elements equally as acceptable as section (`<section>`) elements.
 
  | [Make headings into link targets](https://developers.google.com/style/headings-targets) |
-| 
+|
 
 Added guidance about ensuring that you contextualize UI elements when you document them outside of a numbered procedure.
 
  | [UI elements and interaction](https://developers.google.com/style/ui-elements) |
-| 
+|
 
 Added word list entry: _managed instance group (MIG)_
 
@@ -51,135 +52,135 @@ Added word list entry: _managed instance group (MIG)_
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added guidance about avoiding inconsistent end punctuation in list items.
 
  | [Lists](https://developers.google.com/style/lists) |
-| 
+|
 
 Added _do the following_ as a recommended phrase for introducing lists in procedures.
 
  | [Procedures](https://developers.google.com/style/procedures) |
-| 
+|
 
 Clarified that ordered lists are appropriate for any list where sequence is significant. Added guidance about ensuring that it's clear whether the items in an unordered list are required or optional.
 
  | [Lists](https://developers.google.com/style/lists) |
-| 
+|
 
 Added guidance that if you must refer to a step number, use the numeral.
 
  | [Numbers](https://developers.google.com/style/numbers) |
-| 
+|
 
 Added guidance to use italics sparingly, and consolidated italics guidance into a new page.
 
- | [Use italics to discuss terms](https://developers.google.com/style/italics-terms),  
+ | [Use italics to discuss terms](https://developers.google.com/style/italics-terms),
 [Text-formatting summary](https://developers.google.com/style/text-formatting) |
-| 
+|
 
 Added guidance recommending the terms _selected_ and _not selected_ to refer to the state of a checkbox.
 
  | [UI elements and interaction](https://developers.google.com/style/ui-elements) |
-| 
+|
 
 Changed guidance to recommend using code font for IP addresses and port numbers. Added package names to the list of items to place in code font.
 
  | [Code in text](https://developers.google.com/style/code-in-text) |
-| 
+|
 
 Updated UI elements guidance with expanded definitions for _pane_, _panel_, and _section_. Added guidance about how to identify difficult-to-find UI elements without using directional language.
 
  | [UI elements and interaction](https://developers.google.com/style/ui-elements) |
-| 
+|
 
 Added `.wasm` (Wasm file) to the table of file extensions and corresponding file type names.
 
  | [Filenames and file types](https://developers.google.com/style/filenames) |
-| 
+|
 
 Reorganized and extended guidance about formatting abbreviation introductions.
 
- | [Abbreviations](https://developers.google.com/style/abbreviations),  
+ | [Abbreviations](https://developers.google.com/style/abbreviations),
 [Text-formatting summary](https://developers.google.com/style/text-formatting) |
-| 
+|
 
 Consolidated pluralization guidance into a new page, including guidance about abbreviations, product names, and code elements.
 
  | [Pluralization](https://developers.google.com/style/pluralization) |
-| 
+|
 
 Restructured guidance about writing for a global audience to make it easier to navigate.
 
  | [Write for a global audience](https://developers.google.com/style/translation) |
-| 
+|
 
 Expanded guidance about exclamation marks to clarify that we avoid them except in rare cases.
 
- | [Periods and other end punctuation](https://developers.google.com/style/periods),  
+ | [Periods and other end punctuation](https://developers.google.com/style/periods),
 [Voice and tone](https://developers.google.com/style/tone) |
-| 
+|
 
 Created a page about how to format common mathematical notation.
 
- | [Mathematical notation](https://developers.google.com/style/mathematical-notation),  
-[Numbers](https://developers.google.com/style/numbers),  
-[Text-formatting summary](https://developers.google.com/style/text-formatting),  
+ | [Mathematical notation](https://developers.google.com/style/mathematical-notation),
+[Numbers](https://developers.google.com/style/numbers),
+[Text-formatting summary](https://developers.google.com/style/text-formatting),
 [Units of measurement](https://developers.google.com/style/units-of-measure) |
-| 
+|
 
 Changed guidance for temperatures to recommend a nonbreaking space between a numeral and the degree symbol instead of between the degree symbol and the temperature scale.
 
  | [Units of measurement](https://developers.google.com/style/units-of-measure) |
-| 
+|
 
 Added guidance about marking headings as optional. Restructured headings guidance to make it easier to navigate.
 
  | [Headings and titles](https://developers.google.com/style/headings) |
-| 
+|
 
 Added an entry for _AI_, specifying that it rarely needs to be spelled out.
 
- | [Word list](https://developers.google.com/style/word-list),  
+ | [Word list](https://developers.google.com/style/word-list),
 [Abbreviations](https://developers.google.com/style/abbreviations) |
-| 
+|
 
 Clarified that the word _can_ can be used to convey both permission and ability.
 
  | [Word list](https://developers.google.com/style/word-list) |
-| 
+|
 
 Clarified that when we mark a term "Use with caution" in the word list, we recommend following our standard jargon guidance.
 
  | [Word list](https://developers.google.com/style/word-list) |
-| 
+|
 
 Clarified how we prefer to distinguish between a _page_ (the whole web page) and a _document_ (the text on a page that explains a product, feature, or service).
 
  | [Word list](https://developers.google.com/style/word-list) |
-| 
+|
 
 Revised the entry for _style sheet_ to also allow for _stylesheet_, prioritizing consistency in a document.
 
  | [Word list](https://developers.google.com/style/word-list) |
-| 
+|
 
 Added explanations to several existing word list items regarding compound word usage: _clickthrough_, _hardcode_, _high availability_, _load balancing_, _plugin_, _third-party_, _time zone_, and _wake lock_.
 
  | [Word list](https://developers.google.com/style/word-list) |
-| 
+|
 
 Expanded the entry for _first class_, _first-class_, _first-class citizen_, providing new recommended alternatives with examples.
 
- | [Word list](https://developers.google.com/style/word-list),  
+ | [Word list](https://developers.google.com/style/word-list),
 [Write inclusive documentation](https://developers.google.com/style/inclusive-documentation) |
-| 
+|
 
 Expanded or added entries for _like_, _such as_, _for example_, and _for instance_. Made corresponding updates to the page about writing examples.
 
- | [Word list](https://developers.google.com/style/word-list),  
+ | [Word list](https://developers.google.com/style/word-list),
 [Format examples](https://developers.google.com/style/format-examples) |
-| 
+|
 
 Added guidance to the _virtual machine (VM) instance_ entry regarding Compute Engine instances.
 
@@ -189,86 +190,86 @@ Added guidance to the _virtual machine (VM) instance_ entry regarding Compute En
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Removed outdated language that indicated that a list of options is treated differently than other unordered lists.
 
  | [Lists](https://developers.google.com/style/lists) |
-| 
+|
 
 Added a page about writing prescriptive documentation.
 
  | [Prescriptive documentation](https://developers.google.com/style/prescriptive-documentation), [Word list](https://developers.google.com/style/word-list#should) |
-| 
+|
 
 Removed guidance that said to include empty parentheses after method names.
 
  | [Code in text](https://developers.google.com/style/code-in-text) |
-| 
+|
 
 Changed footnotes guidance to recommend using numbers instead of symbols.
 
  | [Footnotes](https://developers.google.com/style/footnotes) |
-| 
+|
 
 Simplified contractions guidance, removing excess explanations and examples.
 
  | [Contractions](https://developers.google.com/style/contractions) |
-| 
+|
 
 Added examples to guidance about introducing sections of a document.
 
  | [Headings and titles](https://developers.google.com/style/headings) |
-| 
+|
 
 Added an example service account ID.
 
  | [Example domains and names](https://developers.google.com/style/examples) |
-| 
+|
 
 Simplified and clarified guidance about articles, including using articles before abbreviations and product names.
 
  | [Abbreviations](https://developers.google.com/style/abbreviations), [Articles (a, an, the)](https://developers.google.com/style/articles), [Product names](https://developers.google.com/style/product-names), [Word list](https://developers.google.com/style/word-list) |
-| 
+|
 
 Included a general explanation of why we don't document future features.
 
  | [Document future features](https://developers.google.com/style/future) |
-| 
+|
 
 Revised guidance to recommend using an abbreviation in a title or heading only if the abbreviation is the more commonly known version of the word.
 
  | [Headings and titles](https://developers.google.com/style/headings) |
-| 
+|
 
 Added a suggestion that when you use an imperative in running text, consider whether to write a procedure instead.
 
  | [Second person and first person](https://developers.google.com/style/person) |
-| 
+|
 
 Generalized existing guidance on what to do when jargon is part of a command or code sample.
 
  | [Jargon](https://developers.google.com/style/jargon) |
-| 
+|
 
 Consolidated guidance about cross-references and linking into one page.
 
  | [Cross-references and linking](https://developers.google.com/style/cross-references) |
-| 
+|
 
 Added some specific reasons why we avoid directional language when orienting the reader to information on a page.
 
  | [Write accessible documentation](https://developers.google.com/style/accessibility) |
-| 
+|
 
 Clarified that spacing around icons is a judgment call based on readability.
 
  | [UI elements and interaction](https://developers.google.com/style/ui-elements) |
-| 
+|
 
 Removed an example phone number.
 
  | [Example domains and names](https://developers.google.com/style/examples) |
-| 
+|
 
 Removed the word list entry for _property_ because its usage heavily depends on the technical context.
 
@@ -279,7 +280,7 @@ Removed the word list entry for _property_ because its usage heavily depends on 
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Consolidated spelling guidance into the introduction to the word list. Extended guidance about how to use the preferred dictionary to determine which spelling to use for a word with multiple spellings.
 
  | [Word list](https://developers.google.com/style/word-list) |
@@ -291,7 +292,7 @@ Consolidated spelling guidance into the introduction to the word list. Extended 
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Consolidated and expanded guidance about hyphens and closed compounds.
 
  | [Hyphens](https://developers.google.com/style/hyphens) |
@@ -301,11 +302,11 @@ Consolidated and expanded guidance about hyphens and closed compounds.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added guidance for distinguishing between binary and decimal units, such as gibibytes (GiB) and gigabytes (GB). Also corrected abbreviation of _kilobyte_ to _kB_.
 
  | [Decimal and binary units](https://developers.google.com/style/units-of-measure#byte-units) |
-| 
+|
 
 Expanded guidance for referring to figures and other images in text. Clarified that figure numbers are not required.
 
@@ -317,11 +318,11 @@ Expanded guidance for referring to figures and other images in text. Clarified t
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added the term _generative AI_.
 
  | [Word list](https://developers.google.com/style/word-list#generative-ai) |
-| 
+|
 
 Added the term _rehost_. Redirected the definition for _lift and shift_ to _rehost_.
 
@@ -334,24 +335,24 @@ Added the term _rehost_. Redirected the definition for _lift and shift_ to _reho
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Expanded guidance about avoidance of the term _drop-down_.
 
  | [Word list](https://developers.google.com/style/word-list#drop-down) |
-| 
+|
 
 Added examples to guidance about writing documentation that focuses on the present state of the software.
 
  | [Timeless documentation](https://developers.google.com/style/timeless-documentation) |
-| 
+|
 
 Added recommendation to use a more precise term than _workload_ when possible, or to define what the term means in the specific context.
 
 Added related guidance about avoiding ambiguous or overloaded words like _workload_, _solution_, and _support_, or defining them in each context.
 
- | [Word list](https://developers.google.com/style/word-list#workload),  
+ | [Word list](https://developers.google.com/style/word-list#workload),
 [Jargon](https://developers.google.com/style/jargon) |
-| 
+|
 
 Aligned guidance with XML and HTML specifications to recommend against the use of angle brackets as part of an element name, but instead to only use angle brackets as part of a tag.
 
@@ -361,32 +362,32 @@ Aligned guidance with XML and HTML specifications to recommend against the use o
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Cleaned up word list by removing entries that only provided [hyphenation](https://developers.google.com/style/hyphens), [spelling](https://developers.google.com/style/spelling), or [abbreviation](https://developers.google.com/style/abbreviations) guidance that followed directly from our general guidance.
 
  | [Word list](https://developers.google.com/style/style/word-list) |
-| 
+|
 
 Consolidated and clarified guidance regarding alt text, figure captions, and figure descriptions.
 
- | [Diagrams, figures, and other images](https://developers.google.com/style/images)  
+ | [Diagrams, figures, and other images](https://developers.google.com/style/images)
 [Write accessible documentation](https://developers.google.com/style/accessibility) |
-| 
+|
 
 Added recommendation to avoid linking to other document sets from navigation controls such as a table of contents.
 
  | [Links to other sites](https://developers.google.com/style/links-external) |
-| 
+|
 
 Clarified guidance about avoiding words such as _above_ and _below_ in references to documentation and user interfaces for accessibility reasons, and provided example of appropriate non-directional usage.
 
  | [Word list](https://developers.google.com/style/word-list#above) |
-| 
+|
 
 Removed prohibition against hyphenation of the phrase _open source_, so this term now follows our general guidance for hyphenation, which allows for hyphenation of an adjectival phrase to add clarity and remove ambiguity.
 
  | [Word list](https://developers.google.com/style/word-list#open-source) |
-| 
+|
 
 Changed guidance for indicating the omission of code from an instructional code snippet to recommend the use of an explanatory comment instead of a mere ellipsis.
 
@@ -396,11 +397,11 @@ Changed guidance for indicating the omission of code from an instructional code 
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Changed guidance regarding run-in headings in description lists to recommend that the punctuation (such as a colon) is not formatted as bold. Making the punctuation bold caused the punctuation to seem to be part of the heading string, which caused confusion in cases such as UI labels.
 
  | [Lists](https://developers.google.com/style/lists#description-lists-that-use-run-in-headings) |
-| 
+|
 
 Removed the recommendation to use a special _external_ icon (indicated by `class="external"`) for links. Readers and writers have expressed confusion about the meaning and usage of this icon. We strengthened guidance about using other, explicit means to inform the reader about the destination and behavior of a link.
 
@@ -410,21 +411,21 @@ Removed the recommendation to use a special _external_ icon (indicated by `class
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Removed page about custom font styling, which only said to use styles defined in the style sheet for the website. Redirected link to page about HTML formatting and semantic tagging.
 
  | [HTML and semantic tagging](https://developers.google.com/style/fonts) |
-| 
+|
 
 Added word-list entry for _then_ and expanded entry for _if_ to recommend the use of the optional helper word _then_ in many cases in which it might be omitted in casual usage.
 
  | [Word list](https://developers.google.com/style/word-list#then) |
-| 
+|
 
 Simplified and unified guidance for _jank_ and _janky_ to recommend that these terms only be used for specific graphics issues.
 
  | [Word list](https://developers.google.com/style/word-list#jank) |
-| 
+|
 
 Strengthened guidance against the use of _and/or_ except in cases where space is limited.
 
@@ -434,16 +435,16 @@ Strengthened guidance against the use of _and/or_ except in cases where space is
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added several examples of when and how to use quotation marks.
 
  | [Quotation marks](https://developers.google.com/style/quotation-marks) |
-| 
+|
 
 Added explanation of guidance against anthropomorphism.
 
  | [Anthropomorphism](https://developers.google.com/style/anthropomorphism) |
-| 
+|
 
 Added guidance about using a hyphen with the prefix _non_ before hyphenated compounds.
 
@@ -453,21 +454,21 @@ Added guidance about using a hyphen with the prefix _non_ before hyphenated comp
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added link buttons to each entry in the word list to make deep-linking to individual entries easier.
 
  | [Word list](https://developers.google.com/style/word-list) |
-| 
+|
 
 Extended guidance about example names to recommend using an initial to represent a person's surname.
 
  | [Example person surnames](https://developers.google.com/style/examples#example-person-surnames) |
-| 
+|
 
 Clarified guidance about when to use present tense and when to use future tense.
 
  | [Present tense](https://developers.google.com/style/tense) |
-| 
+|
 
 Extended link text guidance to include an example for `mailto` links.
 
@@ -477,21 +478,21 @@ Extended link text guidance to include an example for `mailto` links.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added link to [Google API guidelines](https://google.aip.dev/192) for information about code comments.
 
  | [API reference code comments](https://developers.google.com/style/api-reference-comments) |
-| 
+|
 
 Revised guidance for the word _toggle_ to recommend against use as a verb.
 
  | [UI elements and interaction](https://developers.google.com/style/ui-elements#term-toggle) |
-| 
+|
 
 Extended and clarified guidance for names for directories and files.
 
  | [Filenames and file types](https://developers.google.com/style/filenames) |
-| 
+|
 
 Added explanation for why to use code format for code items.
 
@@ -501,31 +502,31 @@ Added explanation for why to use code format for code items.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Consolidated guidance about periods and end punctuation. Also removed standalone pages about exclamation points and about spacing after periods.
 
  | [Periods and other end punctuation](https://developers.google.com/style/periods) |
-| 
+|
 
 Revised guidance about hyphens to suggest a lookup strategy, categorize uses, and note exceptions.
 
  | [Hyphens](https://developers.google.com/style/hyphens) |
-| 
+|
 
 Created firmer guidance about punctuation in lists for run-in headings and at the end of list items.
 
  | [Lists](https://developers.google.com/style/lists) |
-| 
+|
 
 Strengthened capitalization guidance: when _not_ to use capitalization, and how to use capitalization with product names.
 
  | [Capitalization](https://developers.google.com/style/capitalization), [Product names](https://developers.google.com/style/product-names) |
-| 
+|
 
 Added guidance about using end punctuation when documenting a command-line option or argument.
 
  | [Document command-line syntax](https://developers.google.com/style/code-syntax) |
-| 
+|
 
 Improved description and examples for using first-person pronouns (_we_, _our_).
 
@@ -536,11 +537,11 @@ Improved description and examples for using first-person pronouns (_we_, _our_).
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Softened guidance regarding the choice between the pronouns _who_ and _that_.
 
  | [Pronouns](https://developers.google.com/style/pronouns) |
-| 
+|
 
 Added _web interface_ as an alternative to _console_ and _UI_ in general references to a browser-based interface.
 
@@ -551,16 +552,16 @@ Added _web interface_ as an alternative to _console_ and _UI_ in general referen
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Expanded and clarified guidance about using trademarks only as modifiers. This guidance emphasizes that you should never modify a trademark, such as by creating a possessive or plural form.
 
  | [Use trademarks only as modifiers](https://developers.google.com/style/trademarks#use-trademarks-only-as-modifiers) |
-| 
+|
 
 Strengthened guidance against shortening product names to anything other than an approved alternative name.
 
  | [Google product names](https://developers.google.com/style/product-names#shortening) |
-| 
+|
 
 Expanded guidance about using ARIA labels in text that describes icons in graphical user interfaces. This improves accessibility and increases consistency in terminology used to refer to visual elements in text.
 
@@ -571,51 +572,51 @@ Expanded guidance about using ARIA labels in text that describes icons in graphi
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added a page about paragraph structure, which provides guidance about recommended paragraph length and order of information.
 
  | [Paragraph structure](https://developers.google.com/style/paragraph-structure) |
-| 
+|
 
 Expanded accessibility guidance to say that a document should convey its information when you use it without images or animation.
 
  | [Write accessible documentation](https://developers.google.com/style/accessibility) |
-| 
+|
 
 Clarified that letter keys should be represented with uppercase letters.
 
  | [Press and type keyboard keys](https://developers.google.com/style/ui-elements#keyboard) |
-| 
+|
 
 Added _existing_ to list of examples of potentially problematic words in timeless documentation.
 
  | [Timeless documentation](https://developers.google.com/style/timeless-documentation) |
-| 
+|
 
 Recommended using an empty `alt` attribute for icons that include a text label.
 
  | [Buttons and icons](https://developers.google.com/style/ui-elements#buttons) |
-| 
+|
 
 Strengthened and clarified guidance about avoiding culturally specific references and about using simple and consistent language.
 
  | [Voice and tone](https://developers.google.com/style/tone) |
-| 
+|
 
 Created section about items that are sometimes—but not always—formatted in code font, such as email addresses.
 
  | [Items that are sometimes in code font](https://developers.google.com/style/code-in-text#sometimes) |
-| 
+|
 
 Added information about example internationalized domain names.
 
  | [Example domain names](https://developers.google.com/style/examples#domains) |
-| 
+|
 
 Expanded guidance about choosing example email addresses.
 
  | [Example email addresses](https://developers.google.com/style/examples#addresses) |
-| 
+|
 
 Expanded guidance about using second-person _you_ to refer to the reader of a document and, generally, using third-person _user_ to refer to the intended user of the software that the reader is developing.
 
@@ -631,7 +632,7 @@ Expanded guidance about using second-person _you_ to refer to the reader of a do
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 To emphasize a negative, use `<em>`not`</em>`.
 
  | [Contractions](https://developers.google.com/style/contractions) |
@@ -646,13 +647,13 @@ To emphasize a negative, use `<em>`not`</em>`.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added guidance about how to document optional arguments for commands.
 
 Special characters that indicate optional and mutually exclusive arguments in commands—such as brackets, braces, and pipes—break commands if the user doesn't edit them first. The new guidance offers several approaches for avoiding these problems.
 
  | [Code in text](https://developers.google.com/style/code-in-text), [Code samples](https://developers.google.com/style/code-samples), [Document command-line syntax](https://developers.google.com/style/code-syntax) |
-| 
+|
 
 Clarified that contractions are recommended in general, but not required in all cases.
 
@@ -662,11 +663,11 @@ Clarified that contractions are recommended in general, but not required in all 
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 In figure captions, always use end punctuation, and use complete sentences when possible.
 
  | [Figures and other images](https://developers.google.com/style/images) |
-| 
+|
 
 Added separators between word list terms, to improve readability.
 
@@ -676,7 +677,7 @@ Added separators between word list terms, to improve readability.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added guidance to multiple pages about ways to make documentation more inclusive for readers who have a variety of cognitive patterns.
 
  | [Write accessible documentation](https://developers.google.com/style/accessibility), [Cross-references](https://developers.google.com/style/cross-references), [Numbers](https://developers.google.com/style/numbers), [Procedures](https://developers.google.com/style/procedures) |
@@ -685,16 +686,16 @@ Added guidance to multiple pages about ways to make documentation more inclusive
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Don't present new information in tables through images or symbols alone.
 
  | [Tables](https://developers.google.com/style/tables) |
-| 
+|
 
 Clarified guidance about using footnotes in tables.
 
  | [Tables](https://developers.google.com/style/tables) |
-| 
+|
 
 Added instructions for how to look up a UI element's `aria-label` attribute.
 
@@ -704,13 +705,13 @@ Added instructions for how to look up a UI element's `aria-label` attribute.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Strengthened recommendation to avoid using semicolons where possible, and removed basic information about semicolons.
 
 Our [accessibility guidance](https://developers.google.com/style/accessibility) recommends against using semicolons where possible, because screen readers may not clearly indicate them. So we changed our semicolon guidance to be more in line with our accessibility guidance.
 
  | [Semicolons](https://developers.google.com/style/semicolons) |
-| 
+|
 
 Expanded and clarified guidance about what to put in code font.
 
@@ -720,16 +721,16 @@ Expanded and clarified guidance about what to put in code font.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Changed and clarified recommended phrasing for describing boolean parameters in reference docs.
 
  | [API reference code comments](https://developers.google.com/style/api-reference-comments) |
-| 
+|
 
 Expanded and clarified explanation of why we use straight quotation marks and apostrophes.
 
  | [Quotation marks](https://developers.google.com/style/quotation-marks) |
-| 
+|
 
 Added suggested alternative terms for _cloud-native_.
 
@@ -740,7 +741,7 @@ Added suggested alternative terms for _cloud-native_.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Clarified that _and then_ is generally better than just _then_.
 
  | [Write for a global audience](https://developers.google.com/style/translation) |
@@ -750,11 +751,11 @@ Clarified that _and then_ is generally better than just _then_.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Expanded table-formatting guidance, to improve accessibility.
 
  | [Tables](https://developers.google.com/style/tables) |
-| 
+|
 
 Improved guidance about figure captions, descriptions, and alt text.
 
@@ -764,13 +765,13 @@ Improved guidance about figure captions, descriptions, and alt text.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Write _a SQL_ rather than _an SQL_.
 
 Both are in use, but _a SQL_ is significantly more common.
 
  | [Articles (a, an, the)](https://developers.google.com/style/articles) |
-| 
+|
 
 Added information about our distinction between _don't use_ and _avoid_.
 
@@ -781,21 +782,21 @@ Added information about our distinction between _don't use_ and _avoid_.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Expanded guidance about _mobile_ and related terms.
 
  | [Word list](https://developers.google.com/style/word-list) |
-| 
+|
 
 It's OK to use _below_ in set phrases such as _below (the) average_.
 
  | [Word list](https://developers.google.com/style/word-list) |
-| 
+|
 
 Expanded our information about serial commas.
 
  | [Commas](https://developers.google.com/style/commas) |
-| 
+|
 
 To refer to a file with the `.tiff` extension, use the phrase _TIFF file_.
 
@@ -806,11 +807,11 @@ To refer to a file with the `.tiff` extension, use the phrase _TIFF file_.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Updated guidance about the term _Cloud console_.
 
  | [Word list](https://developers.google.com/style/word-list) |
-| 
+|
 
 Clarified guidance about the term _see_.
 
@@ -820,11 +821,11 @@ Clarified guidance about the term _see_.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Revised guidance about using the term _element_ in HTML and XML contexts.
 
  | [Word list](https://developers.google.com/style/word-list) |
-| 
+|
 
 Revised and expanded guidance about how to form possessives.
 
@@ -841,7 +842,7 @@ Revised and expanded guidance about how to form possessives.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Clarified guidance about placement of _only_.
 
  | [Write for a global audience](https://developers.google.com/style/translation) |
@@ -851,7 +852,7 @@ Clarified guidance about placement of _only_.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Clarified guidance about _Interconnect connection_.
 
  | [Word list](https://developers.google.com/style/word-list) |
@@ -860,7 +861,7 @@ Clarified guidance about _Interconnect connection_.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Offset footnote symbols using superscript.
 
  | [Footnotes](https://developers.google.com/style/footnotes) |
@@ -870,13 +871,13 @@ Offset footnote symbols using superscript.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Strengthened guidance recommending avoiding humor in documentation.
 
 Most humor is difficult to translate, and much humor is culturally specific.
 
  | [Write for a global audience](https://developers.google.com/style/translation) |
-| 
+|
 
 Changed the link to a resource about identity-first language.
 
@@ -888,16 +889,16 @@ The site that we had previously linked to has disappeared.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added a new page about jargon.
 
  | [Jargon](https://developers.google.com/style/jargon) |
-| 
+|
 
 Expanded guidance about when to use the various notice types.
 
  | [Notes, cautions, warnings, and other notices](https://developers.google.com/style/notices) |
-| 
+|
 
 Clarified and expanded guidance about when to remove locales from URLs.
 
@@ -908,7 +909,7 @@ Clarified and expanded guidance about when to remove locales from URLs.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Introduce an interactive element (such as a button that expands and collapses) in the text preceding the element, to improve accessibility.
 
  | [Write accessible documentation](https://developers.google.com/style/accessibility) |
@@ -917,11 +918,11 @@ Introduce an interactive element (such as a button that expands and collapses) i
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Changed guidance about taking screenshots.
 
  | [Figures and other images](https://developers.google.com/style/images) |
-| 
+|
 
 In code samples, indicate omitted code using three dots and no spaces (`...`)
 
@@ -932,18 +933,18 @@ In code samples, indicate omitted code using three dots and no spaces (`...`)
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Removed guidance about using lettered lists for mutually exclusive options.
 
 The semantic distinction that we were making isn't in wide use, and lettered lists aren't supported in standard Markdown, so we no longer recommend using lettered lists.
 
  | [Lists](https://developers.google.com/style/lists) |
-| 
+|
 
 Clarified recommendation about how to italicize in Markdown.
 
  | [Text-formatting summary](https://developers.google.com/style/text-formatting) |
-| 
+|
 
 Changed guidance about _dead-letter queue_ and _hold the pointer over_.
 
@@ -954,7 +955,7 @@ Changed guidance about _dead-letter queue_ and _hold the pointer over_.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Clarified guidance about using an introductory phrase before the output of a command.
 
  | [Document command-line syntax](https://developers.google.com/style/code-syntax) |
@@ -964,7 +965,7 @@ Clarified guidance about using an introductory phrase before the output of a com
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Use `_gcloud_` _CLI_ instead of `_gcloud_` _command-line tool_.
 
  | [Word list](https://developers.google.com/style/word-list) |
@@ -974,7 +975,7 @@ Use `_gcloud_` _CLI_ instead of `_gcloud_` _command-line tool_.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 In general, don't use a single _x_ or a series of _x_'s as placeholders; instead, use a more informative placeholder.
 
  | [Formatting placeholders](https://developers.google.com/style/placeholders) |
@@ -984,16 +985,16 @@ In general, don't use a single _x_ or a series of _x_'s as placeholders; instead
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Avoid repeating the exact page title as a heading on the page.
 
  | [Headings and titles](https://developers.google.com/style/headings) |
-| 
+|
 
 Expanded guidance about _runtime_ and _run time_.
 
  | [Word list](https://developers.google.com/style/word-list) |
-| 
+|
 
 Added _.adoc_ and _.md_ to the list of examples of filename extensions.
 
@@ -1003,13 +1004,13 @@ Added _.adoc_ and _.md_ to the list of examples of filename extensions.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Clarified guidance about video formats.
 
 The main reason to avoid using animated GIF is that it's resource-inefficient.
 
  | [Figures and other images](https://developers.google.com/style/images) |
-| 
+|
 
 Clarified guidance about changing an existing custom anchor for a heading.
 
@@ -1019,11 +1020,11 @@ Clarified guidance about changing an existing custom anchor for a heading.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 For animations and videos, use a compressed format (such as MP4), not animated GIF.
 
  | [Figures and other images](https://developers.google.com/style/images) |
-| 
+|
 
 Don't use _email_ as a verb.
 
@@ -1034,39 +1035,39 @@ Don't use _email_ as a verb.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added headings to make guidance about using simple and unambiguous language easier to find.
 
  | [Writing for a global audience](https://developers.google.com/style/translation#clear-language) |
-| 
+|
 
 Expanded guidance about demonstrative pronouns.
 
  | [Ambiguous pronoun references](https://developers.google.com/style/pronouns#ambiguous-pronoun-references) |
-| 
+|
 
 Clarified guidance about when to use code format for URLs.
 
  | [Code in text](https://developers.google.com/style/code-in-text) |
-| 
+|
 
 Refreshed guidance about optimizing for search (SEO).
 
- | [Text for images](https://developers.google.com/style/images#text-associated-with-images),  
-[Link text](https://developers.google.com/style/link-text),  
-[Filenames](https://developers.google.com/style/filenames),  
+ | [Text for images](https://developers.google.com/style/images#text-associated-with-images),
+[Link text](https://developers.google.com/style/link-text),
+[Filenames](https://developers.google.com/style/filenames),
 [Headings](https://developers.google.com/style/headings) |
 
 ## November 30, 2021
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added examples and clarified guidance recommending use of optional pronouns and other helper words.
 
- | [Optional pronouns](https://developers.google.com/style/pronouns#optional-pronouns),  
+ | [Optional pronouns](https://developers.google.com/style/pronouns#optional-pronouns),
 [Writing for a global audience](https://developers.google.com/style/translation#write-short,-clear,-and-precise-sentences) |
-| 
+|
 
 Added guidance for linking to a section of another page.
 
@@ -1077,22 +1078,22 @@ Added guidance for linking to a section of another page.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added guidance about expanding shortened words and symbols.
 
  | [Abbreviations](https://developers.google.com/style/abbreviations#dont-use) |
-| 
+|
 
 Expanded guidance about the order of information in complex procedures, including the recommended order for goals, results, and justifications for steps.
 
  | [Procedures](https://developers.google.com/style/procedures#order-of-information-in-complex-steps) |
-| 
+|
 
 Added guidance about including a description of default behaviors in API reference documents.
 
  | [API reference code comments](https://developers.google.com/style/api-reference-comments#parameters) |
 | Reinforced guidance about including words like _file_ after items in code font, such as filenames. | [Filenames](https://developers.google.com/style/filenames) |
-| 
+|
 
 Added guidance about using alternatives to directional terms such as _above_ and _below_ when referring to location in a document.
 
@@ -1103,11 +1104,11 @@ Added guidance about using alternatives to directional terms such as _above_ and
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Simplified placeholder examples and clarified when to repeat an explanation for a placeholder.
 
  | [Formatting placeholders](https://developers.google.com/style/placeholders#explaining-placeholders) |
-| 
+|
 
 Added guidance on using brackets and dots (`[...]`) to indicate omitted output in an example.
 
@@ -1117,21 +1118,21 @@ Added guidance on using brackets and dots (`[...]`) to indicate omitted output i
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added page about philosophy and principles of the style guide.
 
  | [Philosophy of this style guide](https://developers.google.com/style/philosophy) |
-| 
+|
 
 Clarified recommendation to include a noun after a code element and to avoid inflecting code elements.
 
  | [Code in text](https://developers.google.com/style/code-in-text) |
-| 
+|
 
 Added guidance to not use numbers in headings to indicate a sequence of sections.
 
  | [Headings and titles](https://developers.google.com/style/headings) |
-| 
+|
 
 Updated examples for verb forms in headings and titles, including special cases such as _Pricing_ and _Billing_.
 
@@ -1141,16 +1142,16 @@ Updated examples for verb forms in headings and titles, including special cases 
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Clarified guidance about specifying the context for a task.
 
  | [Procedures](https://developers.google.com/style/procedures) |
-| 
+|
 
 Avoid using _run the following command_ to introduce code. Instead, focus on what the command does.
 
  | [Procedures](https://developers.google.com/style/procedures) |
-| 
+|
 
 Expanded the guidance for _CLI_.
 
@@ -1161,16 +1162,16 @@ Expanded the guidance for _CLI_.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Avoid words and phrases that anchor the documentation to a point in time or assume knowledge of prior or future products and features.
 
  | [Timeless documentation](https://developers.google.com/style/timeless-documentation) |
-| 
+|
 
 Added _navigation menu_ to the list of UI terms.
 
  | [UI elements and interaction](https://developers.google.com/style/ui-elements) |
-| 
+|
 
 Marked _slice and dice_ as _don't use_.
 
@@ -1181,7 +1182,7 @@ Marked _slice and dice_ as _don't use_.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Introduce a list of placeholders with the phrase _This output includes the following values:_
 
 The old guidance for what introductory phrase to use wasn't a complete sentence.
@@ -1192,7 +1193,7 @@ The old guidance for what introductory phrase to use wasn't a complete sentence.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added guidance for heading and title phrasing.
 
 Many writers ask what verb forms to use in headings and titles. The new guidance helps writers make that decision more easily, and it improves consistency for translators and readers.
@@ -1203,7 +1204,7 @@ Many writers ask what verb forms to use in headings and titles. The new guidance
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 When you need an example project name, create a name that's meaningful or descriptive.
 
  | [Example domains and names](https://developers.google.com/style/examples) |
@@ -1219,7 +1220,7 @@ When you need an example project name, create a name that's meaningful or descri
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Added guidance about whether to include an abbreviation if it is used only once in the document.
 
  | [Abbreviations](https://developers.google.com/style/abbreviations) |
@@ -1229,7 +1230,7 @@ Added guidance about whether to include an abbreviation if it is used only once 
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Don't refer to casing styles by names like _camel case_ or _snake case_.
 
  | [Capitalization](https://developers.google.com/style/capitalization#special-capitalization-style-names) |
@@ -1238,7 +1239,7 @@ Don't refer to casing styles by names like _camel case_ or _snake case_.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 In the first sentence of each procedural step, include an imperative verb.
 
  | [Procedures](https://developers.google.com/style/procedures) |
@@ -1248,7 +1249,7 @@ In the first sentence of each procedural step, include an imperative verb.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 New word list entries: _can_, _might_, _must_
 
 A writer asked us to clarify our guidance for these terms.
@@ -1259,7 +1260,7 @@ A writer asked us to clarify our guidance for these terms.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Updated guidance on fictitious person names, and added a list of specific given names to use in examples.
 
 Many writers have asked for a list of recommended names to use.
@@ -1270,7 +1271,7 @@ Many writers have asked for a list of recommended names to use.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Don't use UI element labels as if they were English verbs or nouns.
 
  | [UI elements and interaction](https://developers.google.com/style/ui-elements#referring-to-ui) |
@@ -1279,35 +1280,35 @@ Don't use UI element labels as if they were English verbs or nouns.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Clarified phrasing of guidance about avoiding using the same link text for different target pages.
 
  | [Link text](https://developers.google.com/style/link-text) |
-| 
+|
 
 Added guidance about what to do when link text includes a command or other code-font element.
 
  | [Link text](https://developers.google.com/style/link-text) |
-| 
+|
 
 Try to keep the main subject and verb as close to the beginning of a sentence as possible.
 
  | [Writing for a global audience](https://developers.google.com/style/translation) |
-| 
+|
 
 Updated guidance about using a hyphen to indicate a range of numbers.
 
 For example, we now recommend using an ordinary hyphen rather than a nonbreaking hyphen, for ease of authoring.
 
  | [Hyphens](https://developers.google.com/style/hyphens) |
-| 
+|
 
 Removed the word list entry for _AJAX_.
 
 The entry was outdated, and Wikipedia covers the term better.
 
  | [Word list](https://developers.google.com/style/word-list) |
-| 
+|
 
 New word list entries: _webmaster_, _white label_
 
@@ -1319,13 +1320,13 @@ Use more specific terms.
 
 | New guidance or change | Page |
 | --- | --- |
-| 
+|
 Don't put a link in a heading.
 
 A link in a heading is easy for a reader to miss.
 
  | [Headings and titles](https://developers.google.com/style/headings#formatting-a-heading-or-title) |
-| 
+|
 
 Clarified and reorganized the material about which preposition to use with each UI element.
 

@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Tables
@@ -39,13 +40,13 @@ Example of a table with some cells that contain more than one paragraph:
 
 | Attribute name | Type | Description |
 | --- | --- | --- |
-| `href` | HTML | 
+| `href` | HTML |
 Defines the URL for a link.
 
 For example, go to the `<a href="https://www.google.com">Google Search</a>` page.
 
  |
-| `src` | HTML | 
+| `src` | HTML |
 
 Defines the path of the image to be displayed.
 
@@ -79,10 +80,12 @@ Your site's CSS determines the styling and placement of the caption.
 
 Recommended:
 
+```
 <table>
   <caption><b>Table 1.</b> Prehistoric birds</caption>
   ...
 </table>
+```
 
 ## Table formatting
 

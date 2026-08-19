@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Diagrams, figures, and other images
@@ -27,11 +28,11 @@ Consider the following guidelines for images:
 -   Be consistent for a given document or doc set in what operating system you use for screenshots—for example, take all screenshots on macOS or on Linux. Similarly, be consistent in how your screenshots look. If you take screenshots that include drop shadows of the main window, make sure that similar screenshots are consistent.
 -   Crop screenshots to show the relevant information. For example, don't include the full window if you just want to show a single button or menu item. Cropping helps the reader focus on the information that you want to convey in the screenshot, and it can help future-proof the screenshot if other parts of the UI change.
 -   Don't include personally identifying information (PII) in screenshots.
-    
+
     If a source screenshot includes PII, hide it with a solid-color overlay with 100% opacity. Don't rely on blurs, mosaic effects, or similar image-processing effects to obscure PII; such effects can be reversed to reveal the original information.
-    
+
     If you're exporting an image to a format that can include information on separate layers (for example, PDF or TIFF), flatten the image on export.
-    
+
 -   Don't use image maps. Instead, provide a list of text references following the image. Reasons to avoid image maps include the following:
 
 -   Image maps are problematic for accessibility.
@@ -62,6 +63,7 @@ In figure 1, the ecommerce application's capabilities are separated into bounded
 
 ### HTML
 
+```
       <p>The following diagram shows how you can apply bounded contexts to an existing ecommerce application:</p>
 <figure id="bounded">
   <img src="https://cloud.google.com/architecture/images/microservices-architecture-refactoring-monoliths-bounded-contexts.svg"
@@ -90,14 +92,16 @@ bounded contexts and migrated to services as follows:</p>
   </li>
   </ul>
 </div>
+```
 
 ### Markdown
 
+```
 The following diagram shows how you can apply bounded contexts to an existing ecommerce application:
 
-!\[Bounded contexts are applied to an application.\](https://cloud.google.com/architecture/images/microservices-architecture-refactoring-monoliths-bounded-contexts.svg)
+![Bounded contexts are applied to an application.](https://cloud.google.com/architecture/images/microservices-architecture-refactoring-monoliths-bounded-contexts.svg)
 
-\*\*Figure 1.\*\* Application capabilities are separated into bounded contexts that migrate to services.
+**Figure 1.** Application capabilities are separated into bounded contexts that migrate to services.
 
 In figure 1, the ecommerce application's capabilities are separated into bounded contexts and
 migrated to services as follows:
@@ -112,6 +116,7 @@ migrated to services as follows:
 
     -   The consumer, sellers, and third-party capabilities are bound together and migrate to the
         account service.
+```
 
 ### Alt text
 
@@ -136,11 +141,11 @@ Consider the following when writing alt text:
 -   Introduce diagrams in the text, not in the alt text.
 -   Don't use figure captions to replace alt text.
 -   Use full sentences or a noun phrase.
-    
+
     Recommended: `alt="Architecture of an app that's built with Apps Script."`
-    
+
     Recommended: `alt="A card message."`
-    
+
 -   Write short, descriptive alt text in 155 characters or less.
 -   If the image presents more useful information than you can fit in the 155 character limit, include a brief summary of the image in the `alt`attribute and also include a more extensive description of the image in the text.
 -   Alt text should consider the context of the image, not just its content.
@@ -152,17 +157,17 @@ _Figure captions_ are concise and comprehensive summaries of a figure or image. 
 Consider the following when writing figure captions:
 
 -   Figure numbers are optional. If you use figure numbers, use the form "<b>Figure NUMBER.</b> DESCRIPTION."
-    
+
     Recommended: **Figure 1**. Application capabilities are separated into bounded contexts that migrate to services.
-    
+
     Recommended: Application capabilities are separated into bounded contexts that migrate to services.
-    
+
     Not recommended: Bounded contexts
-    
+
 -   We recommend using complete sentences in figure captions.
 -   Always use end punctuation for captions.
 -   When you refer to a figure, don't use spatial descriptions such as "the image above."
-    
+
     -   If you used figure numbers, consistently refer to the figure by number. For example: "... as shown in figure 1." Don't capitalize the word _figure_ in a reference to a figure, except at the start of a sentence.
     -   If you can't use figure numbers, show the figure again, for accessibility and user experience reasons.
 -   Don't include the figure caption in a sentence referencing the figure.
@@ -189,7 +194,7 @@ When you must include text in figures and images, use the following guidelines:
 -   Use sentence case. Follow guidelines for [capitalization for titles and headings](https://developers.google.com/style/capitalization#capitalization-in-titles-and-headings_1).
 -   Use numbered callouts in figures to help you write a figure description, but don't use callouts for detailed annotations in the image.
 -   Use full trademarked product names.
-    
+
 
 ### Accessibility resources
 
@@ -211,10 +216,12 @@ If a web browser supports the `srcset` attribute, it selects an image from the s
 
 For example, to provide both a standard resolution image and a double-resolution image, add a `srcset` attribute and specify both `1x` and `2x` image assets:
 
+```
 <img src="/assets/images/skateboard.png"
-  **srcset="/assets/images/skateboard.png 1x,
-  /assets/images/skateboard\_2x.png 2x"**
+  srcset="/assets/images/skateboard.png 1x,
+  /assets/images/skateboard_2x.png 2x"
   width="375" alt="" />
+```
 
 -   The `width` attribute matches the CSS pixel size used for the page dimensions. (The height is automatically calculated based on the width and the image's proportions; _don't_ state it explicitly.)
 -   Set the `src` attribute to point to the standard-resolution (`1x`) image, _not_ the `2x` version. (Almost everyone who has a high-resolution screen also has a modern browser that can recognize the `srcset` attribute. The `src` attribute is mainly used by older browsers on low-resolution devices, which should download the smaller, low-resolution image.) Even if your original image is the higher-resolution image, set the `src` attribute to use the standard-resolution version; don't force a reader using a low-resolution screen to download a graphic that's higher-resolution than they can view.
@@ -236,7 +243,7 @@ Consider the following guidelines for adding images to pages:
 -   Don't make your image too small. It's fine for an image to take up the full width of a page.
 -   Consider how the image will look when printed out.
 -   In general, don't use an image that's wider than the column it appears in. On [developer.android.com](https://d.android.com), for example, the main-body column is 856px wide, so use images that are no wider than that. In that context, the high-resolution 2x version of the image should be no wider than 1712px.
-    
+
     -   Screenshots at full resolution often take up too much space on the page, so you may have to resize them.
     -   If the graphics were created by someone else (for example, a designer on the team you're supporting), it may be fairly trivial for them to provide you with images at the appropriate size. If the images they provide are wider than 856px, ask the designer if they can provide the relevant graphics as 856px/1712px pairs.
 -   Don't link to the figure from within the same page unless it's a very long page and you're linking to it from quite far away on the page.

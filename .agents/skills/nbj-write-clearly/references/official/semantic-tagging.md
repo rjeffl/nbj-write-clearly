@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # HTML and semantic tagging
@@ -21,6 +22,6 @@ In particular, follow these guidelines:
 -   Don't use frames or tables for layout; instead, use your site's CSS to lay out the page.
 -   Don't use the heading elements (such as `h1` and `h2`) to visually style text; instead, use those elements only for hierarchically structured headings, and use CSS for visual style.
 -   The [`em` element](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element) indicates emphasis, not italics as such. Don't use it to italicize something that isn't meant to be emphasized; instead, use the [`i` element](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-i-element) for non-emphasis italics.
-    
+
 -   The [`strong` element](https://html.spec.whatwg.org/multipage/semantics.html#the-strong-element) indicates strong importance, not bold as such. To bold a word that doesn't merit strong importance, use the [`b` element](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element).
 -   The [`br` element](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-br-element) is intended "only for line breaks that are actually part of the content, as in poems or addresses." Don't use it to adjust the spacing between lines. Instead, use elements like `p` to semantically mark the text, and use CSS to adjust line spacing.

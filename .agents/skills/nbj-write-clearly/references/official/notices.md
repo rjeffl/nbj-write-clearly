@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Notes, cautions, warnings, and other notices
@@ -52,8 +53,10 @@ Use whatever visual presentation for notices is standard for your site.
 
 If you're writing in HTML and your site doesn't specify what HTML to use for notices, we recommend using HTML code similar to the following example:
 
+```
 <aside class="note"><b>Note:</b> All VPC networks include firewall
 rules.</aside>
+```
 
 **Note**: All VPC networks include firewall rules.
 

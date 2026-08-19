@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Word list
@@ -1387,13 +1388,13 @@ Use with caution. Never use in conjunction with _slave_. Where possible, replace
 | Guidance | Recommended | Not recommended |
 | --- | --- | --- |
 | Don't use _master_ in conjunction with _slave_ in any context. | Cloud SQL primary/replica | Cloud SQL master/slave |
-| Avoid using _master_ where possible. | 
+| Avoid using _master_ where possible. |
 -   GKE control plane
 -   Jenkins controller
 -   root key (in security)
 -   primary key (in databases)
 
- | 
+ |
 
 -   GKE master plane
 -   Jenkins master

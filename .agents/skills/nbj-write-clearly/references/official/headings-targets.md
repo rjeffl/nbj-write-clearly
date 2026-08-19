@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Make headings into link targets
@@ -22,54 +23,79 @@ In some content management systems, anchors are automatically created for headin
 
 To add an anchor to a heading in HTML, add a `section` element with an `id` attribute, or use an `a` element with a `name` attribute. For anchor text, use lowercase letters, and put hyphens between words. In the following, replace `ID_OF_ANCHOR` with your anchor text—for example, `introduction-to-everything`.
 
-    <section id="ID\_OF\_ANCHOR"></section>
-  
+```
+    <section id="ID_OF_ANCHOR"></section>
+
+```
+
 
 Recommended:
 
+```
   <section id="introduction-to-everything">
   <h2>Introduction to everything</h2>
   ...
   </section>
-  
+
+```
+
 
 Recommended:
 
+```
   <h2><a name="introduction-to-everything">Introduction to everything</a></h2>
-  
+
+```
+
 
 Recommended:
 
+```
   <a name="introduction-to-everything"></a>
   <h2>Introduction to everything</h2>
-  
+
+```
+
 
 Acceptable:
 
+```
   <h2 id="introduction-to-everything">Introduction to everything</h2>
-  
+
+```
+
 
 ### Markdown
 
 To add an anchor to a heading in Markdown, add the following code to the end of the line that the heading is on. For anchor text, use lowercase letters, and put hyphens between words. In the following, replace `ID_OF_ANCHOR` with your anchor text—for example, `conserve-habitat`.
 
-{: #ID\_OF\_ANCHOR }
+```
+{: #ID_OF_ANCHOR }
+```
 
 Recommended:
 
-\## Help conserve habitat for pollinators {: #help-conserve-habitat-for-pollinators }
+```
+## Help conserve habitat for pollinators {: #help-conserve-habitat-for-pollinators }
+```
 
 Also recommended:
 
-\## Help conserve habitat for pollinators {: #conserve-habitat }
+```
+## Help conserve habitat for pollinators {: #conserve-habitat }
+```
 
 Acceptable:
 
-\## Help conserve habitat for pollinators {: id='conserve-habitat' }
+```
+## Help conserve habitat for pollinators {: id='conserve-habitat' }
+```
 
 Acceptable:
 
-\## Help conserve habitat for pollinators {: id="conserve-habitat" }
+```
+## Help conserve habitat for pollinators {: id="conserve-habitat" }
+```
 
 ## Revise a heading
 
@@ -79,13 +105,17 @@ To create the custom anchor, use the older ID string for the heading. You can fi
 
 ### HTML
 
+```
 <section id="introduction-to-some-things">
 <h2>Introduction to everything</h2>
 ...
 </section>
+```
 
 ### Markdown
 
-\## Introduction to everything {: #introduction-to-some-things }
+```
+## Introduction to everything {: #introduction-to-some-things }
+```
 
 If you need to change an existing custom anchor, you should check your content management system to update any links that use the old anchor. Inbound links that use the old anchor still reach the page but not the specific section or heading.

@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Mathematical notation
@@ -22,7 +23,7 @@ In general, use HTML entities for mathematical symbols instead of keyboard symbo
 | --- | --- | --- |
 | + | Use the keyboard symbol. | Plus sign |
 | − | `&minus;` | Minus sign |
-| × | `&times;` | 
+| × | `&times;` |
 Multiplication sign
 
 Alternatively, you can use the dot operator `∙` (`&#8729;`) or asterisk operator `*` (`&#42;`) to match the UI. Don't use an asterisk (`*`) to indicate multiplication in text.

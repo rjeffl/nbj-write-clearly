@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Format examples
@@ -12,14 +13,14 @@ To introduce an example in a sentence, use the guidance in the following table. 
 
 | Guidance | Recommended | Not recommended |
 | --- | --- | --- |
-| Introduce a short-to-medium-length example at the end of a sentence. For clarity, consider setting off the example using a comma, parentheses, or an em dash as appropriate. Avoid using a semicolon for this purpose. | 
+| Introduce a short-to-medium-length example at the end of a sentence. For clarity, consider setting off the example using a comma, parentheses, or an em dash as appropriate. Avoid using a semicolon for this purpose. |
 Choose a strong encryption algorithm, such as AES-256.
 
 You can monitor various metrics for your managed database instances—for example, CPU utilization, storage capacity, and active connections.
 
 The API supports common image formats like PNG and JPEG.
 
- | 
+ |
 
 Enter a name for the instance, for example, `my-instance-99`.
 
@@ -28,7 +29,7 @@ Specify the region for deployment; for example, `us-central1`.
 Enter a name for the instance (for example, `my-instance-99`).
 
  |
-| Introduce a short example in the middle of a sentence. Keep the example in the middle of a sentence relatively short and consider setting it off with dashes, commas, or parentheses as appropriate. | 
+| Introduce a short example in the middle of a sentence. Keep the example in the middle of a sentence relatively short and consider setting it off with dashes, commas, or parentheses as appropriate. |
 
 Enter a six-digit hex number (for example, `228B22`), and then click **OK**.
 

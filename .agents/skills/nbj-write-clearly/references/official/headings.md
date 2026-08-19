@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Headings and titles
@@ -16,20 +17,20 @@ Write document titles based on the primary purpose of the document. If a documen
 
 | Guidance | Recommended | Not recommended |
 | --- | --- | --- |
-| 
+|
 For a task-based heading, start with a [_bare infinitive_](https://wikipedia.org/wiki/Infinitive#English), also known as a _plain form_ or [_base form_](https://wikipedia.org/wiki/English_verbs#Base_form) verb. In English, the _imperative mood_ also uses the base form verb, so it looks the same as the bare infinitive.
 
 Task-based headings are frequently used in quickstarts, how-to documents, and tutorials.
 
  | Create an instance | Creating an instance |
-| 
+|
 
 For a conceptual or non-task-based heading, use a [_noun phrase_](https://wikipedia.org/wiki/Noun_phrase) that doesn't start with an _\-ing_ verb.
 
 Noun-phrase headings are frequently used in concept documentation.
 
  | Migration to Google Cloud | Migrating to Google Cloud |
-| 
+|
 
 If a section is not required for all users or scenarios, use the _Optional:_ prefix in the heading. This prefix signals when the section information applies only to a specific configuration or use case.
 
@@ -74,6 +75,7 @@ Recommended:
 
 ### HTML
 
+```
 <h1>Log serving requests by using AI Platform Prediction</h1>
 
 <p>This task-based document shows how to monitor machine learning models. The
@@ -88,10 +90,12 @@ a noun phrase.</p>
 
 <p>This task-based section provides a series of steps to set variables in a
 notebook. Its title starts with a bare infinitive.</p>
+```
 
 ### Markdown
 
-\# Log serving requests by using AI Platform Prediction
+```
+# Log serving requests by using AI Platform Prediction
 
 This task-based document shows how to monitor machine learning models. The
 document title starts with a bare infinitive.
@@ -105,6 +109,7 @@ a noun phrase.
 
 This task-based section provides a series of steps to set variables in a
 notebook. Its title starts with a bare infinitive.
+```
 
 ## Heading and title format
 
@@ -127,80 +132,96 @@ The following sections list and define our writing standards for capitalization,
 -   **Don't use heading tags to change visual formatting**. Use CSS rather than a heading level that doesn't fit the hierarchy. Don't make up your own formatting for headings.
 -   **Apply proper heading tags**. Use heading tags to structure your content hierarchically—for example, `<h1>`, `<h2>`, and `<h3>` in HTML, or `#`, `##`, and `###` in Markdown.
 -   **Maintain logical order**. Don't skip levels of the heading hierarchy. For example, put an `<h3>` tag only under an `<h2>` tag.
-    
+
     Recommended:
-    
+
     ### HTML
-    
-    <h1>Transfer data sets</h1>
-    
-    <p>This document provides a high-level overview of ways to transfer your data to Google
-    Cloud.</p>
-    
-    <h2>Estimate costs</h2>
-    
+
+```
+<h1>Transfer data sets</h1>
+
+<p>This document provides a high-level overview of ways to transfer your data to Google
+Cloud.</p>
+
+<h2>Estimate costs</h2>
+```
+
     ### Markdown
-    
-    \# Transfer data sets
-    
-    This document provides a high-level overview of ways to transfer your data to Google Cloud.
-    
-    ## Estimate costs
-    
+
+```
+# Transfer data sets
+
+This document provides a high-level overview of ways to transfer your data to Google Cloud.
+
+## Estimate costs
+```
+
     Not recommended:
-    
+
     ### HTML
-    
-    <h1>Transfer data sets</h1>
-    
-    <p>This document provides a high-level overview of ways to transfer your data to Google
-    Cloud.</p>
-    
-    <h3>Estimate costs</h3>
-    
+
+```
+<h1>Transfer data sets</h1>
+
+<p>This document provides a high-level overview of ways to transfer your data to Google
+Cloud.</p>
+
+<h3>Estimate costs</h3>
+```
+
     ### Markdown
-    
-    \# Transfer data sets
-    
-    This document provides a high-level overview of ways to transfer your data to Google Cloud.
-    
-    ### Estimate costs
-    
+
+```
+# Transfer data sets
+
+This document provides a high-level overview of ways to transfer your data to Google Cloud.
+
+### Estimate costs
+```
+
 -   **Don't use empty headings**. Make sure headings are followed by content.
-    
+
     Recommended:
-    
+
     ### HTML
-    
-    <h2>Migrate VMs to Compute Engine</h2>
-    
-    <p>Migration is not just a single step. The following sections describe the recommended
-    steps.</p>
-    
-    <h3>Design the migration</h3>
-    
+
+```
+<h2>Migrate VMs to Compute Engine</h2>
+
+<p>Migration is not just a single step. The following sections describe the recommended
+steps.</p>
+
+<h3>Design the migration</h3>
+```
+
     ### Markdown
-    
-    \## Migrate VMs to Compute Engine
-    
-    Migration is not just a single step. The following sections describe the recommended steps.
-    
-    ### Design the migration
-    
+
+```
+## Migrate VMs to Compute Engine
+
+Migration is not just a single step. The following sections describe the recommended steps.
+
+### Design the migration
+```
+
     Not recommended:
-    
+
     ### HTML
-    
-    <h2>Migrate VMs to Compute Engine</h2>
-    
-    <h3>Design the migration</h3>
-    
+
+```
+<h2>Migrate VMs to Compute Engine</h2>
+
+<h3>Design the migration</h3>
+```
+
     ### Markdown
-    
-    \## Migrate VMs to Compute Engine
-    
-    ### Design the migration
-    
+
+```
+## Migrate VMs to Compute Engine
+
+### Design the migration
+```
+
 
 ## Refer to a group of sections
 
@@ -210,6 +231,7 @@ Recommended:
 
 ### HTML
 
+```
 <h2>Views in the data preparation editor</h2>
 
 <p>The following sections describe the views in the data preparation editor.</p>
@@ -225,10 +247,12 @@ Recommended:
 <h3>Schema view</h3>
 
 <p>...</p>
+```
 
 ### Markdown
 
-\## Views in the data preparation editor
+```
+## Views in the data preparation editor
 
 The following sections describe the views in the data preparation editor.
 
@@ -243,3 +267,4 @@ The following sections describe the views in the data preparation editor.
 ### Schema view
 
 ...
+```

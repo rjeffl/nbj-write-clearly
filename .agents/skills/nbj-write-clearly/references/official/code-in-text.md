@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Code in text
@@ -35,27 +36,25 @@ The following table includes items that should be in code font, but it's not an 
 
 | Item | Recommended |
 | --- | --- |
-| Attribute names and values | 
+| Attribute names and values |
 The `imageURL` attribute contains the path for the image file that you can open in a browser—for example, `https://www.example.com/images/product.jpg`.
 
 You can create a VM instance using the `e2-highcpu-16` machine type in the `us-central1-a` region.
 
  |
 | Class names | The `SnapshotDiskOperator` class includes the `generate_snapshot_name` method. |
-| Command output | 
+| Command output |
 
 The output is similar to the following:
 
-        Found sysprep-specialize-script-ps1 in metadata.
-        ...
-        Finished running specialize scripts.
+        `Found sysprep-specialize-script-ps1 in metadata. ... Finished running specialize scripts.`
          |
 | [Command-line utility names](#tool-names), such as `gcloud`, `gsutil`, `kubectl`, and `bq` | You can use the `kubectl` tool to define a network policy. |
 | Data types | Nested data is represented as a `STRUCT` type. |
 | Database elements (such as row and column names) | The query extracts the `month`, `julianday`, and `dayofweek` values from the `datetime` and `timestamp` columns. |
 | Defined (constant) values for an element or attribute | The constant `city` has the value `"San Francisco"`. |
 | [DNS record types](https://wikipedia.org/wiki/List_of_DNS_record_types) | Create a DNS `AAAA` record in your public DNS zone that points to the IP address of the load balancer. |
-| Element names (HTML and XML) | 
+| Element names (HTML and XML) |
 
 The `script` and `df-messenger` HTML elements should be in the `body` element of your page.
 
@@ -71,14 +70,14 @@ When you refer to an element name, don't put angle brackets (`<>`) around the el
 | [HTTP content-type](https://www.w3.org/Protocols/rfc1341/4_Content-Type.html) values | The value of the `Content-Type` header value is required and must be set to `application/fhir+json` as defined in the FHIR specification. |
 | [HTTP status codes](#statuscodes) | The HTTP `500 Internal Server Error` status code indicates that the server encountered an unexpected condition that prevented it from fulfilling the request. |
 | HTTP verbs | To specify image content directly using a local image file, you can use a `POST` request. |
-| IAM role names | 
+| IAM role names |
 
 Grant the new service account the `roles/cloudfunctions.invoker` IAM role for the `trace` function.
 
  |
 | IP addresses | The other nodes of the cluster should contact this host on IP address `10.10.10.10.` |
 | Language keywords | The SQL statement contains the dataset table name after the `FROM` keyword in the format of `PROJECT_NAME.DATASET.TABLE_NAME`. |
-| [Method and function names](#methods) | 
+| [Method and function names](#methods) |
 
 The `ST_GEOPOINT` function uses the longitude and latitude of the Colosseum in Rome.
 
@@ -90,11 +89,11 @@ To fetch the status of the job, call the `get_job_status` method.
 | Package names | The Beautiful Soup library for parsing web pages is distributed as the `beautifulsoup4` package. |
 | Port numbers | Each member Pod must have a container that's listening on TCP port `50000`. |
 | Query parameter names and values | If you want to return all contents under a directory, use the `recursive=true` query parameter with your request. |
-| 
+|
 
 Strings (such as URLs or domain names) that are used in commands and code
 
- | 
+ |
 
 In IAM, a condition can specify a page that only Human Resources admins can access—for example, `https://hr.example.com`.
 
@@ -102,7 +101,7 @@ The `logID` field includes the domain `corpaudits.example.com`.
 
  |
 | Text input | In the **Key name** field, enter `config-management`. |
-| [UI elements](https://developers.google.com/style/ui-elements) that are rendered based on previously entered text (such as a server or instance name) | 
+| [UI elements](https://developers.google.com/style/ui-elements) that are rendered based on previously entered text (such as a server or instance name) |
 
 From the **Server name** list, select **`my-sql-cluster1`**.
 
@@ -122,7 +121,7 @@ The following table includes items that should not be in code font, but it's not
 | --- | --- |
 | Domain names | The test environment is designed only for standard application offerings from example.com. |
 | Names of products, services, and organizations | Example Organization has current and former employees who use Google products such as Google Docs and Google Sheets. |
-| URLs that the reader is supposed to follow in a browser | 
+| URLs that the reader is supposed to follow in a browser |
 You can find support at https://support.example.com.
 
 It's usually best to format a URL as a link and use descriptive link text instead of exposing the URL itself. For more information, see [Avoid URLs as link text](https://developers.google.com/style/cross-references#urls).
@@ -142,28 +141,28 @@ Recommended: In the **Query results** pane, the **`Store`** column is displayed.
 The following list includes items that are sometimes in code font, but it's not an exhaustive list.
 
 -   **Boolean values**. If you refer directly to a Boolean data type value (such as `true` or `false`, or `1` or `0`), then format the value as code. If you refer to the evaluation of a Boolean condition as true or false, then refer to the evaluation in non-code font.
-    
+
     Recommended:
-    
+
     -   If the update succeeds, returns `true`.
     -   `enableCertificateValidation`: If true, validates the SSL certificate before proceeding. If false, trusts the certificate without validating it.
-    
+
 -   **Command-line utility names**. Often, command-line utility names are spelled the same as the software project or product with which they are associated, with only differences in capitalization. In such cases, use code font for the command and ordinary font for the name of the project or product.
-    
+
     Recommended:
-    
+
     -   Invoke the GCC 8.3 compiler using `gcc` for C programs or `g++` for C++ programs.
     -   To send the file over FTP with IPv6, use `ftp -6`.
     -   The options for the `curl` command are explained on the curl project website.
     -   The `apt` program includes commands from the `apt-get` and `apt-cache` programs for working with APT packages.
-    
+
 -   **Email addresses as input or output**. If you want the reader to use the email address as computer input or output, use code font. If you want the reader to treat the email address as a way to contact someone or a reference to someone, use non-code font and hyperlink the email address.
-    
+
     Recommended:
-    
+
     -   Enter the username, not the full email address. For example, enter `alex`, not `alex@example.com`.
     -   For help, contact [support@example.com](mailto:support@example.com).
-    
+
 
 ## Method names
 
@@ -202,13 +201,13 @@ In general, don't use code elements such as keywords and filenames as if they we
 | The `ADDRESS` constant's value is defined in the `settings.h` file. | `ADDRESS`'s value is defined in `settings.h`. |
 | To add the data, send a `POST` request. | `POST` the data. |
 | To retrieve the data, send a `GET` request. | Retrieve information by `GET`ting the data. |
-| 
+|
 You can't close the file before opening it.
 
 You can't call the `close` method for a file before you call `open`.
 
  | `Close`ing the file requires you to have `open`ed it first. |
-| 
+|
 
 Takes an array of extended ASCII code points (an array of `INT64` values) and returns `BYTES` values.
 
@@ -216,7 +215,7 @@ For `STRING` arguments, returns the original string with all alphabetic characte
 
  | Takes an array of extended ASCII code points (ARRAY of INT64) and returns BYTES. |
 
-  
+
 
 ## Linking API terms in Android
 
@@ -226,7 +225,9 @@ Link `AndroidManifest.xml` elements and attributes to the API guide pages. Link 
 
 Recommended:
 
+```
 <a href="/guide/topics/manifest/data-element.html">data</a>
+```
 
 Very common classes such as `Activity` and `Intent` don't need to be linked every time. If you use a term as a concept rather than a class, then don't put it in code font and don't capitalize it. Here are some objects that do not always require Javadoc links or capitalization:
 
@@ -250,13 +251,19 @@ Recommended: The user interface for an activity is provided by a hierarchy of vi
 To link to a class or method:
 
 -   To link to a class, use the class name as link text—for example:
-    
-    <a href="/reference/android/widget/TextView">TextView</a>
-    
+
+```
+<a href="/reference/android/widget/TextView">TextView</a>
+```
+
 -   To link to a method, use the method name as a fragment identifier. If you're linking to a static method, also include the class name in the link text. If you need to distinguish between overloaded versions of a particular method, consider showing the full signature—for example:
-    
-    <a href="/reference/android/app/Activity.html#onCreate(android.os.Bundle)">onCreate(Bundle)</a>
-    
+
+```
+<a href="/reference/android/app/Activity.html#onCreate(android.os.Bundle)">onCreate(Bundle)</a>
+```
+
 -   To link the attribute for a particular widget or layout to its Javadoc in the widget or layout's API reference entry, use the URL for the page, and then add the fragment identifier `#attr_android:ATTRIBUTE_NAME`. For example, to link to the XML attribute `android:inputType` for the `TextView` widget, add the following:
-    
-    <a href="/reference/android/widget/TextView.html#attr\_android:inputType>inputType</a>
+
+```
+<a href="/reference/android/widget/TextView.html#attr_android:inputType>inputType</a>
+```

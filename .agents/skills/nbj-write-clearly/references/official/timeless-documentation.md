@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Timeless documentation
@@ -30,9 +31,9 @@ Writing timeless product documentation has the following value:
 The following words and phrases can undermine timelessness in documentation:
 
 -   **Words and phrases that make promises or project plans and strategies**. In the context of describing product or feature capabilities, words and phrases such as _at present_, _as of this writing_, or _eventually_ can prematurely disclose plans for a product or feature, or they can inappropriately imply that a product or feature might change. In those cases, don't use such words and phrases.
-    
+
     For more information, see [Documenting future features](https://developers.google.com/style/future).
-    
+
 -   **Words and phrases that are implied**. At Google, we assume our documentation is current unless a specific release version is specified. Thus, words and phrases such as _currently_ and _as of this writing_ are implied by the existence of the documentation itself.
 -   **Words and phrases that become outdated soon after publication**. Words such as _soon_ and _latest_ quickly become irrelevant.
 -   **Words and phrases that assume prior knowledge of a product or feature**. If you must use words like _new_, give a reference point such as a date or version release number—for example, _The January 14, 2021 release of BigQuery includes a new resource panel._

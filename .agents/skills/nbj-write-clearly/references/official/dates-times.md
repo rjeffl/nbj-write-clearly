@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Dates and times
@@ -17,17 +18,17 @@ In general, use the following guidelines to format expressions of time:
 -   Use the 12-hour clock, except if required to use a 24-hour time, such as when documenting features that use 24-hour time. If the UI, a command, or a code sample uses the 24-hour format, use that format throughout the page for consistency.
 -   Use exact times when possible, but _noon_ and _midnight_ are OK.
 -   Use hyphens in time ranges. Don't add spaces before or after the hyphens.
-    
+
     Recommended: 5-10 minutes ago.
-    
+
 -   Capitalize AM and PM, and leave one space between it and the time.
-    
+
     Recommended: 3:45 PM.
-    
+
 -   Remove the minutes from round hours.
-    
+
     Recommended: 3 PM.
-    
+
 
 ### Express time zones
 

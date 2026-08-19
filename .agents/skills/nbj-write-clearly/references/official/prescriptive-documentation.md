@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Prescriptive documentation
@@ -32,13 +33,13 @@ To clarify what you mean, determine if an action is _required_ versus _optional_
 -   **If an outcome is expected**: describe the outcome in terms of what is expected. For example: "The process returns 10 items."
 -   **If an outcome is possible**: use _might_ or _can_. For example, "The process can take about 30 minutes."
 -   **If a state is actual**: when you're describing the state of something, such as the value of a variable, avoid writing "The value should be true." Instead, clarify which of the following you mean:
-    
+
     -   "You must set the value to true."
     -   "The server sets the value to true."
     -   "If the value is false, follow these steps to change it to true."
-    
+
     For information about clarifying who's performing an action, see [Active voice](https://developers.google.com/style/voice).
-    
+
 
 Recommended: Ensure that the Classroom Share Button conforms to our min-max size guidelines and related color/button templates.
 

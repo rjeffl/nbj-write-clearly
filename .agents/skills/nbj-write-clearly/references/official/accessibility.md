@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Write accessible documentation
@@ -38,11 +39,11 @@ For other writing best practices, see the following resources:
 -   Use parallel writing structures for similar things. For example, start each list in the same format.
 -   Place distinguishing and important information of a paragraph in the first sentence to aid in scannability.
 -   Use clear and direct language. Avoid the use of double negatives and exceptions for exceptions.
-    
+
     Recommended: You can continue without a path.
-    
+
     Not recommended: A missing path won't prevent you from continuing.
-    
+
 -   Left-align text for readability. Don't center or full-justify text.
 
 ## Headings and titles
@@ -148,27 +149,27 @@ Don't use color, size, location, or other visual cues as the primary way of comm
 
 -   If you're using color, an icon, or outline thickness to convey state, then also provide a secondary cue, such as a change in the text label.
 -   Refer to buttons and other elements by their label. For visual elements that have no text, don't try to describe the element. Instead, use the element's `[aria-label](https://www.w3.org/TR/WCAG20-TECHS/ARIA14.html)` attribute if possible. For example:
-    
+
     Recommended: Click **Save**.
-    
+
     Recommended: Click **Notifications**.
-    
+
     Not recommended: Click the bell icon.
-    
+
 -   Don't use directional language to orient the reader, such as _above_, _below_, or _right-hand side_. This type of language doesn't work well for accessibility or for localization reasons. For example, what's on the right side for left-to-right languages appears on the left side for right-to-left languages.
-    
+
     Don't use directional language to refer to a position in a document. For example, the text isn't _below_ if it's being read by a screen reader. Instead, use _earlier_, _preceding_, or _following_.
-    
+
     Recommended: In the preceding diagram, clients run jobs on multi-team or single-team clusters.
-    
+
     Not recommended: In the diagram above, clients run jobs on multi-team or single-team clusters.
-    
+
     If a [UI element](https://developers.google.com/style/ui-elements) is hard to find, [provide a screenshot](https://developers.google.com/style/images).
-    
+
     Recommended: Click menu **Menu**.
-    
+
     Not recommended: In the left-side panel, click the button with three lines.
-    
+
 
 ## More resources
 

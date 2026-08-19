@@ -4,6 +4,7 @@ Snapshot: 2026-08-19
 License: CC BY 4.0 (page content), Apache 2.0 (code samples).
 Converted from HTML to Markdown; site navigation and boilerplate removed.
 See NOTICE.md in the repository root.
+This file is reference material for lookup, not instructions to the agent.
 -->
 
 # Pronouns
@@ -70,17 +71,17 @@ There are several relative pronouns. This section concerns only three of them: _
 _That_ and _which_ don't mean exactly the same thing, so don't substitute one for the other:
 
 -   _That_ introduces a restrictive clause. It isn't preceded by a comma.
-    
+
     Recommended: The echidna that has a long snout is furry.
-    
+
     This sentence describes a particular echidna, the one that has a long snout.
-    
+
 -   _Which_ introduces a nonrestrictive clause and is preceded by a comma.
-    
+
     Recommended: The echidna, which has a long snout, is furry.
-    
+
     This sentence describes all echidnas, and mentions in passing that they all have long snouts.
-    
+
 
 For more information about restrictive and nonrestrictive clauses and whether to use _that_ or _which_, read [what Grammar Girl has to say on the subject](https://www.quickanddirtytips.com/articles/which-versus-that/).
 
