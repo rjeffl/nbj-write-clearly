@@ -43,7 +43,8 @@ if (( skill_lines > 100 )); then
 fi
 
 # references/official/ holds vendored Google pages that may legitimately
-# contain TODO in code samples; sync-official.ts validates them instead.
+# contain TODO in code samples. sync-official.ts validates them for content
+# length and invisible Unicode at write time; the checks below cover the rest.
 if grep -R -n -E '/Users/|TODO|FIXME' \
   --exclude-dir=official \
   "$repo_root/README.md" \
@@ -66,7 +67,25 @@ for file in "$official_dir"/*.md; do
     echo "Missing snapshot header in $file." >&2
     exit 1
   fi
+  # Literal markup examples must sit inside code fences; a bare HTML tag at
+  # line start means the converter leaked an example into the document flow.
+  if ! awk 'BEGIN { fence = 0 }
+    /^ ? ? ?```/ { fence = !fence; next }
+    !fence && /^<[a-zA-Z]/ { print FILENAME ":" FNR ": " $0; bad = 1 }
+    END { exit bad }' "$file"; then
+    echo "Raw HTML outside a code fence in $file." >&2
+    exit 1
+  fi
 done
+
+# Invisible or bidi Unicode anywhere in the skill is an injection vector.
+if ! find "$skill_root" -name '*.md' -print0 | xargs -0 perl -CSD -ne '
+  if (/[\x{200B}-\x{200F}\x{202A}-\x{202E}\x{2060}-\x{2064}\x{FEFF}\x{E0000}-\x{E007F}]/) {
+    print STDERR "Invisible Unicode in $ARGV\n"; $found = 1;
+  }
+  END { exit 1 if $found }'; then
+  exit 1
+fi
 
 if git -C "$repo_root" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   git -C "$repo_root" diff --check
