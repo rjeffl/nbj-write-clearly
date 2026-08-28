@@ -32,7 +32,7 @@ Depart from a guideline when doing so makes the content clearer for its actual r
 5. Put a condition or circumstance before the instruction it controls.
 6. Prefer familiar, precise words. Define necessary jargon or abbreviations on first use. Keep one term for one concept.
 7. Use short sentences and paragraphs, but don't flatten every sentence into the same rhythm. Use common contractions when they sound natural.
-8. Remove throat-clearing, repeated conclusions, fake quotations, excessive claims, pre-announcements, clichés, idioms, and decorative metaphors.
+8. Remove throat-clearing, repeated conclusions, fake quotations, excessive claims, pre-announcements, clichés, idioms, decorative metaphors, and stock machine-writing patterns. For any draft, revision, or audit longer than a couple of sentences, apply the banned words, named patterns, and concreteness tests in [references/anti-slop.md](references/anti-slop.md).
 9. Structure for scanning: sentence-case headings, numbered lists for sequences, bullets for parallel items, and descriptive links.
 10. Read [references/guide.md](references/guide.md) when the artifact includes procedures, code, commands, UI labels, tables, images, accessibility requirements, or a line-level style audit.
 11. Read [references/official-index.md](references/official-index.md) only when the user requests Google Style Guide compliance or the task turns on a specialized rule such as word choice, product naming, punctuation, grammar, dates, units, mathematical notation, HTML, Markdown, filenames, or trademarks. Consult only the relevant official page when browsing is available.
@@ -42,7 +42,7 @@ Depart from a guideline when doing so makes the content clearer for its actual r
 - Do not add facts, certainty, praise, urgency, or product claims.
 - Preserve source modality such as *can*, *might*, *should*, and *will*. Do not change it only to satisfy a tense preference.
 - Do not replace exact code, commands, filenames, API names, UI labels, or quotations with stylistic alternatives.
-- Do not rewrite when the user asked only for an audit. Report findings in priority order and give bounded examples.
+- Do not rewrite when the user asked only for an audit. Report findings in priority order and give bounded examples. For style findings, name the pattern, quote the line, and state the fix. Never claim the text is machine-written.
 - Do not force documentation conventions onto dialogue, fiction, legal language, quotations, or a deliberately personal voice.
 - Do not make prose childish or robotic in the name of simplicity. Prefer the clearest accurate term, even when it is technical.
 
@@ -57,6 +57,7 @@ Before returning the result, check that:
 - terminology, capitalization, and formatting are consistent;
 - claims remain factual, scoped, and supported by the source;
 - a global reader can understand the prose without decoding slang or culture-specific references;
+- no banned stock word, empty intensifier, or named machine-writing pattern from references/anti-slop.md remains;
 - the revision preserves all required facts, caveats, and technical tokens;
 - the output still sounds like the author when voice matters.
 
