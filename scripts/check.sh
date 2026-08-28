@@ -11,6 +11,7 @@ required_files=(
   "$skill_root/SKILL.md"
   "$skill_root/agents/openai.yaml"
   "$skill_root/references/guide.md"
+  "$skill_root/references/anti-slop.md"
   "$skill_root/references/official-index.md"
 )
 
@@ -33,6 +34,11 @@ fi
 
 if ! grep -q 'references/official-index.md' "$skill_root/SKILL.md"; then
   echo "SKILL.md must route specialized guidance to official-index.md." >&2
+  exit 1
+fi
+
+if ! grep -q 'references/anti-slop.md' "$skill_root/SKILL.md"; then
+  echo "SKILL.md must route slop-pattern guidance to anti-slop.md." >&2
   exit 1
 fi
 
