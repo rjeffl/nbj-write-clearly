@@ -12,6 +12,10 @@ The directory `.agents/skills/nbj-write-clearly/references/official/` contains s
 
 This project is unofficial, is not endorsed by Google, and does not use Google's trademarks to imply sponsorship.
 
+## no-ai-slop
+
+The authored reference `.agents/skills/nbj-write-clearly/references/anti-slop.md` adapts the banned-word lists, machine-writing pattern catalog, concreteness tests, and audit report format from [no-ai-slop](https://github.com/petergyang/no-ai-slop) by Peter Yang, reviewed on August 28, 2026. That project is licensed under the MIT License, Copyright (c) 2026 Peter Yang. The material is paraphrased and reorganized for a developer-documentation register; upstream guidance specific to preserving a personal writing voice was intentionally dropped in favor of this skill's existing voice-protection rules.
+
 ## Inspiration
 
 The idea was inspired by [Nate B. Jones (@natebjones)](https://x.com/natebjones) and [his August 17, 2026 post](https://x.com/natebjones/status/2089457435459404093) recommending that agents turn the Google guide into a reusable skill.

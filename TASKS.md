@@ -12,4 +12,5 @@ Non-blocking follow-ups from reviews (2026-08-19).
 - [ ] Cosmetic: Material Icons ligature glyphs concatenate with the following word in a few snapshot prose lines (e.g. `ui-elements.md` "arrow_rightexpander arrow") — strip or space icon ligatures in `sync-official.ts` if it bothers readers.
 - [ ] Optional: add own copyright line for fork modifications alongside the retained upstream MIT line if the fork is published more widely.
 - [ ] Be aware the skill can trigger outbound fetches to developers.google.com for specialized rules ("when browsing is available") — legitimate, hardcoded domain, but visible in permission prompts.
-- [ ] Consider spelling out a lighter-weight path in SKILL.md for short artifacts (one-line commit messages, brief review comments) — the full 11-step workflow and 9-point validation checklist are heavy for those.
+- [ ] Consider spelling out a lighter-weight path in SKILL.md for short artifacts (one-line commit messages, brief review comments) — the full 11-step workflow and validation checklist (10 points as of 2026-08-28) are heavy for those.
+- [ ] `references/anti-slop.md` was adapted 2026-08-28 from petergyang/no-ai-slop upstream main; no sync is planned — revisit only if upstream adds materially new patterns.
