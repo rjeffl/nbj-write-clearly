@@ -13,4 +13,7 @@ Non-blocking follow-ups from reviews (2026-08-19).
 - [ ] Optional: add own copyright line for fork modifications alongside the retained upstream MIT line if the fork is published more widely.
 - [ ] Be aware the skill can trigger outbound fetches to developers.google.com for specialized rules ("when browsing is available") — legitimate, hardcoded domain, but visible in permission prompts.
 - [ ] Consider spelling out a lighter-weight path in SKILL.md for short artifacts (one-line commit messages, brief review comments) — the full 11-step workflow and validation checklist (10 points as of 2026-08-28) are heavy for those.
-- [ ] `references/anti-slop.md` was adapted 2026-08-28 from petergyang/no-ai-slop upstream main; no sync is planned — revisit only if upstream adds materially new patterns.
+- [ ] `references/anti-slop.md` was adapted 2026-08-28 from petergyang/no-ai-slop upstream main; no sync is planned. Revisit only if upstream adds materially new patterns.
+- [ ] From review (2026-08-28): consider two `check.sh` greps guarding the anti-slop attribution (footer present in `references/anti-slop.md`, entry present in `NOTICE.md`), mirroring the snapshot-header check.
+- [ ] From review (2026-08-28): consider reproducing the full MIT permission notice under the no-ai-slop heading in `NOTICE.md`; naming the license and copyright holder is the current middle ground.
+- [ ] From review (2026-08-28): the audit report format is stated in both `SKILL.md` (Protect meaning and voice) and `references/anti-slop.md` (Report format for audits); watch for drift if either changes.

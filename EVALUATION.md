@@ -29,7 +29,7 @@ This was a focused forward test, not a broad benchmark. Both candidates performe
 
 After `references/anti-slop.md` was added (adapted from petergyang/no-ai-slop, MIT), three fresh agent contexts each read `SKILL.md` and followed its workflow on scratch inputs outside the repository:
 
-1. **Revise:** a ~180-word fake README introduction seeded with 16 tagged instances across the catalog (throat-clearing opener, portability-test filler, five banned words, three em dashes, binary contrast, importance puffery, trailing *-ing* analysis, an empty phrase, weasel attribution, colon reveal, negative listing, summary-recap ending, fake-profound kicker), plus four technical tokens that had to survive.
+1. **Revise:** a ~180-word fake README introduction seeded with 16 tagged instances across the catalog: a throat-clearing opener, a portability-test filler sentence (containing one of five banned words), four further banned words, one em-dash cluster (three dashes, counted once), a binary contrast, importance puffery, a trailing *-ing* analysis, an empty phrase, weasel attribution, a colon reveal, a negative listing, a summary-recap ending, and a fake-profound kicker. Four technical tokens had to survive.
 2. **Audit:** the same draft, audit-only.
 3. **Control:** a clean, conforming runbook procedure, to test the stop rule.
 

@@ -42,7 +42,7 @@ Depart from a guideline when doing so makes the content clearer for its actual r
 - Do not add facts, certainty, praise, urgency, or product claims.
 - Preserve source modality such as *can*, *might*, *should*, and *will*. Do not change it only to satisfy a tense preference.
 - Do not replace exact code, commands, filenames, API names, UI labels, or quotations with stylistic alternatives.
-- Do not rewrite when the user asked only for an audit. Report findings in priority order and give bounded examples. For style findings, name the pattern, quote the line, and state the fix. Never claim the text is machine-written.
+- Do not rewrite when the user asked only for an audit. Report findings in priority order and give bounded examples. For style findings, name the pattern, quote the line, and state the fix; describe patterns, not provenance.
 - Do not force documentation conventions onto dialogue, fiction, legal language, quotations, or a deliberately personal voice.
 - Do not make prose childish or robotic in the name of simplicity. Prefer the clearest accurate term, even when it is technical.
 

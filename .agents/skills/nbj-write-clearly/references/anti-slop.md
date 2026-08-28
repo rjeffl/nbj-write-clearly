@@ -1,6 +1,6 @@
 # Machine-writing patterns
 
-Apply this reference to any draft, revision, or audit longer than a couple of sentences. It removes stock words and patterns that read as generated filler. It sits at the same tier as this skill's other authored guidance; for punctuation and formatting mechanics such as dashes, colons, and bold, the rules in [guide.md](guide.md) and the official pages win. Never change a listed word or pattern inside code, commands, quotations, API names, UI labels, or product names.
+Apply this reference to any draft, revision, or audit longer than a couple of sentences. It removes stock words and patterns that read as generated filler. For punctuation and formatting mechanics such as dashes, colons, and bold, defer to [guide.md](guide.md) and the official pages listed in [official-index.md](official-index.md). Never change a listed word or pattern inside code, commands, quotations, API names, UI labels, or product names.
 
 ## Words to cut
 
@@ -29,7 +29,7 @@ Each entry names the pattern, shows its shape, and gives the fix.
 - **Fake-profound kicker.** A closing metaphor or aphorism that restates the point as wisdom. Delete it and end on the last concrete point or next action. Do not write a better metaphor.
 - **Summary-recap ending.** "In conclusion" followed by a restated paragraph. End on the last concrete point, takeaway, or next action. Keep a summary section when the destination requires one.
 - **Formatting slop.** Emoji in headings, bold sprinkled mid-sentence for emphasis, a bullet list that reads better as two sentences of prose, or a heading over a two-sentence section. Bold UI labels required by guide.md are exempt.
-- **Em-dash overuse.** Use no em dashes in short artifacts and at most one or two in a long draft, and only where they beat commas, periods, or parentheses. Format any kept dash per the official dashes page.
+- **Em-dash overuse.** Use no em dashes in short artifacts and at most one or two in a long draft, and only where they beat commas, periods, or parentheses. Format any kept dash per the dashes entry in [official-index.md](official-index.md).
 
 ## Concreteness tests
 
@@ -42,4 +42,4 @@ When the task is an audit, report each finding as the pattern name, the quoted l
 
 ---
 
-Adapted from [no-ai-slop](https://github.com/petergyang/no-ai-slop) by Peter Yang (MIT License, Copyright (c) 2026 Peter Yang), reworked for a developer-documentation register. See NOTICE.md for details.
+Adapted from [no-ai-slop](https://github.com/petergyang/no-ai-slop) by Peter Yang (MIT License, Copyright (c) 2026 Peter Yang). The word lists and some examples are reproduced verbatim under those terms; the rest is reworked for a developer-documentation register. See NOTICE.md in this skill's source repository for details.
