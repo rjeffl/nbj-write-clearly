@@ -31,7 +31,7 @@ Depart from a guideline when doing so makes the content clearer for its actual r
 4. Name the actor. Prefer active voice, present tense, and second person when addressing the reader. Use imperatives for steps.
 5. Put a condition or circumstance before the instruction it controls.
 6. Prefer familiar, precise words. Define necessary jargon or abbreviations on first use. Keep one term for one concept.
-7. Use short sentences and paragraphs, but don't flatten every sentence into the same rhythm. Use common contractions when they sound natural.
+7. Give each sentence one claim, keep its subject next to its verb, and end it where the claim ends. Use short paragraphs, but don't flatten every sentence into the same rhythm. Use common contractions when they sound natural. For any draft, revision, or audit longer than a couple of sentences, apply [references/sentences.md](references/sentences.md). For a document of more than about 500 words, measure with its `scripts/sentence_stats.py` before and after the revision.
 8. Remove throat-clearing, repeated conclusions, fake quotations, excessive claims, pre-announcements, clichés, idioms, decorative metaphors, and stock machine-writing patterns. For any draft, revision, or audit longer than a couple of sentences, apply the banned words, named patterns, and concreteness tests in [references/anti-slop.md](references/anti-slop.md).
 9. Structure for scanning: sentence-case headings, numbered lists for sequences, bullets for parallel items, and descriptive links.
 10. Connect the prose so the reader follows one line of thought. For any draft, revision, or audit with more than one paragraph, apply the known-to-new ordering, reference, handoff, parallel-section, and certainty rules in [references/cohesion.md](references/cohesion.md).
@@ -54,6 +54,7 @@ Before returning the result, check that:
 - the opening answers the reader's main question;
 - every instruction names or clearly implies the actor;
 - conditions appear before the actions they govern;
+- each sentence carries one claim, and every sentence the script flags has been fixed or deliberately kept;
 - each pronoun has an unambiguous referent;
 - each sentence and section connects to the one before it, and parallel sections share one structure without cloned sentences;
 - terminology, capitalization, and formatting are consistent;
