@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- `references/cohesion.md`: authored guidance on flow between sentences, paragraphs, and sections. It covers known-to-new ordering, unambiguous references, logical connectives, section handoffs, parallel section structure, consistent certainty phrasing, and seven named flow findings for audits.
+- Required-file and SKILL.md-routing checks for `cohesion.md` in `scripts/check.sh`.
 - `references/anti-slop.md`, adapted from [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop) (MIT): banned stock words, named machine-writing patterns, concreteness tests, and an audit report format. Word lists and some examples are reproduced verbatim under the MIT terms; the rest is reworked for a developer-documentation register.
 - Required-file and SKILL.md-routing checks for `anti-slop.md` in `scripts/check.sh`.
 - Vendored snapshots of all 70 Google Developer Documentation Style Guide pages linked from `official-index.md`, under `references/official/` (snapshot 2026-08-19), so specialized lookups read exact local text instead of fetching live pages.
@@ -20,3 +22,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Added a fork notice to `README.md`.
 - `SKILL.md` step 8 now routes drafts, revisions, and audits longer than a couple of sentences through `references/anti-slop.md`; the audit rule adopts a name-the-pattern, quote-the-line, state-the-fix report format; the validation checklist gains a machine-writing-pattern check.
 - `README.md` and `NOTICE.md` describe and attribute the no-ai-slop adaptation.
+- `SKILL.md` gains step 10, which routes drafts, revisions, and audits with more than one paragraph through `references/cohesion.md`. Former steps 10 and 11 are now 11 and 12. The validation checklist gains a flow check.
+- `README.md` names `rjeffl/nbj-write-clearly` as a fork of `bjornjohansen/nbj-write-clearly` and describes the cohesion reference.
