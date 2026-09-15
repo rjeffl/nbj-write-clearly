@@ -13,6 +13,8 @@ required_files=(
   "$skill_root/references/guide.md"
   "$skill_root/references/anti-slop.md"
   "$skill_root/references/cohesion.md"
+  "$skill_root/references/sentences.md"
+  "$skill_root/scripts/sentence_stats.py"
   "$skill_root/references/official-index.md"
 )
 
@@ -46,6 +48,20 @@ fi
 if ! grep -q 'references/cohesion.md' "$skill_root/SKILL.md"; then
   echo "SKILL.md must route flow guidance to cohesion.md." >&2
   exit 1
+fi
+
+if ! grep -q 'references/sentences.md' "$skill_root/SKILL.md"; then
+  echo "SKILL.md must route sentence guidance to sentences.md." >&2
+  exit 1
+fi
+
+if command -v python3 >/dev/null 2>&1; then
+  python3 -B "$repo_root/scripts/test_sentence_stats.py" -q 2>&1 | tail -1 | grep -q '^OK' || {
+    echo "sentence_stats.py tests failed; run python3 scripts/test_sentence_stats.py." >&2
+    exit 1
+  }
+else
+  echo "Warning: python3 not found; skipped sentence_stats.py tests." >&2
 fi
 
 skill_lines="$(wc -l < "$skill_root/SKILL.md")"
