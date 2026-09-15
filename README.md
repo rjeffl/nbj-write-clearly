@@ -2,7 +2,7 @@
 
 > **Fork notice:** This is a fork of [daniel-p-green/nbj-write-clearly](https://github.com/daniel-p-green/nbj-write-clearly), adapted to trigger for all developer-facing output — code review feedback, code comments, commit messages, and merge request descriptions — not only documentation artifacts. See [CHANGELOG.md](CHANGELOG.md).
 >
-> This copy, [rjeffl/nbj-write-clearly](https://github.com/rjeffl/nbj-write-clearly), is in turn a fork of [bjornjohansen/nbj-write-clearly](https://github.com/bjornjohansen/nbj-write-clearly). It adds [references/cohesion.md](.agents/skills/nbj-write-clearly/references/cohesion.md), which covers flow between sentences, paragraphs, and sections.
+> This copy, [rjeffl/nbj-write-clearly](https://github.com/rjeffl/nbj-write-clearly), is in turn a fork of [bjornjohansen/nbj-write-clearly](https://github.com/bjornjohansen/nbj-write-clearly). It adds [references/cohesion.md](.agents/skills/nbj-write-clearly/references/cohesion.md), which covers flow between sentences, paragraphs, and sections. It also adds [references/sentences.md](.agents/skills/nbj-write-clearly/references/sentences.md) and a measurement script, which cover structure inside a sentence.
 
 An unofficial agent skill for drafting, revising, and auditing clear technical and product documentation. It applies principles from the [Google Developer Documentation Style Guide](https://developers.google.com/style) while protecting facts, technical tokens, uncertainty, and the author's voice.
 
@@ -28,6 +28,7 @@ Use it to draft new material, revise an existing draft, or audit prose without r
 - Leads with the reader's answer or goal.
 - Names actors and puts conditions before instructions.
 - Uses direct, globally understandable language without making every sentence sound the same.
+- Gives each sentence one claim, keeps subjects next to their verbs, and ends sentences where their claims end. For long documents, [scripts/sentence_stats.py](.agents/skills/nbj-write-clearly/scripts/sentence_stats.py) measures the result before and after, as described in [references/sentences.md](.agents/skills/nbj-write-clearly/references/sentences.md).
 - Structures procedures, code, UI references, links, lists, and headings for scanning.
 - Connects sentences and sections: known-to-new ordering, unambiguous references, stated logical relationships, parallel structure for parallel sections, and one phrasing per level of certainty, as described in [references/cohesion.md](.agents/skills/nbj-write-clearly/references/cohesion.md).
 - Removes unsupported claims, pre-announcements, jargon, filler, and named machine-writing patterns: banned stock words, binary contrasts, importance puffery, weasel attribution, and the other patterns cataloged in [references/anti-slop.md](.agents/skills/nbj-write-clearly/references/anti-slop.md).
