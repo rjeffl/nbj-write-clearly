@@ -79,3 +79,44 @@ Unseeded problems caught: passive sentences with no actor (who drains and retrie
 One routing change followed. `cohesion.md` told the agent to read two `references/official/` pages, but no `SKILL.md` step routes there. One run read one of them, and two skipped both as unrouted. The pointers are now conditional: read a page only when the reference's own rules don't settle the question. That wording change was not re-tested.
 
 Like the tests above, this is evidence for this packaging decision, not a broad benchmark.
+
+# Sentence structure forward test (2026-09-15)
+
+After `references/sentences.md` and `scripts/sentence_stats.py` were added, three fresh agent contexts each read `SKILL.md` and followed its workflow. The prompts asked for clarity and readability and named neither the reference nor the script.
+
+Unlike the earlier tests, the revise and audit input was real text rather than seeded prose: 1,449 words from an implementation plan the skill had already revised once, taken from three sections that argue a point. Before the test, a reviewer listed nine known sentence patterns in it: stacked claims, trailing tails, equation metaphors, split subjects, buried citations, a garden path, contrast habit, prose fragments, and a noun stack.
+
+1. **Revise:** revise the excerpt, keeping the project's argumentative voice, every identifier, and every hedge.
+2. **Audit:** audit the same excerpt without rewriting it.
+3. **Control:** a 188-word section written to follow the rules.
+
+## Result
+
+| Check | Revise | Audit | Control |
+|---|---|---|---|
+| Read sentences.md via step 7 routing | yes | yes | yes |
+| Ran `sentence_stats.py` when over 500 words | yes, before and after | yes, before | correctly skipped at 188 words |
+| Known patterns addressed | 8 of 9 | 6 of 9 fully, 2 partly | n/a |
+| Identifiers and numbers intact | all, checked by script | n/a | all |
+| Stop rule held | n/a | no rewrite | one condition-first change from step 5 |
+
+Script counts on the excerpt:
+
+| Measure | Before | After revision |
+|---|---|---|
+| Sentences | 60 | 102 |
+| Median / mean / p90 / max words | 19 / 23.5 / 44 / 60 | 14 / 14.4 / 21 / 37 |
+| Over 35 words | 11 | 1, kept with a reason |
+| Two or more joins | 5 | 0 |
+| Em dashes / semicolons | 17 / 10 | 0 / 0 |
+| Paragraphs with more than one bold span | 12 | 0 |
+
+Notes:
+
+- **Revise, the pattern not addressed.** "a single-frame frame" was kept. It's arguably a specification term, which the noun-stack rule exempts.
+- **Revise, fidelity drift.** Splitting created sentences that needed new verbs, and two of those verbs added claims. A bare "R-5.3e:" label became "R-5.3e is met by a retained topic," and two new *can* sentences changed modality. The run flagged all three as questions for the author. `sentences.md` now says a split must not add a claim, certainty, or modality. That rule was not re-tested.
+- **Audit, partial results.** A clause inside a parenthesis was reported as an orphan reference instead of a buried citation. Five contrasts were kept deliberately, each with a reason. The noun stack was not reported.
+- **Unseeded finding with real consequence.** Both the revise and audit runs noticed that the excerpt calls the same module powers "tested" in one paragraph and "certified" in another, in a project whose rules forbid representing a node as certified.
+- **Voice.** The revise run kept the source's British spellings and its lists without a serial comma as house style. The audit run recommended changing both. Project style outranks the skill, so the revise run's choice follows the authority order.
+
+Like the tests above, this is evidence for this packaging decision, not a broad benchmark.
