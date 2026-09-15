@@ -173,3 +173,27 @@ On the old draft, the X run wrote no "catches" and added no modality or causal l
 - **The relationship and effect drift didn't reproduce in this round, even without the rule.** The earlier 3-of-4 "catches" result doesn't recur reliably, which makes the rule hard to test by comparing runs.
 - **A new drift class appeared in both arms:** an invented actor. Five of six runs turned "Agreed with the storage team, 2026-08-20: …" into "we agreed". `SKILL.md` step 4 ("Name the actor") pulls toward this, and no rule says to leave an actor unnamed when the source doesn't name one.
 - **Usability:** one run's first `sentence_stats.py` call failed on a relative path. It succeeded on a retry with the absolute path.
+
+# Actor limit and script path re-test (2026-09-15)
+
+Two fixes followed the widened split rule test. `SKILL.md` step 4 now names the actor only when the source names or clearly implies one. `sentences.md` now gives the script command as `SKILL_DIR/scripts/sentence_stats.py` and says to use the absolute path. Six fresh runs revised a new 531-word certificate renewal runbook, written with its answer key before any run. Runs weren't told what was under test. Three used the branch (X), and three used `main` (Y).
+
+The runbook has ten unattributed passives, such as "It was decided not to page on-call" and "Agreed with the security team, 2026-07-02". It has three sentences whose actor the source names, such as "restarted by the deploy pipeline". Its length puts it over the 500-word line where the script is required.
+
+| Measure | X (branch) | Y (`main`) |
+|---|---|---|
+| Invented actor, such as *we* or a guessed team | 0 of 3 | 0 of 3 |
+| Named actors made active (pipeline, platform team) | 3 of 3 | 3 of 3 |
+| "renewed by the same client" made active | 2 of 3 | 0 of 3 |
+| An actor inferred for "is escalated" | 0 of 3 | 1 of 3 (the platform team, from the same sentence) |
+| Modal and hedge counts match the source | 3 of 3 | 3 of 3 |
+| First script call succeeded | 3 of 3 | 3 of 3 (two ran it from inside the skill directory) |
+| Contradiction resolved into a new timeline ("30 days until June, then 14") | 2 of 3 | 2 of 3 |
+
+## Reading the result
+
+- **Neither failure reproduced, even without the fixes.** No run invented *we*, and no script call failed. The earlier 5-of-6 *we* result came from one draft's phrasing and doesn't recur on a new one, so this test can't show the fixes help. It does show they cause no harm.
+- **The actor limit didn't make runs timid.** Every run turned the named-actor passives active. X runs did so slightly more often.
+- **A new drift class appeared in both arms.** The runbook says renewal starts 30 days before expiry and, separately, that the window was shortened to 14 days. Four of six runs merged these into a timeline the source doesn't state. All four flagged it for the author, which keeps it visible, but the revision still asserts it.
+
+With three runs per arm, these differences are noise. This is evidence for keeping two low-risk fixes, not a benchmark.
