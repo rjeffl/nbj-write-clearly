@@ -17,5 +17,5 @@ Non-blocking follow-ups from reviews (2026-08-19).
 - [ ] From review (2026-08-28): consider two `check.sh` greps guarding the anti-slop attribution (footer present in `references/anti-slop.md`, entry present in `NOTICE.md`), mirroring the snapshot-header check.
 - [ ] From review (2026-08-28): consider reproducing the full MIT permission notice under the no-ai-slop heading in `NOTICE.md`; naming the license and copyright holder is the current middle ground.
 - [ ] From review (2026-08-28): the audit report format is stated in both `SKILL.md` (Protect meaning and voice) and `references/anti-slop.md` (Report format for audits); watch for drift if either changes.
-- [ ] `references/cohesion.md` (added 2026-09-15) has no forward test yet. Run one like the anti-slop test in `EVALUATION.md`: a multi-section draft seeded with each of the seven flow findings, an audit-only run on the same draft, and a clean control to confirm the stop rule holds. Record the result in `EVALUATION.md`.
+- [x] Forward test for `references/cohesion.md`: run 2026-09-15 and recorded in `EVALUATION.md`.
 - [ ] Watch for overlap between `cohesion.md` and `anti-slop.md`: the section-ending rule restates the pre-announcement and summary-recap patterns, and connective padding sits close to the intensifier list.
