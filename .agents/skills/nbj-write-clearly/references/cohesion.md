@@ -1,6 +1,6 @@
 # Cohesion and flow
 
-Apply this reference to any draft, revision, or audit with more than one paragraph. The rules in SKILL.md, guide.md, and anti-slop.md make each sentence clear on its own. This reference connects those sentences, so the reader follows one line of thought from start to finish without backtracking. For pronoun mechanics, read `references/official/pronouns.md`. For paragraph length, read `references/official/paragraph-structure.md`.
+Apply this reference to any draft, revision, or audit with more than one paragraph. The rules in SKILL.md, guide.md, and anti-slop.md make each sentence clear on its own. This reference connects those sentences, so the reader follows one line of thought from start to finish without backtracking. The rules below are enough for most flow problems. When a pronoun or relative-clause question isn't settled by them, read `references/official/pronouns.md`. When a paragraph's length is in question, read `references/official/paragraph-structure.md`.
 
 ## Order each sentence from known to new
 
