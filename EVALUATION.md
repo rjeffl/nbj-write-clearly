@@ -197,3 +197,29 @@ The runbook has ten unattributed passives, such as "It was decided not to page o
 - **A new drift class appeared in both arms.** The runbook says renewal starts 30 days before expiry and, separately, that the window was shortened to 14 days. Four of six runs merged these into a timeline the source doesn't state. All four flagged it for the author, which keeps it visible, but the revision still asserts it.
 
 With three runs per arm, these differences are noise. This is evidence for keeping two low-risk fixes, not a benchmark.
+
+# Contradiction rule test (2026-09-15)
+
+`SKILL.md` "Protect meaning and voice" gained a rule: don't resolve a contradiction in the source; keep both statements and flag the conflict for the author in the response. Six fresh runs each revised two documents. Runs weren't told what was under test. Three used the branch (X), and three used `main` (Y). The answer key was written before any run and kept outside the folder the runs could read.
+
+- **Pipeline notes (new, 223 words):** five contradictions (owner, staging deploy, retention, rollback time, signing version) and two decoys that look like conflicts but aren't (unit tests per pull request against a nightly integration suite; a usual 20-minute build against one 48-minute cold-cache build).
+- **Certificate runbook (531 words):** the 30-day and 14-day conflict that four of six runs in the actor re-test merged into a timeline.
+
+One X run listed the file names of the Y skill copy with `find` and reports that it didn't read them.
+
+| Measure | X (rule) | Y (`main`) |
+|---|---|---|
+| Pipeline contradictions kept with both statements | 15 of 15 | 15 of 15 |
+| Pipeline contradictions flagged | 15 of 15 | 15 of 15 |
+| Runbook conflict merged into a timeline | 0 of 3 | 0 of 3 |
+| Runbook conflict flagged | 3 of 3 | 3 of 3 |
+| Decoy rewritten or flagged as a conflict | 0 of 6 | 0 of 6 |
+| Where the flags went | response and report only, 3 of 3 | inside the revised document, 3 of 3 (inline "Conflict" or "Needs confirmation" notes, or an appended "Conflicts to resolve" section) |
+
+## Reading the result
+
+- **No run resolved a contradiction, with or without the rule.** The timeline drift from the actor re-test didn't recur in either arm. The likely reason is a confound in this design: the pipeline notes contradict themselves five times, and a run that notices those reads the runbook looking for conflicts. This test can't show that the rule prevents resolution.
+- **The rule changed where flags go.** Every X run kept the revision free of editor notes and flagged conflicts in its response. Every Y run wrote its flags into the document, which adds text the author has to remove before publishing. The rule's "in your response" wording is the only difference between the arms that explains this.
+- **No over-flagging.** Neither arm treated a decoy as a conflict.
+
+With three runs per arm, this is evidence about where the rule sends flags, not a benchmark for how well it prevents resolution. A cleaner test would give the runbook alone to fresh runs.
