@@ -30,6 +30,8 @@ A claim is a statement that could be true or false on its own. A reason attached
 
 Split instead of cutting. When the source argues a point, keep every reason and consequence, and give each one a sentence. The argument stays; only the packaging changes.
 
+A split often needs a new subject or verb. Choose one that adds no claim and no certainty. A bare label such as "R-5.3e: the topic carries the version" becomes "For R-5.3e, the topic carries the version," not "R-5.3e is met by the topic." Don't add *can* or *must* where the source had neither.
+
 Not recommended:
 
 > The retry timeout is 3 seconds rather than 1, because a full-size frame takes 1.1 seconds to send, and the value lives in the build configuration, never in the user settings — a device that boots with the wrong value needs a site visit.
