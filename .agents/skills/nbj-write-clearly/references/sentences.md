@@ -30,7 +30,12 @@ A claim is a statement that could be true or false on its own. A reason attached
 
 Split instead of cutting. When the source argues a point, keep every reason and consequence, and give each one a sentence. The argument stays; only the packaging changes.
 
-A split often needs a new subject or verb. Choose one that adds no claim and no certainty. A bare label such as "R-5.3e: the topic carries the version" becomes "For R-5.3e, the topic carries the version," not "R-5.3e is met by the topic." Don't add *can* or *must* where the source had neither.
+A split often needs a new subject, verb, or connective. Choose ones that say no more than the source did:
+
+- **Labels.** Keep a label as a label, or turn it into a neutral lead-in. "SEC-4: tokens expire after an hour" becomes "Under SEC-4, tokens expire after an hour," not "SEC-4 is satisfied because tokens expire after an hour."
+- **Modality.** Don't add *can*, *must*, or *will*, and don't turn *may* or *might* into *can*.
+- **Relationships.** Link two facts with *because* or *so* only when the source states that one causes the other. "The index was rebuilt on Monday, and queries slowed that week" stays two facts. A possible explanation stays possible: "…which could explain the timeouts" becomes "That could explain the timeouts," not "That explains the timeouts."
+- **Effects.** Keep a claim about what something does at the source's strength. "The linter is a safety net for typos" doesn't become "The linter catches typos," and "helps with" doesn't become "solves."
 
 Not recommended:
 
