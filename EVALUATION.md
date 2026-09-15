@@ -120,3 +120,32 @@ Notes:
 - **Voice.** The revise run kept the source's British spellings and its lists without a serial comma as house style. The audit run recommended changing both. Project style outranks the skill, so the revise run's choice follows the authority order.
 
 Like the tests above, this is evidence for this packaging decision, not a broad benchmark.
+
+# Split-rule re-test (2026-09-15)
+
+The sentence structure test above added one rule afterward: a verb that a split needs must add no claim, certainty, or modality. This test checked that rule in five fresh agent contexts. Each run revised a document with the skill and was not told what was under test.
+
+## Design
+
+- **A/B on a trap draft.** A 435-word set of engineering notes with 16 places where a natural split tempts an added claim: a bare requirement label, a status label, verbless fragments, *may* and *should* statements, a probable cause, a dash apposition, a recorded decision, and an efficacy metaphor. Two runs used the skill with the rule (A). Two used an identical copy without that one paragraph (B).
+- **Regression on the original failure.** One A run revised the same real excerpt whose revision produced "R-5.3e is met by a retained topic" and two added *can*s. The rule's own example uses that label, so this run can confirm the fix but cannot show that the rule generalizes.
+
+A script compared modal, hedge, and certainty word counts with the source. A reviewer then read every trap in every output.
+
+## Result
+
+| Check | A1 | A2 | B1 | B2 | Excerpt (A) |
+|---|---|---|---|---|---|
+| Modal and hedge counts match the source | yes | yes | yes | yes (one extra *would*, faithful) | yes |
+| Added *can*, *must*, *will* or a compliance verb | none | none | none | none | none (the earlier run added three) |
+| Label handling | "For REQ-12," | label kept | citation moved to clause end | label kept | "For R-5.3e," |
+| Other drift | "catches" for "insurance against"; "That cause would explain" | an invented "so" linking a passing build to wrong transmit power | "catches" | "catches" | none found |
+| Identifiers and numbers intact | yes | yes | yes | yes | yes |
+
+## Reading the result
+
+- **The original failure didn't recur.** The excerpt run wrote "For R-5.3e, `lran/bridge/version` carries…" and added no *can*. Because the rule quotes that case, this confirms the fix and nothing more.
+- **On the trap draft, the rule made no measurable difference.** Neither arm added modality, a compliance claim, or certainty to a label. Baseline drift of that kind was already low without the rule.
+- **The drift that remains is a different kind, and it appeared in both arms.** Runs replaced a hedged relationship with a stronger one: "cheap insurance against a regression" became "It catches a regression" in three of four runs. One run invented a causal *so*, and another turned "which would explain" into "That cause would explain." The rule's wording ("no claim") covers these in principle. Its example shows only a label and a modal verb.
+
+With two runs per arm, a difference of one or two drift instances is noise. This is evidence about the rule's scope, not a benchmark.
