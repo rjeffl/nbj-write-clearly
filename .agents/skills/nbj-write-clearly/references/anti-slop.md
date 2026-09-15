@@ -28,7 +28,7 @@ Each entry names the pattern, shows its shape, and gives the fix.
 - **Rhetorical setup.** "What if I told you," "Think about it:", or a question the next sentence answers. Drop the setup and make the point.
 - **Fake-profound kicker.** A closing metaphor or aphorism that restates the point as wisdom. Delete it and end on the last concrete point or next action. Do not write a better metaphor.
 - **Summary-recap ending.** "In conclusion" followed by a restated paragraph. End on the last concrete point, takeaway, or next action. Keep a summary section when the destination requires one.
-- **Formatting slop.** Emoji in headings, bold sprinkled mid-sentence for emphasis, a bullet list that reads better as two sentences of prose, or a heading over a two-sentence section. Bold UI labels required by guide.md are exempt.
+- **Formatting slop.** Emoji in headings, bold sprinkled mid-sentence for emphasis, a bullet list that reads better as two sentences of prose, or a heading over a two-sentence section. Use at most one bold span per paragraph, and make it a whole sentence or a defined term, placed first. Bold UI labels required by guide.md are exempt.
 - **Em-dash overuse.** Use no em dashes in short artifacts and at most one or two in a long draft, and only where they beat commas, periods, or parentheses. Format any kept dash per the dashes entry in [official-index.md](official-index.md).
 
 ## Concreteness tests
