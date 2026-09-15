@@ -18,6 +18,7 @@ Non-blocking follow-ups from reviews (2026-08-19).
 - [ ] From review (2026-08-28): consider reproducing the full MIT permission notice under the no-ai-slop heading in `NOTICE.md`; naming the license and copyright holder is the current middle ground.
 - [ ] From review (2026-08-28): the audit report format is stated in both `SKILL.md` (Protect meaning and voice) and `references/anti-slop.md` (Report format for audits); watch for drift if either changes.
 - [x] Forward test for `references/cohesion.md`: run 2026-09-15 and recorded in `EVALUATION.md`.
-- [ ] Forward test for `references/sentences.md` and `sentence_stats.py`, using real excerpts from a long technical document. Record the result, including before and after script counts, in `EVALUATION.md`.
+- [x] Forward test for `references/sentences.md` and `sentence_stats.py`: run 2026-09-15 on real excerpts and recorded in `EVALUATION.md`.
+- [ ] Re-test the split-without-adding-claims rule in `sentences.md`, added after the forward test and not yet exercised.
 - [ ] Watch the sentence rules against `official/sentence-structure.md` after each `sync-official` run: `sentences.md` defers to that page's condition-before-instruction rule, and a change there may need a matching change here.
 - [ ] Watch for overlap between `cohesion.md` and `anti-slop.md`: the section-ending rule restates the pre-announcement and summary-recap patterns, and connective padding sits close to the intensifier list.
