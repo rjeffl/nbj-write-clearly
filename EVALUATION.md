@@ -48,3 +48,34 @@ After `references/anti-slop.md` was added (adapted from petergyang/no-ai-slop, M
 No pattern line needed sharpening after the runs. The audit run also caught two unseeded problems (announcement framing in the heading, an unanchored "the release" time reference), both from existing guide.md rules.
 
 Like the candidate comparison above, this is evidence for this packaging decision, not a broad benchmark.
+
+# Cohesion forward test (2026-09-15)
+
+After `references/cohesion.md` was added, three fresh agent contexts each read `SKILL.md` and followed its workflow on scratch inputs outside the repository. The prompts asked for clarity and flow but didn't name `cohesion.md`, so the runs also tested the step 10 routing.
+
+1. **Revise:** a ~300-word, eight-section operations document for a fictional edge cache, seeded with 14 tagged instances. The seeds were two broken chains, two synonym drifts, two orphan references, connective padding, a sentence cloned across three parallel sections, parallel sections in different shapes, compared facts not in a table, certainty drift, a missing relationship, a section pre-announcement, and a qualification separated into a Caveats section. Eight technical tokens and quantities had to survive.
+2. **Audit:** the same draft, audit-only.
+3. **Control:** a runbook written to follow the skill, with parallel sections, a comparison table, and consistent certainty, to test the stop rule.
+
+## Result
+
+| Check | Revise | Audit | Control |
+|---|---|---|---|
+| Read cohesion.md via step 10 routing | yes | yes | yes |
+| Seeded instances addressed | 14/14 | 12/14 under the seeded pattern; 2 flagged under a neighboring rule | n/a |
+| Protected tokens intact | 8/8 | n/a | all commands and file names |
+| Missing facts flagged, not invented | 9 author questions; "Not stated" in table cells | fixes that need facts are routed to the author | n/a |
+| Stop rule held (no over-editing) | n/a | no rewrite | two paragraphs moved, no wording changed |
+
+Notes on the partial and borderline results:
+
+- **Audit, two seeds under other names.** The missing relationship (`CACHE_REGION` unset, so the node exits) was reported as a condition placed after its instruction. The broken chain "Latency regressions trigger a rollback." was reported as a trigger with no threshold. Both lines were flagged with a usable fix.
+- **Revise, certainty.** The status column kept three phrasings (*Live*, *Planned for October*, *Probably the first quarter*). These are three different levels of certainty, one phrasing each, so the result follows the rule. The seed was weaker than intended.
+- **Revise, one small fidelity drift.** "the dashboard" became "the shared dashboard" even though the run listed the equivalence as a question for the author.
+- **Control, not fully clean.** The control run moved the collector's timing warning above the restart step, which the existing condition-before-instruction rule requires. It then moved the gateway's note to keep both sections the same shape. It also flagged that "without an outage" conflicts with the collector's 5-second metrics gap. Both problems were authoring flaws in the control, not over-editing.
+
+Unseeded problems caught: passive sentences with no actor (who drains and retries), dates without a year, an opening that doesn't say what is rolling out, and a sequence error in the seed itself (a node that exits and *then* reports an error).
+
+One routing change followed. `cohesion.md` told the agent to read two `references/official/` pages, but no `SKILL.md` step routes there. One run read one of them, and two skipped both as unrouted. The pointers are now conditional: read a page only when the reference's own rules don't settle the question. That wording change was not re-tested.
+
+Like the tests above, this is evidence for this packaging decision, not a broad benchmark.
