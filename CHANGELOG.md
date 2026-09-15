@@ -29,3 +29,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `README.md` names `rjeffl/nbj-write-clearly` as a fork of `bjornjohansen/nbj-write-clearly` and describes the cohesion reference.
 - `SKILL.md` step 7 now states the one-claim, subject-verb, and sentence-ending rules, routes to `references/sentences.md`, and asks for `sentence_stats.py` counts before and after revising a document of more than about 500 words. The validation checklist gains a sentence check.
 - `references/anti-slop.md`'s formatting pattern now allows at most one bold span per paragraph.
+- `SKILL.md` step 4 names the actor only when the source names or clearly implies one, and says not to invent one, such as *we* for an unattributed decision.
+- `references/sentences.md` gives the `sentence_stats.py` command as `SKILL_DIR/scripts/sentence_stats.py` and says to use the absolute path, because the working directory is usually the user's project.

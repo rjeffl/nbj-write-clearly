@@ -28,7 +28,7 @@ Depart from a guideline when doing so makes the content clearer for its actual r
 1. Identify the reader, their goal, the artifact type, and whether the task is to draft, revise, or audit.
 2. Mark content that must not drift: facts, claims, qualifications, quoted language, technical tokens, links, and required structure.
 3. Put the result or purpose first. Give each paragraph one idea and put critical information early.
-4. Name the actor. Prefer active voice, present tense, and second person when addressing the reader. Use imperatives for steps.
+4. Name the actor when the source names or clearly implies one. Don't invent one, such as *we* for an unattributed decision; keep the passive or ask the author. Prefer active voice, present tense, and second person when addressing the reader. Use imperatives for steps.
 5. Put a condition or circumstance before the instruction it controls.
 6. Prefer familiar, precise words. Define necessary jargon or abbreviations on first use. Keep one term for one concept.
 7. Give each sentence one claim, keep its subject next to its verb, and end it where the claim ends. Use short paragraphs, but don't flatten every sentence into the same rhythm. Use common contractions when they sound natural. For any draft, revision, or audit longer than a couple of sentences, apply [references/sentences.md](references/sentences.md). For a document of more than about 500 words, measure with its `scripts/sentence_stats.py` before and after the revision.

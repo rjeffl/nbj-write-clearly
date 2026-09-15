@@ -15,10 +15,10 @@ The official pages on semicolons, parentheses, and commas agree with this file. 
 Sentence problems are easy to fix one at a time and easy to miss across a long document. For a document of more than about 500 words, run the bundled script before and after a revision:
 
 ```sh
-python3 scripts/sentence_stats.py FILE --exclude-heading changelog
+python3 SKILL_DIR/scripts/sentence_stats.py FILE --exclude-heading changelog
 ```
 
-Run it from the skill directory, or pass the script's full path. `--exclude-heading` skips sections that must not be revised, such as dated changelogs or quoted records. The script lists sentences over 35 words, sentences with two or more joins (an em dash, a semicolon, or ", which"), paragraphs with more than two contrasts, and paragraphs with more than one bold span.
+Replace `SKILL_DIR` with the absolute path of the directory that contains `SKILL.md`. The working directory is usually the user's project, so a relative `scripts/` path fails. `--exclude-heading` skips sections that must not be revised, such as dated changelogs or quoted records. The script lists sentences over 35 words, sentences with two or more joins (an em dash, a semicolon, or ", which"), paragraphs with more than two contrasts, and paragraphs with more than one bold span.
 
 The thresholds tell you where to look. They don't tell you what to change. A 40-word sentence that states one claim and ends in a short list can stand. Report the before and after counts with the revision, and revise a long document section by section rather than in one pass.
 
