@@ -20,6 +20,8 @@ Non-blocking follow-ups from reviews (2026-08-19).
 - [x] Forward test for `references/cohesion.md`: run 2026-09-15 and recorded in `EVALUATION.md`.
 - [x] Forward test for `references/sentences.md` and `sentence_stats.py`: run 2026-09-15 on real excerpts and recorded in `EVALUATION.md`.
 - [x] Re-test the split-without-adding-claims rule in `sentences.md`: run 2026-09-15 and recorded in `EVALUATION.md`. The original failure didn't recur; on a trap draft the rule made no measurable difference.
-- [ ] Consider widening the split rule's example beyond labels and modal verbs: in the re-test, splits strengthened relationships in both arms ("insurance against" became "catches", an invented causal *so*). Use a non-LRAN example, since the current one quotes the excerpt it was fixed on. Re-test with more than two runs per arm.
+- [x] Widen the split rule to relationships and effects with non-test examples, and re-test with three runs per arm: done 2026-09-15 and recorded in `EVALUATION.md`. There was no harm and slightly less drift, but the difference is within noise.
+- [ ] `SKILL.md` step 4 ("Name the actor") led five of six runs to invent "we" for a passive decision record. Add a limit: name the actor only when the source names or clearly implies one; otherwise keep the passive or ask the author.
+- [ ] `sentences.md` "Measure long documents first": one run's relative script path failed. Consider giving the invocation as a path relative to `SKILL.md` and telling the agent to resolve it to an absolute path.
 - [ ] Watch the sentence rules against `official/sentence-structure.md` after each `sync-official` run: `sentences.md` defers to that page's condition-before-instruction rule, and a change there may need a matching change here.
 - [ ] Watch for overlap between `cohesion.md` and `anti-slop.md`: the section-ending rule restates the pre-announcement and summary-recap patterns, and connective padding sits close to the intensifier list.

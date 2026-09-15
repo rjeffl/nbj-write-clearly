@@ -149,3 +149,27 @@ A script compared modal, hedge, and certainty word counts with the source. A rev
 - **The drift that remains is a different kind, and it appeared in both arms.** Runs replaced a hedged relationship with a stronger one: "cheap insurance against a regression" became "It catches a regression" in three of four runs. One run invented a causal *so*, and another turned "which would explain" into "That cause would explain." The rule's wording ("no claim") covers these in principle. Its example shows only a label and a modal verb.
 
 With two runs per arm, a difference of one or two drift instances is noise. This is evidence about the rule's scope, not a benchmark.
+
+# Widened split rule re-test (2026-09-15)
+
+The rule was widened to four cases: labels, modality, relationships (*because* and *so* only where the source states a cause), and effects ("a safety net for" doesn't become "catches"). None of its examples quote a test input. Seven fresh runs followed.
+
+- **A/B on a new trap draft:** 355 words of backup-service notes with 20 traps, written before the rule. Three runs used the widened rule (X), and three used a copy with no split rule (Y).
+- **Old draft:** one X run on the earlier notes, where three of four runs had written "catches" for "insurance against".
+
+| Measure | X (widened rule) | Y (no rule) |
+|---|---|---|
+| Modal and hedge counts match the source | 3 of 3 | 3 of 3 |
+| Relationship and effect traps held (correlation kept as two facts, "backstop", "helps with") | 3 of 3 | 2 of 3 (one "helps … stay within") |
+| Invented actor ("we agreed" for a passive decision record) | 2 of 3 | 3 of 3 |
+| Status label's scope narrowed ("confidence in the six-hour figure is low, because…") | 2 of 3 | 2 of 3 |
+| Drift instances, total | 4 | 7 |
+
+On the old draft, the X run wrote no "catches" and added no modality or causal link.
+
+## Reading the result
+
+- **The widened rule did no harm, and its arm drifted slightly less.** Three runs per arm can't separate 4 from 7 from noise.
+- **The relationship and effect drift didn't reproduce in this round, even without the rule.** The earlier 3-of-4 "catches" result doesn't recur reliably, which makes the rule hard to test by comparing runs.
+- **A new drift class appeared in both arms:** an invented actor. Five of six runs turned "Agreed with the storage team, 2026-08-20: …" into "we agreed". `SKILL.md` step 4 ("Name the actor") pulls toward this, and no rule says to leave an actor unnamed when the source doesn't name one.
+- **Usability:** one run's first `sentence_stats.py` call failed on a relative path. It succeeded on a retry with the absolute path.
