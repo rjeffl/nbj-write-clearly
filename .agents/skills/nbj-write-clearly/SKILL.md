@@ -42,6 +42,7 @@ Depart from a guideline when doing so makes the content clearer for its actual r
 
 - Do not add facts, certainty, praise, urgency, or product claims.
 - Preserve source modality such as *can*, *might*, *should*, and *will*. Do not change it only to satisfy a tense preference.
+- Do not resolve a contradiction in the source. Keep both statements as the source gives them, and flag the conflict for the author in your response. A guessed order, timeline, or cause is an added fact.
 - Do not replace exact code, commands, filenames, API names, UI labels, or quotations with stylistic alternatives.
 - Do not rewrite when the user asked only for an audit. Report findings in priority order and give bounded examples. For style findings, name the pattern, quote the line, and state the fix; describe patterns, not provenance.
 - Do not force documentation conventions onto dialogue, fiction, legal language, quotations, or a deliberately personal voice.
@@ -61,7 +62,7 @@ Before returning the result, check that:
 - claims remain factual, scoped, and supported by the source;
 - a global reader can understand the prose without decoding slang or culture-specific references;
 - no banned stock word, empty intensifier, or named machine-writing pattern from references/anti-slop.md remains;
-- the revision preserves all required facts, caveats, and technical tokens;
+- the revision preserves all required facts, caveats, and technical tokens, and leaves any contradiction in the source unresolved and flagged;
 - the output still sounds like the author when voice matters.
 
 Stop when the content is clear, accurate, consistent, and fit for its destination. Do not keep polishing lines that already do their job.

@@ -31,3 +31,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `references/anti-slop.md`'s formatting pattern now allows at most one bold span per paragraph.
 - `SKILL.md` step 4 names the actor only when the source names or clearly implies one, and says not to invent one, such as *we* for an unattributed decision.
 - `references/sentences.md` gives the `sentence_stats.py` command as `SKILL_DIR/scripts/sentence_stats.py` and says to use the absolute path, because the working directory is usually the user's project.
+- `SKILL.md` "Protect meaning and voice" says not to resolve a contradiction in the source: keep both statements and flag the conflict for the author. The validation checklist gains the matching check.
